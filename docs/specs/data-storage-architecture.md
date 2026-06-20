@@ -144,6 +144,12 @@ else's. Different DMs are fully isolated.
   tab mid-fight. The single-JSONB-blob design makes this one cheap UPSERT.
 - Seed SRD content via a migration script that loads Open5e JSON → `creatures`
   / `spells` with `owner_id NULL`. Re-runnable when you update SRD data.
+- **Capture license + attribution metadata per source at ingest.** Store each
+  `source`'s license and required attribution string so the in-app credits screen
+  renders the **correct notice per source**, not one global WotC line. All SRD content
+  is **CC-BY-4.0** (credit WotC, link the license, state that changes were made); the
+  **OGL is never used**. Third-party sources carry their own license, recorded per
+  source — never assumed CC-BY. See `CREDITS.md` and `docs/content-licensing.md`.
 
 ---
 

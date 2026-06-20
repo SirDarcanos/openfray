@@ -218,9 +218,10 @@ A web app has two things to host; they live in different places.
   indefinitely at this scale.
 - **Backend/DB: Supabase free tier** (Postgres + auth + RLS + realtime). As of
   June 2026: 500 MB database, 50K monthly active users, 5 GB egress, unlimited API
-  requests within limits. Fits a small community tool for a long time. *(Confirm
-  current numbers at supabase.com/pricing — Supabase has changed these several
-  times.)*
+  requests within limits, and **a max of 2 active projects** (so free dev/staging/prod
+  as separate projects isn't possible — branch/seed within one). Fits a small
+  community tool for a long time. *(Confirm current numbers at supabase.com/pricing
+  — Supabase has changed these several times.)*
 - **Two free chores that make the free tier behave like paid**, both falling out
   of decisions already made:
   - *Keep-alive:* free projects pause after 7 days of inactivity (data survives,
@@ -233,7 +234,8 @@ A web app has two things to host; they live in different places.
     storage covers it at ~$0. Set up early — DMs care about their custom creatures.
 - **Cost model: $0 until real traffic.** Upgrade trigger is *limits*, not the
   pause — Supabase **Pro at $25/mo** when hitting ~40K MAU, ~400 MB+ database, or
-  needing managed backups/support. That's a "got popular" problem worth having.
+  needing managed backups/support. Pro now bundles **daily backups (7-day
+  retention)** + $10/mo compute credit. That's a "got popular" problem worth having.
 - **No lock-in:** Supabase is standard Postgres underneath; if it ever stops
   fitting, data + schema move to Neon / Railway / Fly.io / managed Postgres with no
   rewrite. The JSONB-blob design keeps it portable.
@@ -317,12 +319,13 @@ edition setting.
 ### Verified facts (checked June 2026) — data source, content boundary, licensing
 
 **Data source: Open5e API, v2.** Confirmed to carry both editions: the 2024/5.5
-content under document key `srd-2024` (~330 creatures, ~339 spells) and the 2014
-content under `wotc-srd` (v1). It also aggregates third-party publishers (Kobold
-Press, Green Ronin) under their own open licenses.
+content under document key `srd-2024` (~330 creatures, ~339 spells) and the 2014/5.1
+content under `srd-2014` (titled "SRD 5.1"). *(The old v1 key `wotc-srd` no longer
+applies — on v2 the 2014 SRD is `srd-2014`.)* It also aggregates third-party
+publishers (Kobold Press, Green Ronin) under their own open licenses.
 - **Open5e's `document.key` field IS our `source` + `edition`.** Every entry is
   already tagged with its origin document; we ingest that field rather than
-  inventing tagging. `srd-2024` / `wotc-srd` → our SRD editions; the entry slug
+  inventing tagging. `srd-2024` / `srd-2014` → our SRD editions; the entry slug
   (e.g. `fireball`) → our within-source identity key; a Kobold Press document →
   a distinct `source`, which *automatically* makes it a separate, never-matched
   entity per our rule. The data structure validates the editions/sources design.
@@ -344,13 +347,26 @@ was **renamed** to avoid trademarks (functionally identical); ingest the renamed
 forms as-is, don't "correct" them.
 
 **Licensing / attribution (an obligation, distinct from our AGPL):**
-- SRD 5.2 is **CC-BY-4.0** — **irrevocable** (no OGL-style rug-pull risk; safe to
-  build on long-term) but **attribution is mandatory**. Must credit WotC wherever
-  SRD content is used (an attribution/about screen).
-- Third-party content (Kobold Press etc.) **retains its own license** — honor each
-  publisher's terms separately; don't assume all are CC-BY.
-- This content attribution (CC-BY, governs the *data*) is **separate from** the
-  project's AGPL (governs the *code*). Both apply.
+- **Policy: CC-BY-4.0 for ALL game content; the OGL is never used, in any version.**
+  Full build-agent instructions in [`content-licensing.md`](content-licensing.md);
+  attributions live in `CREDITS.md` (+ an in-app About/Credits screen).
+- SRD 5.2 (`srd-2024`) is released under **CC-BY-4.0 only** — irrevocable, no OGL
+  option, no decision to make. This is the bulk of the content.
+- SRD 5.1 (`srd-2014`), if ingested, is **dual-licensed** (OGL-1.0a *or* CC-BY-4.0).
+  Dual-licensed means you pick **one** — **we elect CC-BY-4.0**, so the whole
+  compendium sits under one consistent license and the OGL is never invoked.
+- CC-BY is **not** "no strings": wherever SRD content is used we must credit WotC
+  (their exact attribution string, title, licensor), **link the license**, **state
+  that changes were made** (we reformat into our schema), and **not imply
+  endorsement**.
+- Third-party content (e.g. Kobold Press) is honored under **its own license**,
+  checked and recorded per source before ingest — **never assumed CC-BY**. Do not add
+  OGL boilerplate (Section 15 / Product Identity); if a source is OGL-only, **flag it
+  to the maintainer** rather than reintroducing the OGL.
+- **Never ingest WotC content excluded from the SRD** (Beholder, Mind Flayer,
+  Displacer Beast, …) — it isn't under CC-BY and we have no license to it.
+- This content licensing (governs the *data*) is **separate from** the project's
+  AGPL (governs the *code*). Both apply.
 
 ---
 
@@ -516,9 +532,11 @@ randomness-audit credibility).
 | Player view | Designed in now (visibility flags), built in phase 2 |
 | DDB/Roll20 import | Optional, best-effort, never core (no public API) |
 | Compendium | SRD via Open5e, one shared schema, 5.5-styled rendering |
-| Data source | Open5e **v2** API; `srd-2024` + `wotc-srd`; ingest once, clean, seed |
+| Data source | Open5e **v2** API; `srd-2024` + `srd-2014`; ingest once, clean, seed |
 | Content gap | SRD excludes Beholder/Mind Flayer/etc. → custom form is central |
-| Content license | SRD = CC-BY-4.0 (irrevocable); attribution mandatory; 3rd-party varies |
+| Content license | **CC-BY-4.0 for ALL game content; OGL never used.** SRD 5.2 = CC-BY-only; `srd-2014` dual-licensed → elect CC-BY; 3rd-party honored under its own license, never assumed CC-BY |
+| License artifacts | `CREDITS.md` (attributions) + `docs/content-licensing.md` (build-agent instructions) |
+| Excluded IP | Never ingest SRD-excluded WotC IP (Beholder, Mind Flayer, …) — not CC-BY |
 | Editions | `edition` field; campaign-level setting picks which surfaces |
 | Sources | `source` field; SRD, Kobold Press, custom — never cross-matched |
 | Edition grouping | Within one source only, import-assigned key; never user content |
