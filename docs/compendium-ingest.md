@@ -41,9 +41,12 @@ stat-block UI** — most of these are non-obvious and will be repeated otherwise
 7. **Action types:** `ACTION`, `BONUS_ACTION`, `REACTION`, `LEGENDARY_ACTION`,
    `LAIR_ACTION`. Partition them (a mapper that keeps only `ACTION` drops bonus
    actions, reactions, and legendary actions — an early bug here).
-8. **Legendary:** there is **no per-round count** in the data — default to 3
+8. **Legendary:** there is **no per-round budget** in the data — default to 3
    (`DEFAULT_LEGENDARY_PER_ROUND`). A creature is "Legendary" iff it has legendary
-   actions (no flag); the UI shows a badge on that basis.
+   actions (no flag); the UI shows a badge on that basis. The **per-action cost**
+   *is* exposed (`actions[].legendary_action_cost`, e.g. an action costing 2 of the
+   round's budget) — we don't map it yet, but it's there if per-action legendary
+   cost tracking is added later. Only the per-round budget is missing.
 9. **Traits** are a separate `traits[]` (`{ name, desc }`), not in `actions`.
 10. **Spellcasting is an action with markdown** (`**At Will:**`, bullet lists) — it
     is *not* a structured spellcasting block in this set. Render markdown
@@ -55,6 +58,16 @@ stat-block UI** — most of these are non-obvious and will be repeated otherwise
 12. **XP:** `experience_points` is correct (use it); shown as "CR 16 (15,000 XP)".
 13. **Document keys** are `srd-2024` (SRD 5.2) and `srd-2014` (SRD 5.1) — **not**
     the old v1 `wotc-srd`. `document.key` → our `source`/`edition`.
+14. **Spells are not prose-only in the feed.** v2 carries structured spell
+    mechanics — `damage_roll` (e.g. `"8d6"`), `damage_types`, `saving_throw_ability`,
+    `attack_roll`, `concentration`, and `casting_options[]` (per-slot-level upcast
+    variants, each with its own `damage_roll`). The current mapper keeps only
+    display metadata + prose `text` (`mapOpen5eSpell`); the mechanics fields are
+    available for a future **rollable-spell** feature. Note the **save DC is *not* a
+    spell field** — it comes from the caster (a monster's `spellcasting.saveDc`, or
+    DM-entered for a PC, since a PC's DC depends on a build we deliberately don't
+    know). The on-save rule (half/none) lives in `desc` prose, not a clean field —
+    parse at ingest (like creature save actions) or have the DM confirm it.
 
 ## Fetching raw data while investigating
 
