@@ -127,21 +127,34 @@ tracker mutates each turn. Template stays read-only; all combat state lives here
 
 ---
 
-## 3. Player Character (lightweight)
+## 3. Player Character & Quick Add (lightweight)
 
-A DM rarely needs the full sheet at the table. Six fields cover ~95% of combat.
+A DM rarely needs the full sheet at the table. The lightweight combatant
+(`isPC: true`) comes in two flavours via `kind`:
+
+- **`pc`** — a player character: the board facts the DM wants. Core fields plus
+  optional `initiativeMod` (used to roll at combat start when no value is entered),
+  `passivePerception`, `languages`, `speed`, and `resistances`/`immunities`/
+  `vulnerabilities` (applied to damage like a monster's). Still no class, level, or
+  spell list — the DM transcribes; the app never derives a build.
+- **`quick`** — a generic quick add (NPC or a mid-fight creature): just name/HP/AC.
 
 ```jsonc
 {
   "combatantId": "uuid",
   "isPC": true,
+  "kind": "pc",                 // "pc" | "quick" (defaults to "pc")
   "name": "Thalia",
-  "initiative": 21,
+  "initiative": 0,              // the rolled value (0 until combat begins)
+  "initiativeMod": 2,           // rolled as d20 + this if not entered manually
   "ac": 16,
   "hp": { "current": 38, "max": 44, "temp": 0 },
-  "passivePerception": 14,
+  "passivePerception": 14,      // optional
+  "languages": ["Common"],      // optional
+  "speed": { "walk": 30 },      // optional
+  "resistances": ["fire"],      // optional; immunities / vulnerabilities likewise
   "concentration": null,
-  "conditions": []
+  "effects": []
 }
 ```
 
