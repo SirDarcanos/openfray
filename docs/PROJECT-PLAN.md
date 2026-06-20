@@ -569,3 +569,7 @@ randomness-audit credibility).
    HI/UX.
 6. `data-storage-architecture.md` — tables, JSONB strategy, RLS, two-tier
    identity.
+7. `compendium-ingest.md` — how the SRD is ingested from Open5e v2, plus the data
+   and toolchain **gotchas** (broken `armor_detail`, prose save actions,
+   `order_in_statblock`, recharge, proficient-saves filter, …). Read before
+   touching the compendium/ingest.
