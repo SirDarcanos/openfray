@@ -150,7 +150,7 @@ tracker mutates each turn. Template stays read-only; all combat state lives here
 
 ---
 
-## 3. Player Character & Quick Add (lightweight)
+## 3. Player Character & Quick add (lightweight)
 
 A DM rarely needs the full sheet at the table. The lightweight combatant
 (`isPC: true`) comes in two flavours via `kind`:
