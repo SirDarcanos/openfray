@@ -102,7 +102,12 @@ This order matters because Effects tick relative to turns. On **"Next turn"**:
 2. ADVANCE activeIndex to next non-dead/non-removed creature (by id walk)
 3. IF the pointer wrapped past the end of the list:
    a. round++
-   b. fire lair actions (initiative count 20 slot)
+   b. fire lair actions (initiative count 20 slot) — NOT BUILT yet, and moot for
+      2024 content: the 2024 Monster Manual removed lair actions as a mechanic
+      (folded into normal/legendary actions), and the SRD never carried them, so
+      no SRD creature has any. Keep this step as a TODO for when 5.0 (2014) and
+      Kobold Press content arrive, where lair actions still exist. See
+      `docs/compendium-ingest.md`.
 4. START the new active creature's turn:
    a. clear/resolve effects keyed to "start of this creature's turn"
    b. resolve `untilSourceTurn` effects whose source == new active creature

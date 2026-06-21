@@ -68,6 +68,20 @@ stat-block UI** — most of these are non-obvious and will be repeated otherwise
     DM-entered for a PC, since a PC's DC depends on a build we deliberately don't
     know). The on-save rule (half/none) lives in `desc` prose, not a clean field —
     parse at ingest (like creature save actions) or have the DM confirm it.
+15. **Lair actions: there are none, and that's correct.** Open5e exposes **0**
+    `LAIR_ACTION` entries — across `srd-2024`, `srd-2014`, and every third-party
+    document (verified over 3,500 creatures), and the legacy v1 API + dnd5eapi.co
+    carry no lair fields either. Two reasons: lair actions were **never in the SRD**
+    (any edition) — they're full-Monster-Manual content — and the **2024 ruleset
+    removed lair actions as a mechanic** (folded into normal/legendary actions). So
+    for 2024-first content there is nothing to ingest and nothing missing. The schema
+    (`Creature.lairActions`), the ingest (`actionsOfType('LAIR_ACTION')`), and the
+    stat-block "Lair Actions" section stay in place but render empty. Lair actions
+    only become relevant if we add **5.0 (2014)** or **Kobold Press** content, and
+    even then only as prose (no clean structured source) — see the count-20 TODO in
+    `docs/specs/initiative-loop-rules.md`. The DM-authored custom-creature form is the
+    escape hatch in the meantime. (No CC-BY/OGL service exposes structured lair
+    actions; only D&D Beyond and 5e.tools have them, and neither is license-clean.)
 
 ## Fetching raw data while investigating
 
