@@ -1,6 +1,6 @@
 # OpenFray — Project Plan
 
-*A free, open-source D&D 5e combat tracker for Dungeon Masters.*
+*A free, open-source DnD 5e combat tracker for Dungeon Masters.*
 *(5.5e/2024-first, with 5.0 support.) — openfray.app*
 
 This is the authoritative plan. Six companion specs go deeper on each subsystem;
@@ -17,7 +17,7 @@ standalone dice package (`@openfray/dice`).
 
 ## 1. What this is (and what it isn't)
 
-A fast, browser-based **combat console** for DMs running D&D 5.5e at the table.
+A fast, browser-based **combat console** for DMs running DnD 5.5e at the table.
 Not "another initiative tracker" — the differentiator is everything the existing
 tools (Improved Initiative, D&D Beyond's tracker, Roll20) do poorly or not at all:
 

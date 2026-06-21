@@ -116,7 +116,7 @@ This order matters because Effects tick relative to turns. On **"Next turn"**:
 ```
 
 > The subtle one is 4b. "Until the start of the source's next turn" is the most
-> common D&D duration, and it resolves when that creature *becomes active*, not
+> common DnD duration, and it resolves when that creature *becomes active*, not
 > when it finishes. Tick it at START, not END.
 
 ---
