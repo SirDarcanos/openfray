@@ -53,9 +53,16 @@ Everything rollable is an Action. Presets (§dice) read straight off this.
     { "formula": "2d6",    "type": "fire" }
   ],
   "save": null,                 // or { "ability": "dex", "dc": 21, "onSave": "half" }
+  "legendaryCost": 2,           // optional; legendary actions costing 2+ of the round budget
   "text": "Original prose, kept for display only — never parsed for mechanics."
 }
 ```
+
+A save action whose target has **Evasion** (Dex, half-on-success) takes none on a
+success and half on a failure; **Magic Resistance** grants advantage on the save.
+A save action with damage but no `save` is auto-hit area damage (every target takes
+it). When an action applies a condition, the DM picks its duration —
+`untilSourceTurn` (keyed to the acting creature), a round count, or manual.
 
 > **The one rule that saves you months:** mechanics live in structured fields
 > (`toHit`, `damage[].formula`, `save.dc`). Prose lives in `text` for display
@@ -63,17 +70,28 @@ Everything rollable is an Action. Presets (§dice) read straight off this.
 
 ### Spellcasting
 
+The 2024 monster model is "At Will" / "N per Day Each" (not slot-based), parsed
+from the Spellcasting action's prose **at ingest** into usage groups. Each spell
+carries a `ref` into the compendium for the hover card + casting; per-day uses are
+counted **per spell**. The save DC belongs to the caster, never the spell.
+
 ```jsonc
 {
   "ability": "cha",
   "saveDc": 21,
-  "toHit": 13,
-  "slots": { "1": 4, "2": 3, "3": 3, "4": 3, "5": 2 },   // max per level
-  "spells": [
-    { "level": 3, "name": "Fireball", "ref": "srd:fireball" }  // ref → compendium
+  "toHit": 13,                          // optional; only when the block lists one
+  "groups": [
+    { "usage": { "type": "atWill" },          "spells": [ { "name": "Mage Hand", "ref": "srd-5.2:mage-hand" } ] },
+    { "usage": { "type": "perDay", "per": 2 }, "spells": [ { "name": "Fireball",  "ref": "srd-5.2:fireball"  } ] }
   ]
+  // "slots" is kept optional for a future 5.1 slot model; 2024 monsters don't use it.
 }
 ```
+
+Casting from the stat block spends the use and routes a damage/save spell through
+the same attack / mass-save modals (at the spell's fixed level — monster spells
+don't upcast); a concentration spell auto-starts concentration with a round timer
+parsed from its duration.
 
 ### LimitedUse (recharge + x/day — your headline feature)
 
@@ -105,10 +123,15 @@ tracker mutates each turn. Template stays read-only; all combat state lives here
 
   // live resource state — decremented from the template's maxes
   "slotsUsed":   { "1": 0, "2": 1, "3": 0 },
+  "spellUsesSpent": { "srd-5.2:fireball": 1 },   // per-spell "N/Day Each" uses spent
   "limitedUseState": { "fire-breath": { "available": false } }, // recharged?
   "legendaryRemaining": 3,                 // resets to perRound at end of its turn
+  "legendaryResistanceSpent": 0,           // max = base, or the in-lair count when inLair
+  "inLair": false,                         // raises Legendary Resistance to its lair count
+  "reactionUsed": false,                   // one per round; refreshes at this creature's turn start
 
-  "concentration": null,   // or { "spell": "Hold Person", "saveDc": 13, "round": 2 }
+  // round-relative timer ticks at the caster's turn start; lapses at 0
+  "concentration": null,   // or { "spell": "Hold Person", "saveDc": 13, "round": 2, "rounds": 9 }
 
   "conditions": [
     { "name": "Frightened", "expiresRound": 4, "source": "uuid-of-caster" },
