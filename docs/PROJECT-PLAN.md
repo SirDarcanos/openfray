@@ -27,11 +27,13 @@ order, monster resources, conditions, and the relational state between combatant
 hanging off it.
 
 **The product is NOT a character-sheet manager.** The single most important
-scoping rule, applied everywhere: *we track consequences on the board, never
-abilities on a sheet.* The player's sheet / D&D Beyond owns what a character can
-do; we own what just happened and what must be remembered. Every feature is tested
-against one question — **does this require knowing a PC's build? If yes, it's out
-of scope.**
+scoping rule, applied everywhere: *we track what happens at the table — plus the
+reference a DM keeps on hand — never the rules engine behind a character.* The
+player's sheet / D&D Beyond owns what a character can do and computes it; we own
+what just happened, what must be remembered, and the facts a DM jots for reference.
+Every feature is tested against one question — **does this require knowing a PC's
+build (the app modeling, deriving from, or running class/level/features/spells)?
+If yes, it's out of scope.**
 
 ### The validated gaps we're filling
 - **Monster resource tracking** — spell slots, legendary actions, lair actions,
