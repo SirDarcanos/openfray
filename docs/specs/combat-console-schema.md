@@ -152,30 +152,49 @@ tracker mutates each turn. Template stays read-only; all combat state lives here
 
 ## 3. Player Character & Quick add (lightweight)
 
-A DM rarely needs the full sheet at the table. The lightweight combatant
-(`isPC: true`) comes in two flavours via `kind`:
+A DM doesn't run a PC's sheet at the table, but they keep the reference they want
+on hand. The lightweight combatant (`isPC: true`) comes in two flavours via `kind`:
 
-- **`pc`** — a player character: the board facts the DM wants. Core fields plus
-  optional `initiativeMod` (used to roll at combat start when no value is entered),
-  `passivePerception`, `languages`, `speed`, and `resistances`/`immunities`/
-  `vulnerabilities` (applied to damage like a monster's). Still no class, level, or
-  spell list — the DM transcribes; the app never derives a build.
+- **`pc`** — a player character: the board facts plus the reference the DM jots.
+  Core fields, plus optional `initiativeMod` (used to roll at combat start; derived
+  from DEX for roster PCs), the six `abilities`, `senses` (passive perception +
+  darkvision/etc.), `languages`, `speed`, and `resistances`/`immunities`/
+  `vulnerabilities` (applied to damage like a monster's), and display-only character
+  context: `race`, `alignment`, `faith`, `personalityTraits`, `ideals`, `bonds`,
+  `flaws`, `backstory`, and private `dmNotes`. A signed-in PC added from the durable
+  roster also carries `rosterId`, a link back to the saved character (a `RosterPc` in
+  the `players` table) so encounter edits like DM notes persist to it. Still no class,
+  level, or spell list — the DM transcribes and the app displays; it never models,
+  derives from, or runs a build.
 - **`quick`** — a generic quick add (NPC or a mid-fight creature): just name/HP/AC.
+  PCs added anonymously at the table are likewise lightweight — no `rosterId` or
+  character context, and a flat `passivePerception` in place of full `senses`.
 
 ```jsonc
 {
   "combatantId": "uuid",
+  "rosterId": "pc-uuid",        // link to the saved roster character; absent for anon / quick
   "isPC": true,
   "kind": "pc",                 // "pc" | "quick" (defaults to "pc")
   "name": "Thalia",
+  "race": "Half-Elf",           // optional, display-only
+  "alignment": "lawful good",   // optional
+  "faith": "Lathander",         // optional; matters for clerics/paladins
   "initiative": 0,              // the rolled value (0 until combat begins)
-  "initiativeMod": 2,           // rolled as d20 + this if not entered manually
+  "initiativeMod": 2,           // rolled as d20 + this; derived from DEX for roster PCs
   "ac": 16,
   "hp": { "current": 38, "max": 44, "temp": 0 },
-  "passivePerception": 14,      // optional
-  "languages": ["Common"],      // optional
-  "speed": { "walk": 30 },      // optional
-  "resistances": ["fire"],      // optional; immunities / vulnerabilities likewise
+  "abilities": { "str": 10, "dex": 14, "con": 12, "int": 13, "wis": 11, "cha": 16 },
+  "senses": { "passivePerception": 14, "darkvision": 60 },  // anon quick PCs use a flat `passivePerception`
+  "languages": ["Common"],
+  "speed": { "walk": 30 },
+  "resistances": ["fire"],      // immunities / vulnerabilities likewise
+  "personalityTraits": ["Brave to a fault"],
+  "ideals": ["Protect the weak"],
+  "bonds": ["My village"],
+  "flaws": ["Reckless"],
+  "backstory": "Raised in Neverwinter…",   // markdown
+  "dmNotes": "Owes the party 50 gp",       // markdown; private to the DM
   "concentration": null,
   "effects": []
 }
