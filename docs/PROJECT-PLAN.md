@@ -1,6 +1,6 @@
 # OpenFray — Project Plan
 
-*A free, open-source DnD 5e combat tracker for Dungeon Masters.*
+*A free, open-source DnD 5e combat tracker for Game Masters.*
 *(5.5e/2024-first, with 5.0 support.) — openfray.app*
 
 This is the authoritative plan. Six companion specs go deeper on each subsystem;
