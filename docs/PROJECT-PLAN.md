@@ -17,7 +17,7 @@ standalone dice package (`@openfray/dice`).
 
 ## 1. What this is (and what it isn't)
 
-A fast, browser-based **combat console** for DMs running DnD 5.5e at the table.
+A fast, browser-based **combat console** for GMs running DnD 5.5e at the table.
 Not "another initiative tracker" — the differentiator is everything the existing
 tools (Improved Initiative, D&D Beyond's tracker, Roll20) do poorly or not at all:
 
@@ -28,9 +28,9 @@ hanging off it.
 
 **The product is NOT a character-sheet manager.** The single most important
 scoping rule, applied everywhere: *we track what happens at the table — plus the
-reference a DM keeps on hand — never the rules engine behind a character.* The
+reference a GM keeps on hand — never the rules engine behind a character.* The
 player's sheet / D&D Beyond owns what a character can do and computes it; we own
-what just happened, what must be remembered, and the facts a DM jots for reference.
+what just happened, what must be remembered, and the facts a GM jots for reference.
 Every feature is tested against one question — **does this require knowing a PC's
 build (the app modeling, deriving from, or running class/level/features/spells)?
 If yes, it's out of scope.**
@@ -38,7 +38,7 @@ If yes, it's out of scope.**
 ### The validated gaps we're filling
 - **Monster resource tracking** — spell slots, legendary actions, lair actions,
   recharge / once-per-day abilities. D&D Beyond has never added this for monsters
-  despite years of requests; DMs resort to browser extensions and console scripts.
+  despite years of requests; GMs resort to browser extensions and console scripts.
 - **Relational combat state** — "advantage against the barbarian (Reckless)",
   "disadvantage on the goblin's next attack (Vicious Mockery)" — tracked as
   first-class, reminded automatically.
@@ -51,7 +51,7 @@ If yes, it's out of scope.**
 
 ## 2. Scope: phases
 
-### Phase 1 — single-DM, single-device tracker (the build target)
+### Phase 1 — single-GM, single-device tracker (the build target)
 The spine plus differentiators, no multiplayer:
 - Initiative loop (turn/round, durations, lair actions)
 - HP / damage / heal
@@ -65,14 +65,14 @@ The spine plus differentiators, no multiplayer:
 - Anonymous use (SRD + players, ephemeral) and sign-up (everything persists)
 
 **Ship-it line:** a better tracker than anything available exists by the time
-dice rolling works. Mass save + effect-awareness are the features that make DMs
+dice rolling works. Mass save + effect-awareness are the features that make GMs
 switch.
 
 ### Phase 2 — shared player view
 A read-only screen players can see (turn order, conditions, "Bloodied" not exact
 HP). Designed *into* the data model now (per-field visibility flags exist from day
 one) but **not built** in phase 1. Requires the realtime layer — which is the same
-infrastructure that gives the DM's own phone live sync (see §3a). The player view
+infrastructure that gives the GM's own phone live sync (see §3a). The player view
 is then a small increment on top: the realtime broadcast plus a visibility filter.
 
 ### Later / optional, never core
@@ -162,27 +162,27 @@ means one language, one set of types, no translation layer.
 ### Platform: tablet/desktop-first, phone as companion — NOT mobile-first
 Running a fight is a dense, glanceable control-panel task (stat block + turn order
 + resources + quick-apply chips visible together) that wants horizontal space, and
-it happens when the DM's attention is most divided. So:
+it happens when the GM's attention is most divided. So:
 - **Primary device = tablet landscape (~1024px+) and desktop.** The canonical
   multi-panel combat console. This is what to wireframe first.
 - **Phone = companion**, a deliberately reduced experience (reference: stat blocks,
   compendium, glance at initiative, quick rolls) — *not* a cramped full console.
 - **Methodology is tablet-first, scale up to desktop, scale phone down to a
-  graceful subset** — *not* mobile-first. Mobile-first optimizes the screen the DM
+  graceful subset** — *not* mobile-first. Mobile-first optimizes the screen the GM
   rarely runs combat on, then expands phone compromises into the space where the
   real work happens. Make the phone not-broken; don't sink solo-dev effort into
   making the full console excellent at 375px.
 
 ### Multi-device: independent reference now (Option B), live sync later (A/C)
-The phone companion shows reference data from the DM's own account (compendium,
+The phone companion shows reference data from the GM's own account (compendium,
 saved creatures) as **independent read access** — it does **not** mirror the live
 in-progress fight in phase 1. Reasoning: what the phone is actually for ("see
 blocks, compendium") is reference, which needs no sync; the expensive part —
 phone reflecting the *live* encounter state across devices — is the **same
-realtime infrastructure as the phase-2 player view** (DM-on-phone is just the
+realtime infrastructure as the phase-2 player view** (GM-on-phone is just the
 player view with no visibility filter). So we don't build it twice or early:
 ship cheap independent reference now, and live multi-device sync arrives *with*
-the player view, where the DM's phone gets it "for free."
+the player view, where the GM's phone gets it "for free."
 
 **The one constraint this implies** (already satisfied): encounter state stays
 **broadcast-ready** — stored as one autosaved JSONB blob — so making it
@@ -194,7 +194,7 @@ comes from **local state, not the realtime layer**. Three distinct things, often
 conflated:
 1. **SPA / no hard refresh** — free from React client-side routing; views swap in
    place, live encounter persists in memory across them.
-2. **Instant updates from the DM's own actions** — local React state mutation +
+2. **Instant updates from the GM's own actions** — local React state mutation +
    re-render; no network round-trip in the hot path. This is what makes it feel
    instant, and it's phase-1, easy.
 3. **Cross-device/user realtime** — the only piece that's actual infrastructure
@@ -233,7 +233,7 @@ A web app has two things to host; they live in different places.
     backend).
   - *Backups:* free tier has **no automatic backups** (a bigger risk than the
     500 MB cap). A scheduled job dumping daily Postgres backups to cheap object
-    storage covers it at ~$0. Set up early — DMs care about their custom creatures.
+    storage covers it at ~$0. Set up early — GMs care about their custom creatures.
 - **Cost model: $0 until real traffic.** Upgrade trigger is *limits*, not the
   pause — Supabase **Pro at $25/mo** when hitting ~40K MAU, ~400 MB+ database, or
   needing managed backups/support. Pro now bundles **daily backups (7-day
@@ -282,7 +282,7 @@ to model structurally. Three small fields carry it:
   source**, assigned at import time for controlled content.
 
 **Edition is a campaign-level setting**, not a per-creature/per-block choice. The
-DM sets it in campaign settings (and may flip it occasionally). The app reads it as
+GM sets it in campaign settings (and may flip it occasionally). The app reads it as
 ambient context when deciding what to surface. There is **no live on-block edition
 toggle** — edition is a campaign decision, not a combat-time one.
 
@@ -344,7 +344,7 @@ publishers (Kobold Press, Green Ronin) under their own open licenses.
 some classes (Artificer), and species (Aasimar) as protected WotC IP. Implication:
 the compendium will be missing famous creatures by law, which makes the
 **custom-creature form and Kobold Press import central, not nice-to-haves** — for
-many DMs they're how the SRD-forbidden boss gets added. Also note some SRD content
+many GMs they're how the SRD-forbidden boss gets added. Also note some SRD content
 was **renamed** to avoid trademarks (functionally identical); ingest the renamed
 forms as-is, don't "correct" them.
 
@@ -465,7 +465,7 @@ passion project, not a business. That settles it:
   Don't invest in detection (scanners, watermarking, phone-home); it's
   disproportionate to the risk and sours the vibe.
 - **AGPL deters some corporate adoption** (some companies ban AGPL deps). For a
-  community DM tool that's a feature, not a bug.
+  community GM tool that's a feature, not a bug.
 - One cheap, passive, community-friendly nod to recognition: a tasteful
   *"built by [you] — source at [link]"* in the app footer. Not DRM; just travels
   with copies and reinforces attribution.
@@ -516,7 +516,7 @@ randomness-audit credibility).
 
 | Question | Decision |
 |---|---|
-| What is it | 5.5e DM combat console; scratchpad not character sheet |
+| What is it | 5.5e GM combat console; scratchpad not character sheet |
 | Name | **OpenFray** — `openfray.app` (canonical) + `openfray.com` (redirect) |
 | Hard scope rule | Never requires knowing a PC's build |
 | Language | **TypeScript, end to end** |
@@ -530,7 +530,7 @@ randomness-audit credibility).
 | Primary platform | **Tablet landscape + desktop; tablet-first, NOT mobile-first** |
 | Phone | **Companion (reference): independent read access, not live combat** |
 | Multi-device sync | **Deferred to phase 2, shared with player-view realtime layer** |
-| Phase 1 | Single-DM tracker + differentiators, no multiplayer |
+| Phase 1 | Single-GM tracker + differentiators, no multiplayer |
 | Player view | Designed in now (visibility flags), built in phase 2 |
 | DDB/Roll20 import | Optional, best-effort, never core (no public API) |
 | Compendium | SRD via Open5e, one shared schema, 5.5-styled rendering |
