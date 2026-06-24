@@ -291,6 +291,13 @@ exists for that entity*; otherwise show whatever edition does exist. Availabilit
 beats edition-purity — never hide a creature just because it's only in the other
 edition.
 
+> **As built (2026-06):** compendium content surfacing is keyed to a **per-account
+> "content libraries" toggle** (`user_settings`, default 5.2-only), not to the campaign's
+> `edition` field — see the content-libraries work in `local/HANDOFF.md`. The compendium
+> badges each entry's edition (`5.5`/`5.0`) and filters by the enabled libraries. The
+> campaign `edition` field now only labels the campaign itself. This supersedes the
+> campaign-driven display rule above; the rule is kept for design context.
+
 **Grouping ("same creature, two editions") happens ONLY within a single source**,
 over content we control (SRD imports), where we assign the identity key by hand and
 know the answer. The match rule is: *same source + same identity key + differing
@@ -539,7 +546,7 @@ randomness-audit credibility).
 | Content license | **CC-BY-4.0 for ALL game content; OGL never used.** SRD 5.2 = CC-BY-only; `srd-2014` dual-licensed → elect CC-BY; 3rd-party honored under its own license, never assumed CC-BY |
 | License artifacts | `CREDITS.md` (attributions) + `docs/content-licensing.md` (build-agent instructions) |
 | Excluded IP | Never ingest SRD-excluded WotC IP (Beholder, Mind Flayer, …) — not CC-BY |
-| Editions | `edition` field; campaign-level setting picks which surfaces |
+| Editions | `edition` field, per-block; **per-account content-libraries toggle** picks which surfaces (as built — superseded the campaign-level plan; campaign `edition` only labels the campaign) |
 | Sources | `source` field; SRD, Kobold Press, custom — never cross-matched |
 | Edition grouping | Within one source only, import-assigned key; never user content |
 | Duplicate handling | Advisory name warning only; "warn then forget", no linking |
