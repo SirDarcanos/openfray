@@ -1,8 +1,17 @@
 # Compendium Ingest & Open5e Gotchas
 
+> ⚠️ **The ingest tooling has moved.** All compendium generation (the mappers,
+> ingest scripts, PDF extractor, and the validate/diff harness) now lives in the
+> **[openfray-compendium](https://github.com/SirDarcanos/openfray-compendium)** repo;
+> this app repo only ships the generated `public/compendium/*.json`. **SRD 5.2
+> creatures are now parsed from WotC's official SRD 5.2.1 PDF** (the Open5e 5.2 set
+> had missing alignments, wrong sizes, and a corrupt creature); SRD 5.2 spells and
+> SRD 5.1 still come from Open5e / dnd5eapi. The notes below are kept as reference
+> for that tooling — the file/script paths now refer to the openfray-compendium repo.
+
 How the SRD compendium is built, and the data/toolchain traps discovered the hard
-way. **Read this before touching `src/compendium/`, `scripts/ingest-srd.ts`, or the
-stat-block UI** — most of these are non-obvious and will be repeated otherwise.
+way. **Read this before touching the compendium ingest or the stat-block UI** —
+most of these are non-obvious and will be repeated otherwise.
 
 ## The ingest
 
