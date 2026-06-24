@@ -16,6 +16,29 @@ stat-block UI** — most of these are non-obvious and will be repeated otherwise
   attribution in `CREDITS.md`. **CC-BY only; never the OGL.** See
   `docs/content-licensing.md`.
 
+## SRD 5.1 (D&D 2014) — a separate pipeline via dnd5eapi.co
+
+- `npm run ingest:srd-2014` fetches **SRD 5.1 from dnd5eapi.co** (the 5e-bits API),
+  maps via `src/compendium/dnd5eapi.ts`, and writes `srd-2014-creatures.json` /
+  `srd-2014-spells.json` (334 creatures, 319 spells). Tagged `source: 'srd-5.1'`,
+  `edition: '5.0'`.
+- **Why dnd5eapi.co, not Open5e, for 5.1:** Open5e's `srd-2014` carries monster
+  spellcasting as *prose* (e.g. "1st level (4 slots): …"); dnd5eapi.co exposes it
+  **structured** (`spellcasting.slots` + `spells[]` with level/usage), which maps
+  almost 1:1 to our slot model — no fragile prose parsing. (Open5e remains the
+  source for 5.2 and any future third-party like Tome of Beasts.)
+- **Licensing:** SRD 5.1 is **dual-licensed** (OGL 1.0a *or* CC-BY-4.0 — confirmed on
+  WotC's own page). We elect **CC-BY-4.0** on WotC's content regardless of dnd5eapi.co's
+  OGL framing (the licence is on the content, not the API); never reproduce OGL text.
+- **dnd5eapi quirks handled in the mapper:** the API is one request per resource, so
+  the ingest pulls the index then fetches each detail in batches. Reach/range aren't
+  structured — parsed from the action prose. Legendary cost is in the action *name*
+  ("(Costs 2 Actions)"). Legendary Resistance's per-day count is in the special
+  ability's structured `usage.times`, not its prose. Defenses/languages come
+  **lowercase** — the mapper capitalizes them to match the 5.2 set. The spellcasting
+  footnote ("\*casts these on itself before combat") lives in the ability's `desc`,
+  not the structured object — lifted into `Spellcasting.note`.
+
 ## Open5e v2 data gotchas (srd-2024)
 
 1. **`armor_detail` is broken** — it returns `"natural armor"` for **all 331
