@@ -146,10 +146,11 @@ else's. Different DMs are fully isolated.
   / `spells` with `owner_id NULL`. Re-runnable when you update SRD data.
 - **Capture license + attribution metadata per source at ingest.** Store each
   `source`'s license and required attribution string so the in-app credits screen
-  renders the **correct notice per source**, not one global WotC line. All SRD content
-  is **CC-BY-4.0** (credit WotC, link the license, state that changes were made); the
-  **OGL is never used**. Third-party sources carry their own license, recorded per
-  source — never assumed CC-BY. See `CREDITS.md` and `docs/content-licensing.md`.
+  renders the **correct notice per source**, not one global WotC line. WotC SRD content
+  is **CC-BY-4.0** (credit WotC, link the license, state that changes were made; never
+  OGL for WotC). Third-party sources carry their own license — ORC or OGL 1.0a, never
+  assumed CC-BY — recorded per source (OGL sources need the full license text + Section
+  15 chain). See `CREDITS.md` and `docs/content-licensing.md`.
 
 ---
 

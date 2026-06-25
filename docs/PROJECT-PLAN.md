@@ -356,22 +356,22 @@ was **renamed** to avoid trademarks (functionally identical); ingest the renamed
 forms as-is, don't "correct" them.
 
 **Licensing / attribution (an obligation, distinct from our AGPL):**
-- **Policy: CC-BY-4.0 for ALL game content; the OGL is never used, in any version.**
-  Full build-agent instructions in [`content-licensing.md`](content-licensing.md);
-  attributions live in `CREDITS.md` (+ an in-app About/Credits screen).
-- SRD 5.2 (`srd-2024`) is released under **CC-BY-4.0 only** — irrevocable, no OGL
-  option, no decision to make. This is the bulk of the content.
-- SRD 5.1 (`srd-2014`), if ingested, is **dual-licensed** (OGL-1.0a *or* CC-BY-4.0).
-  Dual-licensed means you pick **one** — **we elect CC-BY-4.0**, so the whole
-  compendium sits under one consistent license and the OGL is never invoked.
+- **Policy: honor each source's actual license, preferring CC-BY > ORC > OGL; never
+  assume CC-BY.** Full build-agent instructions in
+  [`content-licensing.md`](content-licensing.md); per-source attributions live in
+  `CREDITS.md` (+ an in-app About/Credits screen).
+- SRD 5.2 (`srd-2024`) is released under **CC-BY-4.0 only** — the bulk of the content.
+- SRD 5.1 (`srd-2014`) is **dual-licensed** (OGL-1.0a *or* CC-BY-4.0); we elect
+  **CC-BY-4.0**. We never apply the OGL to WotC SRD content — we have CC-BY there.
 - CC-BY is **not** "no strings": wherever SRD content is used we must credit WotC
   (their exact attribution string, title, licensor), **link the license**, **state
   that changes were made** (we reformat into our schema), and **not imply
   endorsement**.
-- Third-party content (e.g. Kobold Press) is honored under **its own license**,
-  checked and recorded per source before ingest — **never assumed CC-BY**. Do not add
-  OGL boilerplate (Section 15 / Product Identity); if a source is OGL-only, **flag it
-  to the maintainer** rather than reintroducing the OGL.
+- Third-party content (e.g. Kobold Press / Tome of Beasts) is honored under **its own
+  license**, checked per source before ingest — **never assumed CC-BY**: **ORC** where
+  a title offers it, otherwise **OGL 1.0a**. Using a source under the OGL means shipping
+  **only its declared Open Game Content** (no Product Identity), reproducing the **full
+  OGL text + verbatim Section 15 chain**, and designating our OGC.
 - **Never ingest WotC content excluded from the SRD** (Beholder, Mind Flayer,
   Displacer Beast, …) — it isn't under CC-BY and we have no license to it.
 - This content licensing (governs the *data*) is **separate from** the project's
@@ -543,7 +543,7 @@ randomness-audit credibility).
 | Compendium | SRD via Open5e, one shared schema, 5.5-styled rendering |
 | Data source | Open5e **v2** API; `srd-2024` + `srd-2014`; ingest once, clean, seed |
 | Content gap | SRD excludes Beholder/Mind Flayer/etc. → custom form is central |
-| Content license | **CC-BY-4.0 for ALL game content; OGL never used.** SRD 5.2 = CC-BY-only; `srd-2014` dual-licensed → elect CC-BY; 3rd-party honored under its own license, never assumed CC-BY |
+| Content license | **Per source, preferring CC-BY > ORC > OGL; never assumed CC-BY.** WotC SRD = CC-BY (5.2 only; 5.1 dual → elect CC-BY; never OGL for WotC). 3rd-party (Kobold Press / ToB) = ORC where offered, else OGL 1.0a — OGC-only, full OGL text + Section 15 chain |
 | License artifacts | `CREDITS.md` (attributions) + `docs/content-licensing.md` (build-agent instructions) |
 | Excluded IP | Never ingest SRD-excluded WotC IP (Beholder, Mind Flayer, …) — not CC-BY |
 | Editions | `edition` field, per-block; **per-account content-libraries toggle** picks which surfaces (as built — superseded the campaign-level plan; campaign `edition` only labels the campaign) |
