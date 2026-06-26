@@ -327,23 +327,29 @@ edition setting.
 
 ### Verified facts (checked June 2026) — data source, content boundary, licensing
 
-**Data source: Open5e API, v2.** Confirmed to carry both editions: the 2024/5.5
-content under document key `srd-2024` (~330 creatures, ~339 spells) and the 2014/5.1
-content under `srd-2014` (titled "SRD 5.1"). *(The old v1 key `wotc-srd` no longer
-applies — on v2 the 2014 SRD is `srd-2014`.)* It also aggregates third-party
+> **As built (2026-06):** Open5e was evaluated and then **fully removed**. SRD 5.2.1
+> (creatures, spells, conditions) is now parsed from **WotC's official SRD 5.2.1 PDF**
+> (the Open5e 5.2 set had missing alignments, wrong sizes, a corrupt creature, and
+> mangled casting times); SRD 5.1 comes from **dnd5eapi.co** (it exposes *structured*
+> monster spellcasting/slots, which Open5e's `srd-2014` carries only as prose). The
+> ingest tooling lives in the separate **openfray-compendium** repo, not here; the app
+> ships only the generated `public/compendium/*.json`. See `docs/compendium-ingest.md`.
+> The Open5e-specific notes below are kept for design context (the source/edition tagging
+> model still holds), but the live pipeline no longer uses Open5e.
+
+**Data source (original plan): Open5e API, v2.** Confirmed to carry both editions: the
+2024/5.5 content under document key `srd-2024` (~330 creatures, ~339 spells) and the
+2014/5.1 content under `srd-2014` (titled "SRD 5.1"). *(The old v1 key `wotc-srd` no
+longer applies — on v2 the 2014 SRD is `srd-2014`.)* It also aggregates third-party
 publishers (Kobold Press, Green Ronin) under their own open licenses.
-- **Open5e's `document.key` field IS our `source` + `edition`.** Every entry is
-  already tagged with its origin document; we ingest that field rather than
-  inventing tagging. `srd-2024` / `srd-2014` → our SRD editions; the entry slug
-  (e.g. `fireball`) → our within-source identity key; a Kobold Press document →
-  a distinct `source`, which *automatically* makes it a separate, never-matched
-  entity per our rule. The data structure validates the editions/sources design.
-- **Use v2, not v1** — v1 is being deprecated and may degrade.
-- **Ingest once into our own DB, don't call live.** Open5e's srd-2024 data has had
-  real bugs actively being fixed (CreatureAction data, spellcasting markdown,
-  spell omissions). Pull, **spot-check a sample against our schema, clean as
-  needed**, then seed. This both insulates us from their regressions and matches
-  the seed-SRD approach already in the plan. Tag the SRD version ingested
+- **The `document.key` field IS our `source` + `edition`.** The principle still holds
+  under the as-built pipeline: every entry is tagged with its origin document, so
+  `srd-2024`/`srd-2014` → our SRD editions; the entry slug (e.g. `fireball`) → our
+  within-source identity key; a Kobold Press document → a distinct `source`, which
+  *automatically* makes it a separate, never-matched entity per our rule.
+- **Ingest once into our own data, don't call live.** Whatever the source, we pull,
+  **spot-check a sample against our schema, clean as needed**, then bundle the static
+  JSON. This insulates us from upstream regressions. Tag the SRD version ingested
   (5.2 / 5.2.1…) for later updates.
 
 **Content boundary (permanent, legal — not fixable):** SRD 5.2 deliberately
@@ -502,8 +508,9 @@ passion project, not a business. That settles it:
 5. **Dice engine** — presets + manual, CSPRNG + bias rejection, roll log.
 6. **Effect-aware rolling** — auto adv/disadv resolution (upgrade of #5).
 7. **Mass save** — group resolution flow (reuses the dice result renderer).
-8. **SRD compendium + custom-creature/spell form** — Open5e JSON seeded into the
-   schema.
+8. **SRD compendium + custom-creature/spell form** — static JSON (SRD 5.2.1 from
+   WotC's official PDF, SRD 5.1 from dnd5eapi.co) seeded into the schema; generated in
+   the separate openfray-compendium repo, the app ships only the JSON.
 9. **Concentration auto-checks** — wired into damage + mass save.
 10. **Identity** — anonymous (ephemeral) + sign-up (persist), RLS on.
 
@@ -540,8 +547,8 @@ randomness-audit credibility).
 | Phase 1 | Single-GM tracker + differentiators, no multiplayer |
 | Player view | Designed in now (visibility flags), built in phase 2 |
 | DDB/Roll20 import | Optional, best-effort, never core (no public API) |
-| Compendium | SRD via Open5e, one shared schema, 5.5-styled rendering |
-| Data source | Open5e **v2** API; `srd-2024` + `srd-2014`; ingest once, clean, seed |
+| Compendium | SRD compendium, one shared schema, 5.5-styled rendering |
+| Data source | **As built:** SRD 5.2.1 from WotC's official PDF + SRD 5.1 from dnd5eapi.co; tooling in the separate openfray-compendium repo, app ships static JSON. (Open5e was evaluated then removed.) |
 | Content gap | SRD excludes Beholder/Mind Flayer/etc. → custom form is central |
 | Content license | **Per source, preferring CC-BY > ORC > OGL; never assumed CC-BY.** WotC SRD = CC-BY (5.2 only; 5.1 dual → elect CC-BY; never OGL for WotC). 3rd-party (Kobold Press / ToB) = ORC where offered, else OGL 1.0a — OGC-only, full OGL text + Section 15 chain |
 | License artifacts | `CREDITS.md` (attributions) + `docs/content-licensing.md` (build-agent instructions) |
@@ -578,7 +585,6 @@ randomness-audit credibility).
    HI/UX.
 6. `data-storage-architecture.md` — tables, JSONB strategy, RLS, two-tier
    identity.
-7. `compendium-ingest.md` — how the SRD is ingested from Open5e v2, plus the data
-   and toolchain **gotchas** (broken `armor_detail`, prose save actions,
-   `order_in_statblock`, recharge, proficient-saves filter, …). Read before
-   touching the compendium/ingest.
+7. `compendium-ingest.md` — how the SRD is ingested (SRD 5.2.1 from WotC's official
+   PDF, SRD 5.1 from dnd5eapi.co; tooling in the openfray-compendium repo), plus the
+   data and toolchain **gotchas**. Read before touching the compendium/ingest.
