@@ -33,16 +33,16 @@ most of these are non-obvious and will be repeated otherwise.
   `srd-2014-spells.json` (334 creatures, 319 spells). Tagged `source: 'srd-5.1'`,
   `edition: '5.0'`.
 - **Why dnd5eapi.co, not Open5e, for 5.1:** Open5e's `srd-2014` carries monster
-  spellcasting as *prose* (e.g. "1st level (4 slots): …"); dnd5eapi.co exposes it
+  spellcasting as _prose_ (e.g. "1st level (4 slots): …"); dnd5eapi.co exposes it
   **structured** (`spellcasting.slots` + `spells[]` with level/usage), which maps
   almost 1:1 to our slot model — no fragile prose parsing. (Open5e remains the
   source for 5.2 and any future third-party like Tome of Beasts.)
-- **Licensing:** SRD 5.1 is **dual-licensed** (OGL 1.0a *or* CC-BY-4.0 — confirmed on
+- **Licensing:** SRD 5.1 is **dual-licensed** (OGL 1.0a _or_ CC-BY-4.0 — confirmed on
   WotC's own page). We elect **CC-BY-4.0** on WotC's content regardless of dnd5eapi.co's
   OGL framing (the licence is on the content, not the API); never reproduce OGL text.
 - **dnd5eapi quirks handled in the mapper:** the API is one request per resource, so
   the ingest pulls the index then fetches each detail in batches. Reach/range aren't
-  structured — parsed from the action prose. Legendary cost is in the action *name*
+  structured — parsed from the action prose. Legendary cost is in the action _name_
   ("(Costs 2 Actions)"). Legendary Resistance's per-day count is in the special
   ability's structured `usage.times`, not its prose. Defenses/languages come
   **lowercase** — the mapper capitalizes them to match the 5.2 set. The spellcasting
@@ -52,7 +52,7 @@ most of these are non-obvious and will be repeated otherwise.
 ## Open5e v2 data gotchas (srd-2024)
 
 1. **`armor_detail` is broken** — it returns `"natural armor"` for **all 331
-   creatures** (even the AC-15 Bandit Captain). It is *not real data*. We do **not**
+   creatures** (even the AC-15 Bandit Captain). It is _not real data_. We do **not**
    map armor type. Don't re-add it from this field.
 2. **Creature actions are partly prose.** Attack actions carry a structured
    `attacks[]` (`to_hit_mod`, `reach`, `range`, `damage_die_*`). **Save actions are
@@ -77,12 +77,12 @@ most of these are non-obvious and will be repeated otherwise.
 8. **Legendary:** there is **no per-round budget** in the data — default to 3
    (`DEFAULT_LEGENDARY_PER_ROUND`). A creature is "Legendary" iff it has legendary
    actions (no flag); the UI shows a badge on that basis. The **per-action cost**
-   *is* exposed (`actions[].legendary_action_cost`, e.g. an action costing 2 of the
+   _is_ exposed (`actions[].legendary_action_cost`, e.g. an action costing 2 of the
    round's budget) — we don't map it yet, but it's there if per-action legendary
    cost tracking is added later. Only the per-round budget is missing.
 9. **Traits** are a separate `traits[]` (`{ name, desc }`), not in `actions`.
 10. **Spellcasting is an action with markdown** (`**At Will:**`, bullet lists) — it
-    is *not* a structured spellcasting block in this set. Render markdown
+    is _not_ a structured spellcasting block in this set. Render markdown
     (`react-markdown`), don't show raw asterisks.
 11. **Languages:** `languages.data[].name` (fallback: split `languages.as_string`).
     **Resistances/immunities:** under `resistances_and_immunities`
@@ -96,7 +96,7 @@ most of these are non-obvious and will be repeated otherwise.
     `attack_roll`, `concentration`, and `casting_options[]` (per-slot-level upcast
     variants, each with its own `damage_roll`). The current mapper keeps only
     display metadata + prose `text` (`mapOpen5eSpell`); the mechanics fields are
-    available for a future **rollable-spell** feature. Note the **save DC is *not* a
+    available for a future **rollable-spell** feature. Note the **save DC is _not_ a
     spell field** — it comes from the caster (a monster's `spellcasting.saveDc`, or
     DM-entered for a PC, since a PC's DC depends on a build we deliberately don't
     know). The on-save rule (half/none) lives in `desc` prose, not a clean field —
@@ -141,6 +141,6 @@ most of these are non-obvious and will be repeated otherwise.
 ## Process gotcha (agent self-harm)
 
 When verifying a signed commit with a throwaway commit, **capture `HEAD` first** and
-`reset --hard` to that sha — not `HEAD~1`. If the throwaway commit *fails to create*
+`reset --hard` to that sha — not `HEAD~1`. If the throwaway commit _fails to create_
 (e.g. signing not yet working), `reset --hard HEAD~1` rewinds a **real** commit. This
 happened once and had to be recovered from the reflog.

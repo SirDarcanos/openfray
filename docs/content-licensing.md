@@ -15,7 +15,7 @@ what to do about them. It does **not** cover the project's own code license
 CC-BY for content that isn't offered under it.
 
 - **WotC SRD content (5.1 and 5.2)** is used under **CC-BY-4.0**. SRD 5.2 is CC-BY-only;
-  SRD 5.1 is dual-licensed (OGL 1.0a *or* CC-BY-4.0) and we elect CC-BY. **We never apply
+  SRD 5.1 is dual-licensed (OGL 1.0a _or_ CC-BY-4.0) and we elect CC-BY. **We never apply
   the OGL to WotC SRD content** — we have CC-BY there and prefer it.
 - **Third-party content (e.g. Kobold Press)** is honored under **its own license, never
   assumed CC-BY**: **ORC** where a title offers it, otherwise **OGL 1.0a**. Most Tome of
@@ -28,7 +28,7 @@ Reserved-Material concept. The OGL is the heaviest: it carries a verbatim **Sect
 copyright chain, requires the **full license text** to travel with the content, and
 splits a book into **Open Game Content** (usable) vs **Product Identity** (not). So when
 a source offers more than one, take the lightest. Don't reach for the OGL out of habit —
-only use it for a source that's *only* OGL.
+only use it for a source that's _only_ OGL.
 
 **Net rule:** WotC SRD → CC-BY-4.0 (never OGL). Third-party → its own license, ORC over
 OGL when both are offered, never assumed CC-BY. Using a source under the OGL pulls in all
@@ -54,11 +54,13 @@ standard, accepted way to satisfy these.
 ## Tasks
 
 ### Task 1 — `CREDITS.md` at the repo root
+
 Holds the content attributions (CC-BY for SRD; third-party per their own license).
 When you ingest, fill in **WotC's exact specified attribution string** for each SRD
 version verbatim — do not paraphrase. Already scaffolded; see [`/CREDITS.md`](../CREDITS.md).
 
 ### Task 2 — In-app attribution surface
+
 An About/Credits screen, reachable from a footer link, displaying the same
 attributions. **Must exist before the compendium ships to users.** It can link out to
 `CREDITS.md` / the repo, but the credit to WotC + the CC-BY link must be reachable
@@ -67,6 +69,7 @@ repo). The app needs **both**: a "Source" link (AGPL, for the code) and a conten
 attribution (CC-BY, for the SRD data). Don't conflate them.
 
 ### Task 3 — Per-source tagging at ingestion (build step 8)
+
 Every creature/spell already carries `source` and `edition` (see
 [`AGENTS.md`](../AGENTS.md) / schema). Ensure each record's `source` is specific enough
 to drive correct attribution (e.g. `srd-5.2`, `srd-5.1`, `kobold-press-tob`) so credits
@@ -78,10 +81,10 @@ When a third-party source is **OGL-only** (e.g. Tome of Beasts 1–3), the OGL i
 permitted — but it has real obligations, all of which must be met:
 
 - **Ship only that book's declared Open Game Content.** Read the book's OGC/Product
-  Identity declaration (usually a legal page near the front) and take *only* what it
+  Identity declaration (usually a legal page near the front) and take _only_ what it
   designates as Open Game Content. Drop everything declared Product Identity — artwork,
   sidebars, trade dress, "fiction"/story/background, and any entity the book lists as PI.
-  (Example: ToB 3 declares monster *names, descriptions, statistics, and abilities* as
+  (Example: ToB 3 declares monster _names, descriptions, statistics, and abilities_ as
   OGC, but the Animal Lords / Archangels / Archdevils / Demon Lords / Fey Ladies / Fey
   Lords / Fiend Lords as entirely PI — those creatures are excluded wholesale.)
 - **Reproduce the full OGL 1.0a text** in `CREDITS.md` and the in-app credits.
@@ -91,6 +94,7 @@ permitted — but it has real obligations, all of which must be met:
 - Prefer **ORC** over OGL when a title offers both; never use the OGL for WotC SRD.
 
 ### Task 5 — Do NOT do these
+
 - Do **not** ingest WotC content excluded from the SRD (Beholder, Mind Flayer,
   Displacer Beast, etc.) — it is not licensed to us under CC-BY or anything else.
   SRD-only for WotC content; everything else comes from third-party open sources or

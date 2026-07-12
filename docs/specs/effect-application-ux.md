@@ -6,12 +6,12 @@
 
 The DM does not tell the app "this fighter is a Battle Master with Trip Attack."
 The DM tells the app "this goblin is now Prone." The player's sheet/DDB is the
-source of truth for what they *can* do; we are the scratchpad for what *happened*
-and what we have to *remember*.
+source of truth for what they _can_ do; we are the scratchpad for what _happened_
+and what we have to _remember_.
 
 This single rule is what stops the Effect system from exploding. A sorcerer has
 dozens of metamagic + spell combos — we model zero of them. We only ever model
-the handful of *board states* they produce: a condition, an advantage/disadvantage
+the handful of _board states_ they produce: a condition, an advantage/disadvantage
 flag, a flat modifier, or a plain text reminder. There are only ~6 shapes of
 consequence in all of 5e, no matter how many class features exist.
 
@@ -21,14 +21,14 @@ consequence in all of 5e, no matter how many class features exist.
 
 No matter the class feature, what lands on the board is always one of these:
 
-| Shape | Example causes | Data |
-|---|---|---|
-| **Condition** | Trip→Prone, Grappler→Grappled, Hold Person→Paralyzed | a named condition |
-| **Disadvantage on it** | Vicious Mockery, Trip (its attacks), Bane | `outgoing disadvantage` |
-| **Advantage against it** | Faerie Fire, Reckless, prone (melee), Menacing | `incoming advantage` |
-| **Flat bonus/penalty** | Bless +1d4, Bane −1d4, Bardic Inspiration | `flatBonus ±` |
-| **Marked / reminder** | Hunter's Mark, Hex, Hexblade's Curse, "Sharpshooter this turn" | `note only` |
-| **Ongoing damage / save-ends** | Ensnaring Strike, Ear-Splitting, persistent fire | `saveEnds` + note |
+| Shape                          | Example causes                                                 | Data                    |
+| ------------------------------ | -------------------------------------------------------------- | ----------------------- |
+| **Condition**                  | Trip→Prone, Grappler→Grappled, Hold Person→Paralyzed           | a named condition       |
+| **Disadvantage on it**         | Vicious Mockery, Trip (its attacks), Bane                      | `outgoing disadvantage` |
+| **Advantage against it**       | Faerie Fire, Reckless, prone (melee), Menacing                 | `incoming advantage`    |
+| **Flat bonus/penalty**         | Bless +1d4, Bane −1d4, Bardic Inspiration                      | `flatBonus ±`           |
+| **Marked / reminder**          | Hunter's Mark, Hex, Hexblade's Curse, "Sharpshooter this turn" | `note only`             |
+| **Ongoing damage / save-ends** | Ensnaring Strike, Ear-Splitting, persistent fire               | `saveEnds` + note       |
 
 The Effect schema we already designed expresses all six. So the UI's whole job is
 to let the DM pick "which creature + which shape" as fast as possible.
@@ -72,7 +72,7 @@ Effects need an end condition, but typing durations is slow. Offer 4 chips:
 - **"Save ends"** → prompts ability + DC once
 - **"Manual"** (until I clear it) → default fallback
 
-Most chips carry a *default* duration so the DM usually picks nothing:
+Most chips carry a _default_ duration so the DM usually picks nothing:
 Reckless = untilSourceTurn, Vicious Mockery = consumeOnRoll, Bless = 10 rounds,
 Prone = manual. The DM only touches duration when it's unusual.
 
@@ -80,7 +80,7 @@ Prone = manual. The DM only touches duration when it's unusual.
 
 ## Source attribution without sheets
 
-When the DM applies an effect, the app asks "from whom?" *only if it matters*
+When the DM applies an effect, the app asks "from whom?" _only if it matters_
 (i.e. duration is `untilSourceTurn` or the effect is concentration-linked).
 Otherwise it skips the question. Picking a source is one tap on a combatant —
 not a sheet lookup. This keeps Hunter's Mark / concentration links working
@@ -101,7 +101,7 @@ never tracks this on a sheet; the board does it.
 
 - Adding an effect is **1 creature tap + 1 chip** (+ optional duration). Sub-2s.
 - The DM is transcribing what players announce, at the speed they announce it.
-- Badges on each row mean the board *shows* the current relational state, so the
+- Badges on each row mean the board _shows_ the current relational state, so the
   DM offloads memory to the screen instead of holding it in their head.
 - Zero class knowledge in the app → no combinatorial explosion. Six shapes,
   however many features exist.
@@ -113,8 +113,11 @@ never tracks this on a sheet; the board does it.
 - No class/subclass feature lists.
 - No "cast spell" buttons for PCs (that's their sheet/DDB).
 - No resource tracking for PCs beyond what the DM chooses to jot.
-- No attempt to know what any ability *does* — only what it *leaves on the board*.
+- No attempt to know what any ability _does_ — only what it _leaves on the board_.
 
 The test for any future feature: **does it require knowing a PC's build?**
 If yes, it's out of scope — it belongs on their sheet.
+
+```
+
 ```

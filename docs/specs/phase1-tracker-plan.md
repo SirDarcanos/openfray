@@ -26,53 +26,53 @@ the **Effect**. Get this in now; it's painful to retrofit.
 ## Effect (new — attach to a Combatant)
 
 An Effect is anything that should change a future roll or remind the DM of
-something. Conditions become a *kind* of Effect, so there's one system, not two.
+something. Conditions become a _kind_ of Effect, so there's one system, not two.
 
 ```jsonc
 {
   "id": "uuid",
   "name": "Vicious Mockery",
-  "icon": "debuff",                  // for the badge on the combatant row
-  "source": "uuid-of-bard",          // who caused it (for "until source's next turn")
+  "icon": "debuff", // for the badge on the combatant row
+  "source": "uuid-of-bard", // who caused it (for "until source's next turn")
 
   // WHAT IT DOES MECHANICALLY (engine reads this; null = reminder-only)
   "modifier": {
-    "applies": "attackRolls",        // attackRolls | savingThrows | abilityChecks | ac | "all"
-    "mode": "disadvantage",          // advantage | disadvantage | flatBonus
-    "value": null,                   // for flatBonus, e.g. -2
-    "direction": "outgoing"          // outgoing = this creature's own rolls
-                                     // incoming = rolls made AGAINST this creature
+    "applies": "attackRolls", // attackRolls | savingThrows | abilityChecks | ac | "all"
+    "mode": "disadvantage", // advantage | disadvantage | flatBonus
+    "value": null, // for flatBonus, e.g. -2
+    "direction": "outgoing", // outgoing = this creature's own rolls
+    // incoming = rolls made AGAINST this creature
   },
 
   // WHEN IT ENDS
   "duration": {
-    "type": "consumeOnRoll",         // consumeOnRoll | rounds | untilSourceTurn | saveEnds | manual
-    "rounds": null,                  // for type:rounds
-    "save": null                     // for saveEnds: { ability, dc }
+    "type": "consumeOnRoll", // consumeOnRoll | rounds | untilSourceTurn | saveEnds | manual
+    "rounds": null, // for type:rounds
+    "save": null, // for saveEnds: { ability, dc }
   },
 
-  "note": "Disadvantage on next attack roll"   // always shown to DM as a reminder
+  "note": "Disadvantage on next attack roll", // always shown to DM as a reminder
 }
 ```
 
 ### How the three new cases map to Effects
 
-| Player does… | Effect on whom | modifier | duration |
-|---|---|---|---|
-| Barbarian Reckless Attack | on the **barbarian** | `{applies:attackRolls, mode:advantage, direction:incoming}` | `untilSourceTurn` |
-| Vicious Mockery | on the **target** | `{applies:attackRolls, mode:disadvantage, direction:outgoing}` | `consumeOnRoll` |
-| Faerie Fire, "I have advantage on it" | on the **target** | `{applies:attackRolls, mode:advantage, direction:incoming}` | `rounds` |
-| Bless (+1d4) | on the **ally** | `{applies:"all", mode:flatBonus, value:"1d4"}` | `rounds` |
+| Player does…                          | Effect on whom       | modifier                                                       | duration          |
+| ------------------------------------- | -------------------- | -------------------------------------------------------------- | ----------------- |
+| Barbarian Reckless Attack             | on the **barbarian** | `{applies:attackRolls, mode:advantage, direction:incoming}`    | `untilSourceTurn` |
+| Vicious Mockery                       | on the **target**    | `{applies:attackRolls, mode:disadvantage, direction:outgoing}` | `consumeOnRoll`   |
+| Faerie Fire, "I have advantage on it" | on the **target**    | `{applies:attackRolls, mode:advantage, direction:incoming}`    | `rounds`          |
+| Bless (+1d4)                          | on the **ally**      | `{applies:"all", mode:flatBonus, value:"1d4"}`                 | `rounds`          |
 
 > **Direction is the trick.** `incoming` advantage on the barbarian means: when
-> *anyone* rolls an attack *against* the barbarian, the engine grants advantage.
-> `outgoing` disadvantage on a mocked goblin means: when *the goblin* attacks,
+> _anyone_ rolls an attack _against_ the barbarian, the engine grants advantage.
+> `outgoing` disadvantage on a mocked goblin means: when _the goblin_ attacks,
 > disadvantage. One field captures both Reckless Attack and Vicious Mockery.
 
 ### Phase-1 rendering: badge first, automation second
 
 - **MVP (must):** every Effect shows as a badge on the combatant row with its
-  `note`. Tap the combatant → see the list → the DM is *reminded*. This alone
+  `note`. Tap the combatant → see the list → the DM is _reminded_. This alone
   beats every existing tracker.
 - **Magic (should, if time):** when the DM rolls an attack/save, the engine scans
   the roller's `outgoing` effects **and** the target's `incoming` effects,
@@ -112,6 +112,7 @@ pass/fail UI for single-target saves too.
 State: `round`, `activeIndex`, ordered `combatants[]`.
 
 **On "Next turn":**
+
 1. Resolve end-of-turn duration ticks for the creature whose turn is ending
    (decrement `rounds` effects/conditions; clear expired; reset its
    `legendaryRemaining` to `perRound`).
@@ -121,6 +122,7 @@ State: `round`, `activeIndex`, ordered `combatants[]`.
    (e.g. Reckless Attack advantage drops when the barbarian's turn comes round).
 
 **Edge cases to decide now (cheap now, expensive later):**
+
 - Adding a combatant mid-combat (where in order? what initiative?)
 - Removing/dead combatants — skip turn but keep in list (revivify happens)
 - Duplicate monsters auto-labelled A/B/C and rolled with individual HP
@@ -161,4 +163,7 @@ so the DM trusts it and can override.
 
 Ship-it line: through #5 you have a better tracker than what exists. #6–7 are
 the differentiators. #8–9 make it pleasant to live in.
+
+```
+
 ```

@@ -59,7 +59,7 @@ mutation. This single discipline prevents 90% of "whose turn is it?" bugs.
 
 - Hard remove from list (distinct from death). Re-find active by id, fix index.
 - If the **removed creature is the active one**, advance to the next valid
-  creature *before* removing, so `activeIndex` lands correctly.
+  creature _before_ removing, so `activeIndex` lands correctly.
 - Cascade: clear all Effects where `source` == removed id. A debuff with no
   caster left is gone.
 
@@ -116,7 +116,7 @@ This order matters because Effects tick relative to turns. On **"Next turn"**:
 ```
 
 > The subtle one is 4b. "Until the start of the source's next turn" is the most
-> common DnD duration, and it resolves when that creature *becomes active*, not
+> common DnD duration, and it resolves when that creature _becomes active_, not
 > when it finishes. Tick it at START, not END.
 
 ---
@@ -146,4 +146,7 @@ This order matters because Effects tick relative to turns. On **"Next turn"**:
   `consumeOnRoll`, `manual`) has exactly one well-defined moment it's evaluated.
 - Death is non-destructive; revive is free.
 - The dice engine can be built next against a loop whose ticks won't move.
+
+```
+
 ```

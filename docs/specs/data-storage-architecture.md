@@ -4,13 +4,13 @@
 
 These have opposite needs, so store them differently.
 
-| | **Shipped (SRD)** | **User-created** |
-|---|---|---|
-| Source | SRD 5.2, you author it | DMs at runtime |
-| Changes | Only when you ship an update | Constantly |
-| Owner | Everyone, read-only | One user, private |
-| Volume | Fixed (~few hundred items) | Grows per user |
-| Where | Bundled / seeded, read-only | Database, per-user |
+|         | **Shipped (SRD)**            | **User-created**   |
+| ------- | ---------------------------- | ------------------ |
+| Source  | SRD 5.2, you author it       | DMs at runtime     |
+| Changes | Only when you ship an update | Constantly         |
+| Owner   | Everyone, read-only          | One user, private  |
+| Volume  | Fixed (~few hundred items)   | Grows per user     |
+| Where   | Bundled / seeded, read-only  | Database, per-user |
 
 The Creature/Spell **schema is identical** for both (that was the point of one
 schema). Only `source` and ownership differ. A user's custom monster is just a
@@ -29,9 +29,9 @@ DB from day one even if phase 1 is single-device — the schema below works for 
 Postgres is the sweet spot here because your data is **half relational, half
 document**:
 
-- *Relational* part: users own creatures, encounters reference creatures,
+- _Relational_ part: users own creatures, encounters reference creatures,
   campaigns group encounters. Foreign keys and "list everything I own" queries.
-- *Document* part: a stat block is a deep nested object (actions, spellcasting,
+- _Document_ part: a stat block is a deep nested object (actions, spellcasting,
   limited-use). You do **not** want 8 join tables to reconstruct one monster.
 
 Postgres `JSONB` lets you store the whole Creature/Spell object as a document in
@@ -93,9 +93,10 @@ encounters
 
 ### Why `combatants` live inside `encounters.state` as JSONB
 
-A combatant is a *snapshot instance* of a creature plus volatile combat state
+A combatant is a _snapshot instance_ of a creature plus volatile combat state
 (current HP, slots used, active effects). It is not a row you query across
 encounters. Storing the whole encounter state as one JSONB blob means:
+
 - saving combat progress = one row update (trivial autosave)
 - no schema churn when you add a new effect field
 - the encounter loads as a single object the front end can run directly
@@ -160,6 +161,7 @@ There are exactly **two** account states. "Signup" is the transition between
 them, not a third state.
 
 ### Tier 1 — Anonymous (no account, no database writes)
+
 - Can: browse the read-only **SRD compendium**, run encounters with SRD monsters,
   and **add players** (the one piece of custom data they get).
 - Cannot: create custom monsters/spells, or persist anything.
@@ -169,12 +171,14 @@ them, not a third state.
 - Dies when the tab/window closes. By design.
 
 ### Tier 2 — Signed-up (real account)
+
 - Everything persists: custom creatures/spells, players, in-progress encounters,
   cross-device. This is where `owner_id` + Row-Level Security applies.
 - Created via hosted auth (e.g. Supabase Auth) — email/password or social login.
   Don't hand-roll credential storage.
 
 ### Why anonymous data is deliberately NOT preserved
+
 Persisting anon data server-side would force: orphaned-row cleanup jobs, an
 anonymous→permanent **merge migration** on signup (genuinely fiddly), storage
 bloat from abandoned sessions, and false durability promises that generate
@@ -184,7 +188,9 @@ that moment forward, the user's stuff persists; there's no past anon data to
 reconcile.
 
 ### Avoiding silent data loss (the one refinement)
-"Lost on tab close" must be *chosen*, never a silent surprise mid-fight:
+
+"Lost on tab close" must be _chosen_, never a silent surprise mid-fight:
+
 - Keep live state in memory + **`sessionStorage`** (tab-scoped, clears on close)
   as crash/reload insurance. Still client-only, still ephemeral, still never
   touches the DB — so it preserves the "no durable anon data" principle while
@@ -195,6 +201,7 @@ reconcile.
   ("Your session isn't saved — sign up to keep it"). Loss is opt-in, not silent.
 
 ### Conversion lever
+
 The impending loss of an anon user's **players + in-progress encounter** is the
 single best prompt-to-signup moment — they've felt the value, and signup is what
 keeps it. That's why anon users get players (not a gated feature): they need to
@@ -215,4 +222,7 @@ experience the payoff before being asked to commit.
 - **Sign up or not?** Two tiers. Anonymous = SRD + players, ephemeral, no DB
   writes. Signed-up = everything persists. No third state; signup is the
   transition, and there's no anon data to migrate across it.
+
+```
+
 ```
