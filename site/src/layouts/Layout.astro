@@ -82,6 +82,10 @@ const ogImage = new URL('/og-image.png', Astro.site);
         </svg>
         <span><span class="o">Open</span>Fray</span>
       </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="/console/">Console</a>
+        <a href="/docs/">Help &amp; Documentation</a>
+      </nav>
       <button
         class="theme-toggle"
         type="button"
@@ -118,6 +122,7 @@ const ogImage = new URL('/og-image.png', Astro.site);
     <slot />
 
     <footer>
+      <a href="/docs/">Docs</a><span class="sep">·</span>
       <a href="/privacy">Privacy</a><span class="sep">·</span>
       <a href="/terms">Terms</a><span class="sep">·</span>
       <a
@@ -139,6 +144,15 @@ const ogImage = new URL('/og-image.png', Astro.site);
           >AGPL-3.0</a
         ></span
       >
+
+      <p class="disclaimer">
+        Compatible with fifth edition. Not affiliated with, endorsed, sponsored, or specifically
+        approved by Wizards of the Coast LLC. Game reference content is used under <a
+          href="https://creativecommons.org/licenses/by/4.0/legalcode.en"
+          target="_blank"
+          rel="noreferrer">CC-BY-4.0</a
+        >.
+      </p>
     </footer>
 
     <script is:inline>
