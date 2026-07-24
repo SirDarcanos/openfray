@@ -30,7 +30,7 @@ Master, want to see on the board:
 OpenFray never rolls a player's attacks or saves. Wherever it would roll for a creature,
 you type in what the player rolled instead.
 
-### Quick creatures
+### Throwaway creatures
 
 **Quick add** drops in something you're inventing on the spot and won't reuse — just a
 name, hit points, and armor class. Mark it a foe to keep it with the enemies.
@@ -50,7 +50,45 @@ first.
 
 Everyone is **active**, **unconscious**, or **dead**. Nothing is ever deleted: down and
 dead creatures stay in the order, greyed out and skipped, so they're right there if
-they're brought back. A downed player gets death-save buttons on their row.
+they're brought back.
+
+A creature at 0 is marked dead. A player character is marked unconscious, and OpenFray
+starts tracking their death saves.
+
+## Death saves
+
+A downed player's row is tagged **Unconscious** and grows a set of pips — successes on one
+line, failures on the other — so the tally is visible without opening anything.
+
+![A tracker row for a downed player, tagged Unconscious, with the Saves and Fails pips outlined in red.](../../../assets/screens/death-save-row.png)
+
+Select them and their controls grow three buttons:
+
+![The death save controls, with Save and Fail outlined in red alongside Roll death save.](../../../assets/screens/death-saves.png)
+
+- **Save** and **Fail** record what the player rolled. That's the normal path: they roll
+  their own die, you tap what happened.
+- **Roll death save** is the fallback for when they can't roll — OpenFray rolls it and
+  records the result itself.
+
+Once the tally resolves, OpenFray stops asking: a stabilised character keeps a **Stable**
+tag on their row, and a dead one greys out in the order. Either way they stay in the
+list, in their own initiative slot.
+
+Four things it applies on its own, so nothing is missed in the middle of a fight:
+
+| When                                  | OpenFray does this                                               |
+| ------------------------------------- | ---------------------------------------------------------------- |
+| You deal damage to a downed character | Records the failure with the damage                              |
+| That damage came from a melee hit     | Records it as a critical — two failures                          |
+| **Roll death save** comes up 20       | Puts them back on their feet at 1 hit point and clears the tally |
+| **Roll death save** comes up 1        | Records two failures                                             |
+
+Damaging a **stable** character clears their successes before applying the failure, so
+the row goes straight back to dying rather than quietly staying stable.
+
+Healing above 0 wakes them: the status goes back to active, the tally clears, and they
+keep their place in the order — no re-rolling initiative.
 
 ## Copies and renaming
 

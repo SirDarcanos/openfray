@@ -4,9 +4,19 @@ description: The built-in reference of creatures, spells, characters, and campai
 ---
 
 The **compendium** is the reference OpenFray keeps for you. Open it with the book icon at
-the top of the screen. It has four tabs: search on the left, read on the right.
+the top of the screen.
 
-![The compendium showing the creature list beside an Aboleth stat block, with the four tabs outlined in red.](../../../assets/screens/compendium.png)
+![The compendium, with its tabs, list and reading pane outlined in red and numbered one to three.](../../../assets/screens/compendium.png)
+
+1. **The tabs** — creatures, spells, your characters, your campaigns.
+2. **The list** — search by name; every match shows here.
+3. **What you picked** — the full stat block or spell card, in the same layout you'll see
+   during a fight.
+
+Each row in the list is badged with where it came from, so you always know which book and
+which rules you're looking at:
+
+![A few rows of the creature list, with an entry's Core and 5.5e badges outlined in red.](../../../assets/screens/library-badges.png)
 
 ## Creatures
 
@@ -24,8 +34,15 @@ card when you cast a spell, or when you point at a spell name inside a stat bloc
 
 ## Characters
 
-Your saved players. Build a character once — armor, hit points, abilities, notes — and
-drop them into any fight instead of typing them in again. This one needs an account.
+Your saved players. Build a character once — armor, hit points, abilities, resistances,
+senses, and private GM notes — and drop them into any fight instead of typing them in
+again. This one needs an account.
+
+![The Characters tab, with a saved character selected and Add to encounter, Edit and Delete buttons.](../../../assets/screens/characters-tab.png)
+
+**Add to encounter** puts them straight on the board. The campaign each character belongs
+to is shown beside their name in the list, so a table's party stays recognisable when you
+run more than one game.
 
 ## Campaigns
 

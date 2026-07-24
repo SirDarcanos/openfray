@@ -28,7 +28,22 @@ die.
 
 Each entry shows the dice that were rolled, in brackets, and what was added to them — so
 "is that right?" is answered by looking, not arguing. **View all** opens the full history
-of the fight, grouped by round.
+of the fight, grouped by round, where you can filter down to just the rolls, just the
+damage, or just the effects.
+
+### Rolling by hand
+
+The box at the bottom takes a formula and rolls it. Beyond `2d6+3`, it understands:
+
+| Type this             | And you get                                                |
+| --------------------- | ---------------------------------------------------------- |
+| `1d20+7`              | one die, plus a flat modifier                              |
+| `1d20adv` / `1d20dis` | rolled twice, keeping the higher or lower — both are shown |
+| `4d6kh3`              | roll four, keep the highest three (`kl` keeps the lowest)  |
+| `2d6+1d4+2`           | as many dice and modifiers as you like, added together     |
+
+The **d20 d12 d10 d8 d6 d4** buttons beside it are shortcuts for a single die, for when
+someone just needs a number.
 
 ## Rolls know about effects
 

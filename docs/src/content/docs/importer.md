@@ -21,12 +21,20 @@ Once it's installed you'll see the OpenFray icon in your browser's toolbar.
 1. On D&D&nbsp;Beyond, open a creature and go to its **Details** page — the one with the
    full stat block.
 2. Click the **OpenFray** icon in your toolbar. The add-on reads the page and builds an
-   OpenFray creature from it.
-3. Click **Copy** (or **Download**) to take the creature with you.
-4. In OpenFray, go to the compendium's **Creatures** tab and import what you copied. It's
-   now in your library, ready to drop into any fight.
+   OpenFray creature from it, showing you the result.
 
-Importing keeps the creature in your own library, so this step needs an account.
+   ![The OpenFray Importer popup, showing a converted Goblin Minion with Copy JSON and Download .json buttons.](../../assets/screens/importer-popup.png)
+
+3. Click **Copy JSON**. (**Download .json** saves it as a file instead, if you'd rather
+   keep it or send it to someone.)
+4. In OpenFray, open the compendium's **Creatures** tab and choose **Import**. Paste what
+   you copied into the box and click **Import**.
+
+   ![The Import creature JSON box in OpenFray, with the pasted creature and an Import button.](../../assets/screens/import-json.png)
+
+The creature is saved to your library as an ordinary custom creature — you can edit it
+afterwards like anything you built yourself, and drop it into any fight. Because it's
+saved to your library, this last step needs an account.
 
 ## What it brings across
 

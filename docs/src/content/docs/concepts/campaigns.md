@@ -19,18 +19,32 @@ games apart at a glance. Which creatures and spells you actually see is a separa
 choice, in [Settings](/docs/concepts/compendium/#rule-sets) — that way one setting covers
 you whether or not you're signed in.
 
+![The New campaign box, with a name, an edition, and the five house-rule dropdowns.](../../../assets/screens/campaign-form.png)
+
 ## House rules
 
-| Rule                    | What you can choose                                                                       |
-| ----------------------- | ----------------------------------------------------------------------------------------- |
-| **Critical hit damage** | Double the dice (standard); max the normal dice, then roll the extra; or double the total |
-| **Surprise**            | Roll initiative with disadvantage (2024); or skip the first turn (2014)                   |
-| **Creature hit points** | Average, rolled, lowest, or highest when a creature joins the fight                       |
-| **Initiative ties**     | Higher Dexterity wins; players go first; or leave the order to you                        |
-| **Leveling up**         | Experience points, or milestone                                                           |
+| Rule                    | What you can choose                                                                     |
+| ----------------------- | --------------------------------------------------------------------------------------- |
+| **Critical hit damage** | _Double the dice_ (standard); _Max normal dice + roll crit dice_; or _Double the total_ |
+| **Surprise round**      | _Initiative with disadvantage_ (2024); or _Skip the first turn_ (2014)                  |
+| **Creature HP**         | _Average_, _Roll_, _Min_ or _Max_, applied as each creature joins the fight             |
+| **Initiative ties**     | _Higher Dexterity_; _Players first_; or _Manual_, leaving the order to you              |
+| **Level up**            | _XP_, or _Milestone_                                                                    |
 
 The crit and hit-point rules change the dice OpenFray rolls for creatures — it never
 rolls a player's attack. The surprise and tie rules change the initiative order.
+
+Once a campaign exists, its card lists every rule at a glance, so you can check what this
+table plays without opening the form:
+
+![The Campaigns tab, with a campaign selected and its house rules listed on the right.](../../../assets/screens/campaigns-tab.png)
+
+## Running a campaign
+
+Pick which one you're running from the box at the bottom right of the console. That's
+what applies its rules to the fight in front of you:
+
+![The campaign picker in the console footer, open, listing the available campaigns.](../../../assets/screens/campaign-picker.png)
 
 ## Leveling up: experience or milestone
 

@@ -12,12 +12,24 @@ you can read what it does.
 There are two ways to cast.
 
 **From a creature.** Open its stat block and click a spell in its list. OpenFray fills in
-the save number and attack bonus for you, and uses up one casting.
+the save number and attack bonus from that creature, and spends one casting: an _At will_
+spell is unlimited, while a _2/Day Each_ spell counts down per spell — burning a Fireball
+leaves its Invisibility untouched — and greys out when it's spent.
+
+Monster spells cast at the level printed on the stat block. There's no upcasting to pick,
+because a stat block doesn't have spell slots to spend.
 
 ![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labelled.](../../../assets/screens/cast-spell.png)
 
-**From the Cast spell button**, at the top of the screen. Search any spell, then pick who
-is casting it — or cast it yourself as the Game Master, with no caster at all.
+**From the Cast spell button**, at the top of the screen. Search any spell — every spell
+in the [rule sets you've turned on](/docs/concepts/compendium/#rule-sets), plus your own —
+then pick **who is casting it**.
+
+Naming a caster is worth doing: OpenFray takes their save DC and spell attack bonus, and
+if the spell needs concentration it starts the caster concentrating, with the timer
+already counting. Leave the caster blank and you can still cast — you just type the
+numbers yourself. That's the path for a player's spell, where OpenFray has no sheet to
+read from.
 
 What happens next depends on the spell:
 

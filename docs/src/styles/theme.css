@@ -28,3 +28,12 @@
   --sl-color-gray-7: #f8fafc;
   --sl-color-black: #ffffff;
 }
+
+/* Screenshots sit in a matted frame rather than bleeding into the page, so their
+   dark edges stay distinct from the background in either theme. */
+.sl-markdown-content img {
+  padding: 0.5rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.6rem;
+  background: var(--sl-color-gray-6);
+}

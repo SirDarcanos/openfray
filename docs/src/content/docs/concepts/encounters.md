@@ -32,8 +32,17 @@ concentration all stay as they are. Use it when you clicked ahead by mistake, no
 replay a turn.
 :::
 
-**Pause** holds the fight so you can come back to it later, and stops the clock. **Stop**
-ends the fight and takes you back to setup, keeping everyone on the board.
+**Pause** holds the fight — the turn marker disappears so nobody's "up", and the timers in
+the footer stop counting. It's for the break, the rules argument, the pizza. Press it
+again to carry on exactly where you were.
+
+**Stop** ends the fight. Everyone stays on the board with their hit points, effects and
+conditions intact; the round counter resets and the ▶ button comes back. Nothing is lost,
+so stopping by mistake costs you nothing.
+
+Two clocks run in the footer while you fight: **Real**, the actual time you've spent
+(pauses don't count), and **In-game**, six seconds per round. The second one is the one
+to quote when a player asks whether their one-minute spell is still up.
 
 ## What moving to the next turn does
 
@@ -53,14 +62,30 @@ so adding, removing, or dragging creatures around never loses the turn.
 
 ## Rearranging the order
 
-Drag a creature by the handle on the left of its row to move it. Its initiative changes
-to fit its new spot, and nobody else's number moves. Creatures that are down or dead stay
-in the list, greyed out and skipped, so the order holds steady if they come back.
+Sometimes the order needs a nudge — someone held their action, or you typed a number
+wrong. Once the fight is running, every living row grows a **drag handle**: the six small
+dots on the far left of the row, before the initiative number.
+
+![A tracker row during a fight, with the six-dot drag handle on its left outlined in red.](../../../assets/screens/drag-handle.png)
+
+Drag that handle up or down to move the creature. Its initiative changes to fit its new
+spot, and nobody else's number moves. Creatures that are down or dead stay in the list,
+greyed out and skipped, so the order holds steady if they come back.
 
 ## The summary
 
-When the last enemy is defeated, OpenFray asks whether the fight is over. Say yes and it
-shows a summary: who won, how many rounds it took, how long it lasted in real time and in
-game time, damage dealt and taken, and a few highlights — plus the experience earned,
-unless your campaign levels up by
-[milestone](/docs/concepts/campaigns/#leveling-up-experience-or-milestone).
+When the last enemy is defeated, OpenFray asks once whether the fight is over — it won't
+nag, and you can say no if a second wave is coming. Say yes and you get a summary of what
+just happened:
+
+- **the outcome** — victory, defeat, or simply ended;
+- **experience earned**, and what that is per player — unless your campaign levels up by
+  [milestone](/docs/concepts/campaigns/#leveling-up-experience-or-milestone), in which
+  case it's left out;
+- **how long it took**: rounds, in-game minutes, and real time with pauses excluded;
+- **total damage** dealt and taken;
+- **three awards** — most damage dealt, most taken, and the biggest single hit.
+
+The summary also appears when you press **Stop**, or when the whole party goes down. A
+party wipe only counts once every player is dead or stable: one character still rolling
+death saves means the fight is still on.

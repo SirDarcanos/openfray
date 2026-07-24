@@ -21,8 +21,10 @@ menu — what you need mid-fight is in front of you.
 3. **Controls and the log.** Buttons for the creature you've selected (add an effect,
    concentrate, use a reaction), and below them a running list of everything that has
    happened.
-4. **The dice.** Roll anything by hand, whenever you want.
-5. **Adding to the fight.** The three buttons that put someone new on the board.
+4. **The top bar.** Adding creatures and players, group saves, casting a spell, rests,
+   and the switch between the console and the compendium.
+5. **The bottom bar.** Dice you can roll by hand, the fight's timers, and — signed in —
+   which campaign you're running.
 
 ## Add your creatures and players
 
@@ -44,8 +46,12 @@ sides at a glance.
 
 ## Start the fight
 
-Click **Begin** — the ▶ button at the top of the tracker. Before anything starts,
-OpenFray asks for everyone's initiative:
+Everyone's on the board, so start the fight. **Begin** is the ▶ button at the top of the
+tracker, where the round number appears once you're going:
+
+![The top of the tracker before a fight, with the play button outlined in red and labelled Begin.](../../assets/screens/begin.png)
+
+Before anything starts, OpenFray asks for everyone's initiative:
 
 ![The Roll Initiative box, with a player's roll field and the surprised toggle outlined in red.](../../assets/screens/roll-initiative.png)
 

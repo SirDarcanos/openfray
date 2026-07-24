@@ -32,6 +32,7 @@ export default defineConfig({
           items: [
             { label: 'Overview', link: '/' },
             { label: 'Getting started', link: '/getting-started/' },
+            { label: 'Your account & what’s saved', link: '/account/' },
           ],
         },
         {
@@ -41,7 +42,9 @@ export default defineConfig({
             { label: 'Creatures & players', link: '/concepts/combatants/' },
             { label: 'Effects & conditions', link: '/concepts/effects/' },
             { label: 'Spells', link: '/concepts/spells/' },
+            { label: 'Rests & between fights', link: '/concepts/rests/' },
             { label: 'The compendium', link: '/concepts/compendium/' },
+            { label: 'Build your own', link: '/concepts/making-your-own/' },
             { label: 'Campaigns & house rules', link: '/concepts/campaigns/' },
             { label: 'Dice', link: '/concepts/dice/' },
           ],
@@ -56,7 +59,7 @@ export default defineConfig({
           label: 'OpenFray',
           items: [
             { label: 'Open the console', link: 'https://openfray.app/console/' },
-            { label: 'openfray.app', link: 'https://openfray.app/' },
+            { label: 'Open the website', link: 'https://openfray.app/' },
           ],
         },
       ],
