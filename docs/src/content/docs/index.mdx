@@ -1,0 +1,60 @@
+---
+title: OpenFray documentation
+description: How OpenFray works — a free, browser-based tool for running DnD 5e fights.
+template: splash
+hero:
+  tagline: A free, browser-based tool for running DnD 5e fights. Here's how it works.
+  actions:
+    - text: Get started
+      link: /docs/getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: Open the console
+      link: /console/
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+OpenFray keeps track of a fight for you — who acts when, everyone's hit points, the
+conditions and effects on each creature, and the dice. It also has a built-in list of
+creatures and spells to pull from. It runs in your web browser, and you don't need an
+account. Signing in just lets you save your game.
+
+These pages explain how each part works.
+
+<CardGrid stagger>
+  <Card title="Getting started" icon="rocket">
+    Add creatures and players, start the fight, and get to know the screen. [Start
+    here](/docs/getting-started/).
+  </Card>
+  <Card title="Encounters & initiative" icon="list-format">
+    Running rounds and turns, and moving forward and back. [Read more](/docs/concepts/encounters/).
+  </Card>
+  <Card title="Effects & conditions" icon="warning">
+    Keeping track of who's frightened, poisoned, blessed, and so on. [Read
+    more](/docs/concepts/effects/).
+  </Card>
+  <Card title="Spells" icon="star">
+    Casting a spell, adding its effect, and rolling a whole group's save at once. [Read
+    more](/docs/concepts/spells/).
+  </Card>
+  <Card title="Creatures & players" icon="puzzle">
+    What OpenFray tracks for a creature, a player, and a quick one-off. [Read
+    more](/docs/concepts/combatants/).
+  </Card>
+  <Card title="The compendium" icon="open-book">
+    The built-in creatures and spells, your characters, and your campaigns. [Read
+    more](/docs/concepts/compendium/).
+  </Card>
+  <Card title="Dice" icon="approve-check">
+    Fair dice you can check, with every roll written down. [Read more](/docs/concepts/dice/).
+  </Card>
+</CardGrid>
+
+:::note[Still in alpha]
+OpenFray is new and changing fast. If something here doesn't match what you see in the
+app, trust the app — and please
+[let us know](https://github.com/SirDarcanos/openfray/issues).
+:::

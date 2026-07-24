@@ -1,0 +1,30 @@
+/* Match the OpenFray brand: indigo accent, deep-slate dark mode (the console's
+   default). Starlight exposes its palette as CSS custom properties. */
+:root {
+  --sl-color-accent-low: #1e1b4b;
+  --sl-color-accent: #6366f1;
+  --sl-color-accent-high: #c7d2fe;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #e2e8f0;
+  --sl-color-gray-2: #b4bcca;
+  --sl-color-gray-3: #808a9d;
+  --sl-color-gray-4: #4b5568;
+  --sl-color-gray-5: #1e293b;
+  --sl-color-gray-6: #131a2b;
+  --sl-color-black: #020617;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #dfe2fd;
+  --sl-color-accent: #4f46e5;
+  --sl-color-accent-high: #312c85;
+  --sl-color-white: #0f172a;
+  --sl-color-gray-1: #1e293b;
+  --sl-color-gray-2: #334155;
+  --sl-color-gray-3: #64748b;
+  --sl-color-gray-4: #94a3b8;
+  --sl-color-gray-5: #e2e8f0;
+  --sl-color-gray-6: #f1f5f9;
+  --sl-color-gray-7: #f8fafc;
+  --sl-color-black: #ffffff;
+}
