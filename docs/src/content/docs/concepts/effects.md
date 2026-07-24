@@ -50,7 +50,7 @@ the ones already on the creature are highlighted, and tapping one again takes it
 **3 · Or build a bonus.** Three dropdowns make a sentence — _what_ it does (advantage,
 disadvantage, or a number), _what it applies to_ (attacks, saves, checks, or everything),
 and _whose rolls_ (the creature's own, or rolls made against it). Give it a name, like
-Bless or Reckless, so you recognise it on the board later. OpenFray spells out what
+Bless or Reckless, so you recognize it on the board later. OpenFray spells out what
 you've built in plain English; press **Apply modifier** when it reads right.
 
 **4 · Or just leave a note.** For anything that doesn't fit the boxes above, type a
@@ -100,7 +100,7 @@ you just don't want to forget it two rounds from now.
 
 It becomes a badge on their row like any other effect. OpenFray won't act on it — it
 can't know what you meant — but it will keep it in front of you until you clear it. That's
-the deal with reminders: you get the memory, you keep the judgement.
+the deal with reminders: you get the memory, you keep the judgment.
 
 ## Where effects show up
 

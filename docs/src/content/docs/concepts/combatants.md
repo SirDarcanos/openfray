@@ -39,17 +39,17 @@ name, hit points, and armor class. Mark it a foe to keep it with the enemies.
 
 Every row in the tracker holds the four things you check most often.
 
-![One tracker row, with its initiative, name, hit points and armor class outlined in red and labelled.](../../../assets/screens/tracker-row.png)
+![One tracker row, with its initiative, name, hit points and armor class outlined in red and labeled.](../../../assets/screens/tracker-row.png)
 
 Click the hit points to set a new number, or to add or remove some — type `+5` to heal or
-`-8` to damage. Current hit points change colour as a creature gets hurt, so you can spot
+`-8` to damage. Current hit points change color as a creature gets hurt, so you can spot
 a badly wounded one at a glance. Temporary hit points are counted separately and used up
 first.
 
 ## Down, dead, and back again
 
 Everyone is **active**, **unconscious**, or **dead**. Nothing is ever deleted: down and
-dead creatures stay in the order, greyed out and skipped, so they're right there if
+dead creatures stay in the order, grayed out and skipped, so they're right there if
 they're brought back.
 
 A creature at 0 is marked dead. A player character is marked unconscious, and OpenFray
@@ -71,8 +71,8 @@ Select them and their controls grow three buttons:
 - **Roll death save** is the fallback for when they can't roll — OpenFray rolls it and
   records the result itself.
 
-Once the tally resolves, OpenFray stops asking: a stabilised character keeps a **Stable**
-tag on their row, and a dead one greys out in the order. Either way they stay in the
+Once the tally resolves, OpenFray stops asking: a stabilized character keeps a **Stable**
+tag on their row, and a dead one grays out in the order. Either way they stay in the
 list, in their own initiative slot.
 
 Four things it applies on its own, so nothing is missed in the middle of a fight:

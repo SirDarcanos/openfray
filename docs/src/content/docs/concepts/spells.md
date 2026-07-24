@@ -14,12 +14,12 @@ There are two ways to cast.
 **From a creature.** Open its stat block and click a spell in its list. OpenFray fills in
 the save number and attack bonus from that creature, and spends one casting: an _At will_
 spell is unlimited, while a _2/Day Each_ spell counts down per spell — burning a Fireball
-leaves its Invisibility untouched — and greys out when it's spent.
+leaves its Invisibility untouched — and grays out when it's spent.
 
 Monster spells cast at the level printed on the stat block. There's no upcasting to pick,
 because a stat block doesn't have spell slots to spend.
 
-![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labelled.](../../../assets/screens/cast-spell.png)
+![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labeled.](../../../assets/screens/cast-spell.png)
 
 **From the Cast spell button**, at the top of the screen. Search any spell — every spell
 in the [rule sets you've turned on](/docs/concepts/compendium/#rule-sets), plus your own —

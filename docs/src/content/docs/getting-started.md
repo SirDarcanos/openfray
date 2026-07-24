@@ -49,11 +49,11 @@ sides at a glance.
 Everyone's on the board, so start the fight. **Begin** is the ▶ button at the top of the
 tracker, where the round number appears once you're going:
 
-![The top of the tracker before a fight, with the play button outlined in red and labelled Begin.](../../assets/screens/begin.png)
+![The top of the tracker before a fight, with the play button outlined in red and labeled Begin.](../../assets/screens/begin.png)
 
 Before anything starts, OpenFray asks for everyone's initiative:
 
-![The Roll Initiative box, with a player's roll field and the surprised toggle outlined in red.](../../assets/screens/roll-initiative.png)
+![The Roll initiative box, with a player's roll field and the surprised toggle outlined in red.](../../assets/screens/roll-initiative.png)
 
 - Creatures are already rolled and filled in for you.
 - Players are blank. Type what each player rolled, or leave it blank and OpenFray rolls

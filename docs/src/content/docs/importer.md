@@ -27,10 +27,10 @@ Once it's installed you'll see the OpenFray icon in your browser's toolbar.
 
 3. Click **Copy JSON**. (**Download .json** saves it as a file instead, if you'd rather
    keep it or send it to someone.)
-4. In OpenFray, open the compendium's **Creatures** tab and choose **Import**. Paste what
-   you copied into the box and click **Import**.
+4. In OpenFray, open the compendium's **Creatures** tab and choose **Import a creature**.
+   Paste what you copied into the box and click **Import**.
 
-   ![The Import creature JSON box in OpenFray, with the pasted creature and an Import button.](../../assets/screens/import-json.png)
+   ![The Import a creature box in OpenFray, with the pasted creature and an Import button.](../../assets/screens/import-json.png)
 
 The creature is saved to your library as an ordinary custom creature — you can edit it
 afterwards like anything you built yourself, and drop it into any fight. Because it's

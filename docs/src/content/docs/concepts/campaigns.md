@@ -14,7 +14,7 @@ and you can change them right there.
 
 ## Which rules it's for
 
-Each campaign is labelled **Dungeons & Dragons 2024** or **2014**, so you can tell your
+Each campaign is labeled **DnD 5.5 (2024)** or **DnD 5.0 (2014)**, so you can tell your
 games apart at a glance. Which creatures and spells you actually see is a separate
 choice, in [Settings](/docs/concepts/compendium/#rule-sets) — that way one setting covers
 you whether or not you're signed in.

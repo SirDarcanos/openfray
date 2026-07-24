@@ -23,7 +23,7 @@ Click **Start combat** and you're in round 1, at the top of the list.
 The creature whose turn it is glows in the tracker, and its stat block fills the middle
 of the screen. The buttons beside the round number move the fight along.
 
-![The top of the tracker during a fight, with the round number, the two turn buttons, and the pause and stop buttons outlined in red and labelled.](../../../assets/screens/turn-controls.png)
+![The top of the tracker during a fight, with the round number, the two turn buttons, and the pause and stop buttons outlined in red and labeled.](../../../assets/screens/turn-controls.png)
 
 :::caution[Going back is a fix, not an undo]
 **Previous turn** moves the marker back and nothing else. It does **not** put things
@@ -70,7 +70,7 @@ dots on the far left of the row, before the initiative number.
 
 Drag that handle up or down to move the creature. Its initiative changes to fit its new
 spot, and nobody else's number moves. Creatures that are down or dead stay in the list,
-greyed out and skipped, so the order holds steady if they come back.
+grayed out and skipped, so the order holds steady if they come back.
 
 ## The summary
 

@@ -54,7 +54,7 @@ Your games and their house rules. See
 OpenFray ships with more than one set of rules, and with two extra books of creatures.
 Open **Settings** (the gear at the top right) and tick the ones your table uses:
 
-![The Content libraries settings, with the list of rule sets outlined in red and labelled "Tick the ones your table plays".](../../../assets/screens/rule-sets.png)
+![The Rule sets settings, with the list of rule sets outlined in red and labeled "Tick the ones your table plays".](../../../assets/screens/rule-sets.png)
 
 - **Core Rules 2024** — the newer rules. On by default.
 - **Core Rules 2014** — the older rules. Turn this on if that's what your table plays.

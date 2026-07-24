@@ -46,9 +46,9 @@ one looks wrong, it's the ability score or the CR that needs fixing, not the tot
 
 If the creature already exists on D&D&nbsp;Beyond, don't retype it — the
 [importer](/docs/importer/) turns that page into an OpenFray creature. Paste what it
-gives you into **Import** on the Creatures tab:
+gives you into **Import a creature**, on the Creatures tab:
 
-![The Import creature JSON box, with pasted creature JSON and an Import button.](../../../assets/screens/import-json.png)
+![The Import a creature box, with a creature pasted in and an Import button.](../../../assets/screens/import-json.png)
 
 What lands in your library is an ordinary custom creature: editable, yours, and no
 different from one you built by hand.
