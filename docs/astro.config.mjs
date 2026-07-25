@@ -18,6 +18,19 @@ export default defineConfig({
         src: './src/assets/mark.svg',
         alt: 'OpenFray',
       },
+      // Fathom analytics — privacy-friendly, cookieless (same site id as the console
+      // and marketing site). The CSP in site/public/_headers already allows
+      // cdn.usefathom.com across the whole deploy, including /docs.
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            src: 'https://cdn.usefathom.com/script.js',
+            'data-site': 'CZDKZIAS',
+            defer: true,
+          },
+        },
+      ],
       customCss: ['./src/styles/theme.css'],
       social: [
         {
