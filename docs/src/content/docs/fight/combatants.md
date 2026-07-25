@@ -35,14 +35,15 @@ Master, need to see on the board:
 OpenFray never automatically rolls for a player. Wherever it would roll for a creature,
 you type in what the player rolled instead.
 
-If you sign in with your Google or Discord account, you can save your players characters and add them from the compendium instead:
+If you sign in with your Google or Discord account, you can save your player characters and
+add them from the compendium instead:
 
 ![The Add PC button outlined in red, with the signed-in picker open — a search over saved characters and a Create a character link.](../../../assets/screens/add-pc-dropdown-signedin.png)
 
 ### Throwaway combatants
 
 **Quick add** drops in something you're inventing on the spot and won't reuse — just a
-name, hit points, armor class and weather it's a **Friend** or **Foe**.
+name, hit points, armor class, and whether it's a **Friend** or a **Foe**.
 
 ![The Quick add button outlined in red, with its short form open: a name, a Foe dropdown, AC, and HP.](../../../assets/screens/add-npc-dropdown.png)
 
