@@ -7,10 +7,22 @@ OpenFray runs in your web browser at [openfray.app/console](/console/). There's 
 download and no account needed. This page runs you through your first fight, start to
 finish. You can [sign in](#saving-your-game) later if you want to save your game.
 
-The console is one screen, split into three columns — the **tracker** on the left, the
-**stat block** in the middle, and the **controls and log** on the right, with a top bar and
-a bottom bar. For a full tour, see [The tracker & rows](/docs/fight/tracker/); this page
-just gets you into a fight.
+## The console at a glance
+
+The console is one screen, split into three columns. Everything you need during a fight is
+on it — nothing important is hidden in a menu.
+
+![The OpenFray console during a fight, with five areas outlined in red and numbered one to five.](../../assets/screens/layout.png)
+
+1. **The top bar.** Adding creatures and players, group saves, casting a spell, rests, and
+   the switch between the console and the compendium.
+2. **The tracker.** Everyone in the fight, in the order they act, with hit points, armor
+   class, and any conditions on them. This is the column you watch.
+3. **The stat block.** Everything about the current or selected combatant — abilities, actions, reactions, etc. Click an attack here to roll it. See [The stat block](/docs/reference/stat-block/).
+4. **Controls and the log.** Buttons for the creature you've selected — apply an effect,
+   concentrate, use a reaction — and below them a running list of what has happened.
+5. **The bottom bar.** Dice you can roll by hand, the fight's timers, and — when you're
+   signed in — which campaign you're running.
 
 ## Add your creatures and players
 
@@ -60,15 +72,19 @@ how it went.
 
 ## Saving your game
 
-You don't have to sign in — everything above works without an account. If you do sign in
-(it's free, with Discord or Google), OpenFray also:
+While signed into your account, OpenFray also:
 
 - saves your fight and syncs it to your other devices;
 - keeps a list of your players, so you don't type them in again;
 - lets you set up [campaigns](/docs/library/campaigns/) with your table's house rules;
 - lets you build your own creatures and spells.
 
-Nothing you've already done without an account is lost when you sign in.
+Nothing you've already done without an account is lost when you sign in. Saving is the game state is always automatic.
+
+:::note[Accounts are optional]
+Signing in with an account is entirely optional and **free**, via Google or Discord.
+Everything above works without an account.
+:::
 
 ## Where to next
 

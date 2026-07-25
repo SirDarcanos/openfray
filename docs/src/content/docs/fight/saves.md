@@ -3,8 +3,8 @@ title: Saving throws
 description: Resolve a saving throw forced by an action or a spell — one creature or a whole group at once — with resistances and Evasion handled for you.
 ---
 
-Saving throws come up two ways: an action forces one (a dragon's breath, a creature's
-stinger), or a spell makes a whole group roll at once (the Fireball case). Both use the
+Saving throws come up two ways: an action forces one (e.g. a dragon's breath, a creature's
+stinger), or a spell makes a whole group roll at once (the _Fireball_ case). Both use the
 same box. OpenFray rolls for the creatures, works in their save bonuses, and applies the
 damage; players roll their own and you record the result.
 
@@ -19,9 +19,7 @@ damage; players roll their own and you record the result.
 5. Click **Roll saves**. OpenFray rolls each creature's save; for a player, you record
    what they rolled.
 
-<!-- TODO screenshot: save-resolve.png — the save box resolving an action against several targets, mixed pass/fail. Highlight: DC, the Magical Effect / Evasion toggles, the per-target results, Apply damage. -->
-
-<!-- ![The save box resolving an action against several targets, with the DC, the Magical Effect and Evasion toggles, and the per-target pass/fail results outlined in red.](../../../assets/screens/save-resolve.png) -->
+![The save box resolving an action against several targets, with the DC, and the per-target pass/fail results outlined in red.](../../../assets/screens/save-resolve.png)
 
 If the action deals damage with no save at all, the box says **Automatic area damage — no
 save** and the button reads **Roll damage** instead.
@@ -36,6 +34,8 @@ Two common defenses are handled for you when they apply:
 - **Evasion** — a creature with Evasion takes no damage on a success and half on a failure,
   instead of the usual half-on-success. OpenFray shows an **Evasion** marker on those
   creatures and works it into the damage.
+
+![A save with Magical Effect checked, and a log entry showing the creature rolled with advantage from Magic Resistance.](../../../assets/screens/magic-resistance.png)
 
 ## Turning a failed save into a success
 
@@ -63,9 +63,9 @@ throw spell open it for you.
 
 1. Pick the **ability** and the **DC**, and what a successful save earns — half damage, no
    damage, or the effect simply doesn't happen. Casting a spell fills all of this in.
-2. Choose who's rolling. Your players and the foes are listed separately.
-3. Type the **damage** — a formula like `8d6`, or a flat number if the player already
+2. Type the **damage** — a formula like `8d6`, or a flat number if the player already
    rolled it.
+3. Choose the targets. Your players and the foes are listed separately.
 4. Click **Roll saves**. OpenFray rolls for the creatures, working in their save bonuses
    and things like Magic Resistance and Evasion. For your players, you type what they
    rolled.

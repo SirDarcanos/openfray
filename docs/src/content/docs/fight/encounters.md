@@ -34,16 +34,20 @@ replay a turn.
 
 **Pause** holds the fight while the session stops. The turn marker disappears so nobody is
 "up", and the footer timers stop counting. Press it again to carry on where you left off.
+For example, when a creature is willing to negotiate with the players pause the fight while
+they talk. Resume it if things go south.
 
 **Stop** ends the fight. Everyone stays on the board with their hit points, effects, and
-conditions intact; the round counter resets and the ▶ button comes back. Nothing is lost,
+conditions intact; the round counter resets and the **Begin** button comes back. Nothing is lost,
 so stopping by mistake is safe.
 
 Two clocks run in the footer while you fight: **Real**, the time you've actually spent
 (pauses don't count), and **In-game**, six seconds per round. Use the in-game clock to
 tell a player how long a timed spell has left.
 
-## What moving to the next turn does
+![The footer clocks during a fight — Real 29:11 and In-game 0:36.](../../../assets/screens/fight-timer.png)
+
+### Moving to the next turn
 
 Clicking **Next turn** does more than move the marker. Each time, OpenFray:
 
@@ -54,7 +58,7 @@ Clicking **Next turn** does more than move the marker. Each time, OpenFray:
 - counts down concentration and drops it when it runs out;
 - rolls a creature's [saves to shake off an effect](/docs/fight/effects/#effects-a-saving-throw-ends)
   at the right moment in its turn;
-- rolls to see whether a used-up recharge ability is available again.
+- rolls to see whether a used-up recharge ability is available again (e.g. a dragon's breath attack).
 
 OpenFray follows whose turn it is by the creature itself, not by its place in the list —
 so adding, removing, or dragging creatures around never loses the turn.
@@ -62,18 +66,21 @@ so adding, removing, or dragging creatures around never loses the turn.
 ## Rearranging the order
 
 Sometimes the order needs a nudge — someone held their action, or you typed a number
-wrong. Once the fight is running, every living row grows a **drag handle**: the six small
+wrong. Once the fight is running, every living row shows a **drag handle**: the six small
 dots on the far left of the row, before the initiative number.
 
 ![A tracker row during a fight, with the six-dot drag handle on its left outlined in red.](../../../assets/screens/drag-handle.png)
 
-Drag that handle up or down to move the creature. Its initiative changes to fit its new
-spot, and nobody else's number moves. Creatures that are down or dead stay in the list,
+Drag that handle up or down to move the combatant. Its initiative changes to fit its new
+spot, and nobody else's number moves. Combatants that are down or dead stay in the list,
 grayed out and skipped, so the order holds steady if they come back.
 
 ## Ending the fight
 
-When the last foe is defeated, OpenFray asks once whether the fight is over. Say no if a
-second wave is coming; it won't ask again. Say yes and you get a summary of the fight — the
-outcome, experience, timings, and a few standout hits. See
+When the last foe is defeated, OpenFray asks once whether the fight is over.
+
+![The "Every foe is down" alert asking whether to end combat, with Keep fighting and End combat buttons.](../../../assets/screens/end-combat-alert.png)
+
+Click **Keep fighting** to keep the fight active (e.g. if a second wave of foes is coming or a player is rolling death saves);
+Click **End combat** to stop the ifght and get its summary — the outcome, experience, timings, and a few standout hits. See
 [End of the fight](/docs/fight/recap/).

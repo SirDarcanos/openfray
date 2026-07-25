@@ -4,26 +4,7 @@ description: The three columns of the console, what each row in the tracker show
 ---
 
 The **tracker** is the left column of the console — the list of everyone in the fight, in
-the order they act. It's the column you watch. This page covers how the console is laid
-out, what a row shows, and how to change hit points.
-
-## The console at a glance
-
-The console is one screen, split into three columns. Everything you need during a fight is
-on it — nothing important is hidden in a menu.
-
-![The OpenFray console during a fight, with five areas outlined in red and numbered one to five.](../../../assets/screens/layout.png)
-
-1. **The tracker.** Everyone in the fight, in the order they act, with hit points, armor
-   class, and any conditions on them. This is the column you watch.
-2. **The stat block.** Everything about whoever you clicked on — abilities, attacks, and
-   spells. Click an attack here to roll it. See [The stat block](/docs/reference/stat-block/).
-3. **Controls and the log.** Buttons for the creature you've selected — apply an effect,
-   concentrate, use a reaction — and below them a running list of what has happened.
-4. **The top bar.** Adding creatures and players, group saves, casting a spell, rests, and
-   the switch between the console and the compendium.
-5. **The bottom bar.** Dice you can roll by hand, the fight's timers, and — when you're
-   signed in — which campaign you're running.
+the order they act. It's the column you watch. This page covers what a row shows, and how to change hit points.
 
 ## Reading a row
 
@@ -44,10 +25,12 @@ Click a creature's current hit points to change them. You can:
 - type **`-8`** to deal that much damage.
 
 Current hit points change color as a creature gets hurt, so you can spot a badly wounded
-one at a glance. Temporary hit points are counted separately and used up first.
+one at a glance. Temporary hit points are counted separately and consumed first when damaging a combatant.
 
-:::tip[Damage from an attack is easier]
-Typing `-8` is the quick way to apply damage you've worked out elsewhere. When a creature
+![Three tracker rows with current hit points tinted by wound level — red at 1/5, green at full, and amber at 18/23.](../../../assets/screens/tracker-row-hp-colors.png)
+
+:::tip[Damage from a player]
+Typing `-8` is the quick way to apply damage from a player to a creature. When a creature
 attacks, [resolve the attack](/docs/fight/attacks/) instead — OpenFray rolls the damage,
 applies resistances, and takes the hit points off for you.
 :::
@@ -57,3 +40,5 @@ applies resistances, and takes the hit points off for you.
 Once a fight is running, you can drag a row to a new spot in the initiative order — for a
 held action, or to fix a number you typed wrong. See
 [Encounters & initiative](/docs/fight/encounters/#rearranging-the-order).
+
+![A combatant being dragged by its six-dot handle to a new spot in the initiative order during a fight.](../../../assets/screens/reorder-combatants.gif)
