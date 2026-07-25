@@ -22,7 +22,7 @@ pick, because a stat block doesn't have spell slots to spend.
 ![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labeled.](../../../assets/screens/cast-spell.png)
 
 **From the Cast spell button**, at the top of the screen. Search any spell — every spell
-in the [rule sets you've turned on](/docs/concepts/compendium/#rule-sets), plus your own —
+in the [rule sets you've turned on](/docs/reference/settings/#rule-sets), plus your own —
 then pick **who is casting it**.
 
 Naming a caster is worth doing: OpenFray takes their save DC and spell attack bonus, and
@@ -63,19 +63,6 @@ marks it as such, so ending concentration clears it everywhere at once.
 
 ## Group saves
 
-**Group save** rolls one spell's saving throw for a whole group at once — the Fireball
-case. Open it from the top of the screen, or let a saving throw spell open it for you.
-
-![The Group save box, with the DC, the on-save rule, the damage field, the target list and the Roll saves button outlined in red.](../../../assets/screens/group-save.png)
-
-1. Pick the ability and the number to beat, and what a successful save earns — half
-   damage, no damage, or the effect simply doesn't happen. Casting a spell fills all of
-   this in for you.
-2. Choose who's rolling. Your players and the foes are listed separately.
-3. Type the damage — a formula like `8d6`, or a flat number if the player already rolled
-   it.
-4. Click **Roll saves**. OpenFray rolls for the creatures, working in their save bonuses
-   and things like Magic Resistance and Evasion. For your players, you type in what they
-   rolled.
-5. Apply the damage to everyone in one click — and for a save-or-be-affected spell, drop
-   the condition on the ones that failed.
+A saving throw spell — a _Fireball_ that a whole group rolls against at once — opens the
+**group save** box, filled in from the spell. Rolling a group's save, with resistances and
+Evasion handled for you, has its own page: [Saving throws](/docs/fight/saves/#group-saves).

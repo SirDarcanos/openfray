@@ -18,7 +18,7 @@ yours is sitting on a server you never asked to use. OpenFray warns you before y
 a tab with a fight in it.
 
 Two things do stick around on your own device without an account: your
-[rule-set choices](/docs/concepts/compendium/#rule-sets) and whether you like light or
+[rule-set choices](/docs/reference/settings/#rule-sets) and whether you like light or
 dark. Those are preferences, not game data.
 
 ## Signing in
@@ -29,12 +29,12 @@ created for you.
 
 From then on, this is saved to your account and follows you between devices:
 
-| What                              | Why you'd want it                                                             |
-| --------------------------------- | ----------------------------------------------------------------------------- |
-| **The fight you're running**      | close the laptop mid-session, pick it up next week, mid-round                 |
-| **Creatures and spells you make** | your homebrew library, on every device                                        |
-| **Characters**                    | build the party once instead of retyping them each session                    |
-| **Campaigns**                     | your table's [house rules](/docs/concepts/campaigns/), applied to every fight |
+| What                              | Why you'd want it                                                            |
+| --------------------------------- | ---------------------------------------------------------------------------- |
+| **The fight you're running**      | close the laptop mid-session, pick it up next week, mid-round                |
+| **Creatures and spells you make** | your homebrew library, on every device                                       |
+| **Characters**                    | build the party once instead of retyping them each session                   |
+| **Campaigns**                     | your table's [house rules](/docs/library/campaigns/), applied to every fight |
 
 Saving happens quietly in the background while you play. You never wait for it, and
 there's no save button.

@@ -47,34 +47,20 @@ run more than one game.
 ## Campaigns
 
 Your games and their house rules. See
-[Campaigns & house rules](/docs/concepts/campaigns/). This one needs an account too.
+[Campaigns & house rules](/docs/library/campaigns/). This one needs an account too.
 
 ## Rule sets
 
-OpenFray ships with more than one set of rules, and with two extra books of creatures.
-Open **Settings** (the gear at the top right) and tick the ones your table uses:
-
-![The Rule sets settings, with the list of rule sets outlined in red and labeled "Tick the ones your table plays".](../../../assets/screens/rule-sets.png)
-
-- **Core Rules 2024** — the newer rules. On by default.
-- **Core Rules 2014** — the older rules. Turn this on if that's what your table plays.
-- **Tome of Beasts 1, 2 and 3** — three books of extra creatures from Kobold Press.
-
-You don't need an account for this; the choice is remembered in your browser. Whatever
-you turn on shows up in the compendium and in the **Add creature** list, badged with
-where it came from. Creatures and spells you make yourself always show up, whichever sets
-are on.
-
-Some spells work differently between the two versions of the rules (Barkskin's armor
-class, how Sleep works). Each rule set carries its own version, so you get the one that
-matches what you're playing.
+The compendium shows the books you've turned on. OpenFray ships with Core Rules 2024 and
+2014, and with the Tome of Beasts books — tick the ones your table uses in **Settings**. See
+[Settings & appearance](/docs/reference/settings/#rule-sets).
 
 ## Making your own
 
 With an account you can build your own **creatures** and **spells** in a full editor, and
-they're kept in your library next to the built-in ones. To turn a D&D&nbsp;Beyond
-creature into an OpenFray creature without retyping it, see
-[the importer](/docs/importer/).
+they're kept in your library next to the built-in ones. See
+[Build your own](/docs/library/making-your-own/). To turn a D&D&nbsp;Beyond creature into an
+OpenFray creature without retyping it, see [the importer](/docs/library/importer/).
 
 :::note[Where the rules come from]
 The built-in rules come from the official System Reference Document, used under the

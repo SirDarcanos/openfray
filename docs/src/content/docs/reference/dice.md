@@ -1,6 +1,6 @@
 ---
-title: Dice
-description: Fair, honest dice you can check — every roll shown in the log, with no fudging.
+title: Dice & roll formulas
+description: Fair, honest dice you can check, the formulas the roll box understands, and how effects are worked into a roll.
 ---
 
 For a fight to feel fair, the dice have to be fair — and everyone has to be able to see
@@ -27,9 +27,8 @@ die.
 ![The dice bar at the bottom of the screen and a log entry reading "1d20 [18] +2", both outlined in red.](../../../assets/screens/dice-log.png)
 
 Each entry shows the dice that were rolled, in brackets, and what was added to them — so
-"is that right?" is answered by looking, not arguing. **View all** opens the full history
-of the fight, grouped by round, where you can filter down to just the rolls, just the
-damage, or just the effects.
+"is that right?" is answered by looking, not arguing. **View all** opens the full history,
+grouped by round and filterable by kind. See [The game log](/docs/reference/game-log/).
 
 ### Rolling by hand
 
@@ -47,13 +46,13 @@ someone just needs a number.
 
 ## Rolls know about effects
 
-Because rolls and [effects](/docs/concepts/effects/) work together, whatever is on a
+Because rolls and [effects](/docs/fight/effects/) work together, whatever is on a
 creature is worked in for you:
 
 - **advantage and disadvantage** from conditions and effects are applied, and the log
   shows both dice;
 - **bonuses and penalties** (Bless's +1d4, Bane's −1d4) are added and shown;
-- **critical hits** follow your campaign's [crit rule](/docs/concepts/campaigns/#house-rules);
+- **critical hits** follow your campaign's [crit rule](/docs/library/campaigns/#house-rules);
 - a creature's **saves** include its bonuses, plus things like Magic Resistance and
   Evasion.
 
@@ -61,4 +60,4 @@ creature is worked in for you:
 
 OpenFray rolls for creatures because it has their numbers. It never rolls a player's
 attack or save — those belong to the player, and you type in the result. See
-[Creatures & players](/docs/concepts/combatants/#players).
+[Creatures & players](/docs/fight/combatants/#players).

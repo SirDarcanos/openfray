@@ -14,7 +14,7 @@ Until you begin, players and foes sit in separate groups so you can see both sid
 Click **Begin** and OpenFray asks for everyone's initiative. Creatures are rolled for
 you. Players are blank, so you can type what they rolled, or leave it blank and let
 OpenFray roll. You can also mark someone **surprised** here — what that does depends on
-your campaign's [surprise rule](/docs/concepts/campaigns/#house-rules).
+your campaign's [surprise rule](/docs/library/campaigns/#house-rules).
 
 Click **Start combat** and you're in round 1, at the top of the list.
 
@@ -52,7 +52,7 @@ Clicking **Next turn** does more than move the marker. Each time, OpenFray:
 - gives the creature back its reaction, and refreshes its legendary actions;
 - clears effects that last "until my next turn" as their owner starts to act;
 - counts down concentration and drops it when it runs out;
-- rolls a creature's [saves to shake off an effect](/docs/concepts/effects/#effects-a-saving-throw-ends)
+- rolls a creature's [saves to shake off an effect](/docs/fight/effects/#effects-a-saving-throw-ends)
   at the right moment in its turn;
 - rolls to see whether a used-up recharge ability is available again.
 
@@ -71,19 +71,9 @@ Drag that handle up or down to move the creature. Its initiative changes to fit 
 spot, and nobody else's number moves. Creatures that are down or dead stay in the list,
 grayed out and skipped, so the order holds steady if they come back.
 
-## The summary
+## Ending the fight
 
 When the last foe is defeated, OpenFray asks once whether the fight is over. Say no if a
-second wave is coming; it won't ask again. Say yes and you get a summary of the fight:
-
-- **the outcome** — victory, defeat, or simply ended;
-- **experience earned**, and what that is per player — unless your campaign levels up by
-  [milestone](/docs/concepts/campaigns/#leveling-up-experience-or-milestone), in which
-  case it's left out;
-- **how long it took**: rounds, in-game minutes, and real time with pauses excluded;
-- **total damage** dealt and taken;
-- **three awards** — most damage dealt, most taken, and the biggest single hit.
-
-The summary also appears when you press **Stop**, or when the whole party goes down. A
-party wipe only counts once every player is dead or stable: one character still rolling
-death saves means the fight is still on.
+second wave is coming; it won't ask again. Say yes and you get a summary of the fight — the
+outcome, experience, timings, and a few standout hits. See
+[End of the fight](/docs/fight/recap/).

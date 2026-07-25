@@ -36,22 +36,44 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Core concepts',
+          label: 'Combatants',
           items: [
-            { label: 'Encounters & initiative', link: '/concepts/encounters/' },
-            { label: 'Creatures & players', link: '/concepts/combatants/' },
-            { label: 'Effects & conditions', link: '/concepts/effects/' },
-            { label: 'Spells', link: '/concepts/spells/' },
-            { label: 'Rests & between fights', link: '/concepts/rests/' },
-            { label: 'The compendium', link: '/concepts/compendium/' },
-            { label: 'Build your own', link: '/concepts/making-your-own/' },
-            { label: 'Campaigns & house rules', link: '/concepts/campaigns/' },
-            { label: 'Dice', link: '/concepts/dice/' },
+            { label: 'Creatures, players & quick adds', link: '/fight/combatants/' },
+            { label: 'The tracker & rows', link: '/fight/tracker/' },
+            { label: 'Death & dying', link: '/fight/death/' },
           ],
         },
         {
-          label: 'Tools',
-          items: [{ label: 'The importer', link: '/importer/' }],
+          label: 'Running a fight',
+          items: [
+            { label: 'Encounters & initiative', link: '/fight/encounters/' },
+            { label: 'Attacks & damage', link: '/fight/attacks/' },
+            { label: 'Saving throws', link: '/fight/saves/' },
+            { label: 'Effects & conditions', link: '/fight/effects/' },
+            { label: 'Concentration', link: '/fight/concentration/' },
+            { label: 'Creature resources', link: '/fight/resources/' },
+            { label: 'Spells', link: '/fight/spells/' },
+            { label: 'Rests & clearing the board', link: '/fight/rests/' },
+            { label: 'End of the fight', link: '/fight/recap/' },
+          ],
+        },
+        {
+          label: 'Your library',
+          items: [
+            { label: 'The compendium', link: '/library/compendium/' },
+            { label: 'Build your own creatures & spells', link: '/library/making-your-own/' },
+            { label: 'Campaigns & house rules', link: '/library/campaigns/' },
+            { label: 'The importer', link: '/library/importer/' },
+          ],
+        },
+        {
+          label: 'Reference',
+          items: [
+            { label: 'The stat block', link: '/reference/stat-block/' },
+            { label: 'Dice & roll formulas', link: '/reference/dice/' },
+            { label: 'The game log', link: '/reference/game-log/' },
+            { label: 'Settings & appearance', link: '/reference/settings/' },
+          ],
         },
         // The console and the marketing site live outside /docs. Starlight prefixes
         // `base` onto root-relative sidebar links, so these have to be full URLs.

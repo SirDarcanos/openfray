@@ -1,5 +1,5 @@
 ---
-title: Rests & between fights
+title: Rests & clearing the board
 description: Short and long rests, what each one restores, and how to clear the board before the next encounter.
 ---
 
@@ -65,5 +65,5 @@ Both ask before they do it.
 **Stop** ends the fight but keeps everyone on the board, with their hit points and
 effects intact — it's for "the fight is over, hold on a moment". The broom and the skull
 are for taking the board apart. See
-[Encounters & initiative](/docs/concepts/encounters/#rounds-and-turns).
+[Encounters & initiative](/docs/fight/encounters/#rounds-and-turns).
 :::

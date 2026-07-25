@@ -12,7 +12,7 @@ Your creations are saved to your account, so this needs you to be signed in. Eve
 else in the compendium works without one.
 :::
 
-Both editors live in the [compendium](/docs/concepts/compendium/): open the
+Both editors live in the [compendium](/docs/library/compendium/): open the
 **Creatures** or **Spells** tab and use the create button.
 
 ## Making a creature
@@ -44,7 +44,7 @@ wrong, fix the ability score or the challenge rating behind it, not the total.
 ### Importing instead of typing
 
 If the creature already exists on D&D&nbsp;Beyond, don't retype it — the
-[importer](/docs/importer/) turns that page into an OpenFray creature. Paste what it
+[importer](/docs/library/importer/) turns that page into an OpenFray creature. Paste what it
 gives you into **Import a creature**, on the Creatures tab:
 
 ![The Import a creature box, with a creature pasted in and an Import button.](../../../assets/screens/import-json.png)
@@ -79,7 +79,7 @@ Your creatures and spells:
 
 - appear in the compendium beside the built-in ones, badged **Custom**;
 - show up in the **Add creature** and **Cast spell** pickers;
-- are always available, whichever [rule sets](/docs/concepts/compendium/#rule-sets) you
+- are always available, whichever [rule sets](/docs/reference/settings/#rule-sets) you
   have turned on;
 - can be edited or deleted later from the bottom of their own card.
 

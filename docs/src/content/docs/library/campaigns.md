@@ -9,14 +9,14 @@ running from the box at the bottom of the console. Without a campaign — or wit
 account — OpenFray just uses the standard rules.
 
 Make and edit campaigns on the **Campaigns** tab of the
-[compendium](/docs/concepts/compendium/#campaigns). Each one shows its rules at a glance,
+[compendium](/docs/library/compendium/#campaigns). Each one shows its rules at a glance,
 and you can change them right there.
 
 ## Which rules it's for
 
 Each campaign is labeled **DnD 5.5 (2024)** or **DnD 5.0 (2014)**, so you can tell your
 games apart at a glance. Which creatures and spells you actually see is a separate
-choice, in [Settings](/docs/concepts/compendium/#rule-sets) — that way one setting covers
+choice, in [Settings](/docs/reference/settings/#rule-sets) — that way one setting covers
 you whether or not you're signed in.
 
 ![The New campaign box, with a name, an edition, and the five house-rule dropdowns.](../../../assets/screens/campaign-form.png)
@@ -53,7 +53,7 @@ what applies its rules to the fight in front of you:
 - **Milestone** — you level the party up at story moments, so experience is just noise.
   Pick this and OpenFray hides it during a fight and in the summary.
 
-The [compendium's creature list](/docs/concepts/compendium/#creatures) always shows
+The [compendium's creature list](/docs/library/compendium/#creatures) always shows
 experience, whichever you pick — it's a reference, not a scoreboard.
 
 :::note[Needs an account]

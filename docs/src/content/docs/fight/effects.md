@@ -62,7 +62,7 @@ Whatever you've added is listed along the bottom of the box. **Done** closes it.
 When a spell leaves something behind, **Cast spell** offers to put it on the board for
 you — already named, already timed, already linked to concentration. This box is for
 everything else: the things nothing in the app knows about. See
-[Spells](/docs/concepts/spells/).
+[Spells](/docs/fight/spells/).
 :::
 
 ## Two worked examples
@@ -141,8 +141,6 @@ use **Roll save** to record their roll, or just **Clear** it when they pass.
 
 ## Concentration
 
-Mark a creature as **concentrating**, and add the spell's name if you like. Since
-concentration is what keeps a spell going, **ending it removes that spell's effects from
-everyone at once** — break the caster's concentration on Bless and all three allies lose
-it together. Concentration also drops on its own when its timer runs out, and a creature
-can be asked to make a concentration check when it takes damage.
+A spell that a creature has to concentrate on is a special case: ending the concentration
+clears the spell's effects everywhere at once. That has its own page —
+[Concentration](/docs/fight/concentration/).
