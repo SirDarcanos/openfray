@@ -59,6 +59,8 @@ mid-fight:
 - the **skull** removes _everyone_ and starts fresh — it also clears the game log, so use
   it when you're done with that story entirely.
 
+![The skull and broom at the top of the tracker, labeled in red "Remove everyone" and "Remove foes only".](../../../assets/screens/clear-board.png)
+
 Both ask before they do it.
 
 :::note[Stop is not the same as clearing]

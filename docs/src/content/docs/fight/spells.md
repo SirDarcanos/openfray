@@ -12,7 +12,7 @@ or from the **Cast spell** button, adding a spell's effect, and rolling a group'
 There are two ways to cast.
 
 **From a creature.** Open its stat block and click a spell in its list. OpenFray fills in
-the save number and attack bonus from that creature, and spends one casting: an _At will_
+the save DC and attack bonus from that creature, and spends one casting: an _At will_
 spell is unlimited, while a _2/Day Each_ spell counts down per spell — burning a Fireball
 leaves its Invisibility untouched — and grays out when it's spent.
 
@@ -24,6 +24,8 @@ pick, because a stat block doesn't have spell slots to spend.
 **From the Cast spell button**, at the top of the screen. Search any spell — every spell
 in the [rule sets you've turned on](/docs/reference/settings/#rule-sets), plus your own —
 then pick **who is casting it**.
+
+![The Cast spell button outlined in red, its modal open with a caster picker set to Zara, a spell search, and a badged spell list.](../../../assets/screens/cast-spell-modal.png)
 
 Naming a caster is worth doing: OpenFray takes their save DC and spell attack bonus, and
 if the spell needs concentration it starts the caster concentrating, with the timer
@@ -48,7 +50,7 @@ you don't have to build it by hand:
 - **Hold Person** → Paralyzed, with the saving throw already set up;
 - **Mage Armor** → the new armor class, worked out from the target's Dexterity.
 
-Spells that only affect the caster (like Speak with Animals) go straight onto them — no
+Spells that only affect the caster (_Range: Self_, like Speak with Animals) go straight onto them — no
 need to pick a target. For a saving throw spell, OpenFray offers to put the effect on the
 creatures that **failed**.
 
@@ -58,11 +60,9 @@ change or clear it any time. For spells that only add extra damage (like Hex), y
 reminder badge — you add the extra dice yourself when you roll.
 :::
 
+![Casting Banishment: after the Ogre fails its save, the box offers to apply Banishment to the creatures that failed, dropping Incapacitated on them.](../../../assets/screens/gm-cast-spell.png)
+
 Every spell you cast is written into the log. When a spell needs concentration, OpenFray
 marks it as such, so ending concentration clears it everywhere at once.
 
-## Group saves
-
-A saving throw spell — a _Fireball_ that a whole group rolls against at once — opens the
-**group save** box, filled in from the spell. Rolling a group's save, with resistances and
-Evasion handled for you, has its own page: [Saving throws](/docs/fight/saves/#group-saves).
+![The game log with "Zara concentrates on Banishment" recorded below the Ogre's failed CHA save.](../../../assets/screens/game-log-spell-casted.png)

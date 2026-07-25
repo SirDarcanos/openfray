@@ -14,13 +14,11 @@ In the controls beside a creature's stat block, click **Concentrate**. You can a
 spell's name and, if you like, how long it lasts. Casting a concentration spell from
 [Cast spell](/docs/fight/spells/) starts this for you, with the timer already counting.
 
-<!-- TODO screenshot: concentration.png — a concentrating creature (the Concentrate control / badge) and the concentration-check prompt after damage. Highlight: the Concentrate control or badge, and the "Concentration — DC N" prompt. -->
+![The Concentrate control in use, with the game log recording a creature starting and ending concentration.](../../../assets/screens/set-concentration.gif)
 
-<!-- ![The Concentrate control and a creature's concentration badge, with the concentration check prompt after damage, outlined in red.](../../../assets/screens/concentration.png) -->
+## Ending concentration
 
-## Ending concentration clears the spell
-
-Concentration is what keeps the spell going, so **ending it removes that spell's effects
+Concentration is what keeps a spell going, so **ending it removes that spell's effects
 from everyone at once**. Break the caster's concentration on _Bless_ and all three blessed
 allies lose it together — you don't clear each one by hand.
 
@@ -38,3 +36,5 @@ and prompts you on the creature's row:
   own, and you tap **Maintained** or **Broken**.
 
 Breaking concentration this way clears the spell's effects just like ending it by hand.
+
+![The concentration-check prompt reading "Concentration — DC 10" with Maintained, Broken, and Roll CON save buttons in the controls.](../../../assets/screens/keep-concentration.png)

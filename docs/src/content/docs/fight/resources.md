@@ -14,30 +14,28 @@ Every creature gets one reaction a round — an opportunity attack, a readied ac
 _Shield_ spell. In the controls beside the stat block, click **Use reaction** when it
 spends one; the button changes to **Reaction used**.
 
-<!-- TODO screenshot: reaction-toggle.png — the reaction control. Highlight: Use reaction / Reaction used. -->
-
-<!-- ![The reaction control in the creature's controls, showing Use reaction, outlined in red.](../../../assets/screens/reaction-toggle.png) -->
+![A creature's Use reaction control being clicked in the controls beside its stat block.](../../../assets/screens/use-reaction.gif)
 
 The reaction refreshes at the **start of that creature's next turn**, so you don't have to
-reset it by hand.
+reset it by hand, although you can if you used it by mistake.
 
 ## Legendary actions
 
 A legendary creature can act between other creatures' turns. Its stat block has a
 **Legendary Actions** section, headed with how many it has this round — for example,
-_Legendary Actions (3/round)_.
+_Legendary Actions (3 of 3 left)_.
 
-<!-- TODO screenshot: legendary-actions.png — the Legendary Actions section in combat. Highlight: the "(3/round)" budget and a clickable action. -->
-
-<!-- ![The Legendary Actions section of a stat block in combat, with the per-round budget and a clickable action outlined in red.](../../../assets/screens/legendary-actions.png) -->
+![A dragon's Legendary Actions section headed "Legendary Actions (3 of 3 left)", listing three clickable actions.](../../../assets/screens/legendary-actions.png)
 
 Click a legendary action to spend it. Each one has a cost, and the header counts down as
 you spend from the round's budget. If the action rolls something — an attack, a save — it
 opens the [attack](/docs/fight/attacks/) or [save](/docs/fight/saves/) box. The budget
 refreshes at the start of the creature's turn.
 
-A creature with lair actions has a larger budget **in its lair**; the **In lair** toggle
-(below) switches to those counts.
+A creature with legendary actions has a larger budget **in its lair**; The **In lair** toggle marks the creature as fighting in its lair. It swaps to the lair
+counts for legendary resistance and legendary actions, which are often higher there.
+
+![The In lair checkbox, checked and outlined in red, beside the Use Legendary Resistance button in a creature's controls.](../../../assets/screens/lair-toggle.png)
 
 ## Legendary resistance
 
@@ -45,16 +43,13 @@ A creature with **Legendary Resistance** can turn a failed saving throw into a s
 times a day. Its stat block shows the section with a counter — _Legendary Resistance (3
 left)_ — and the controls have a **Use Legendary Resistance** button.
 
-<!-- TODO screenshot: legendary-resistance.png — the Legendary Resistance section and controls. Highlight: the "(N left)" header, Use Legendary Resistance, In lair. -->
-
-<!-- ![The Legendary Resistance counter and the Use Legendary Resistance button, with the In lair toggle, outlined in red.](../../../assets/screens/legendary-resistance.png) -->
+![The Legendary Resistance counter and the Use Legendary Resistance button, with the In lair toggle, outlined in red.](../../../assets/screens/legendary-resistance.png)
 
 You can spend it two ways: press **Use Legendary Resistance** directly, or, when the
 creature fails a save in the [save box](/docs/fight/saves/#turning-a-failed-save-into-a-success),
 convert that failure to a success there. Either way spends one use.
 
-The **In lair** toggle marks the creature as fighting in its lair. It swaps to the lair
-counts for legendary resistance and legendary actions, which are often higher there.
+![Resolving a Fireball save: after the Adult Blue Dragon fails, a red-outlined "Use LR (4)" button converts the failure into a success.](../../../assets/screens/effect-legendary-resistance.png)
 
 ## Recharge abilities
 
@@ -62,9 +57,7 @@ Some abilities — a breath weapon, a bite — come back on a die roll, shown as
 5–6** on the stat block. Use it and it grays out, spent. On the creature's next turn,
 OpenFray rolls to see whether it recharges, and makes it available again if it does.
 
-<!-- TODO screenshot: recharge.png — a recharge ability, spent and grayed out. Highlight: the "Recharge 5–6" label and the spent state. -->
-
-<!-- ![A recharge ability in a stat block, labeled Recharge 5–6 and grayed out after use, outlined in red.](../../../assets/screens/recharge.png) -->
+![A recharge ability in a stat block, labeled Recharge 5–6 and grayed out after use, outlined in red.](../../../assets/screens/spent-recharge-ability.png)
 
 ## Limited-use actions and spells
 
