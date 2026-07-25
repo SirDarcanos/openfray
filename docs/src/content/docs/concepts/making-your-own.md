@@ -23,8 +23,7 @@ skills, senses, traits, actions, reactions, legendary actions and spellcasting.
 
 ![The creature editor, with the hit-dice fields and the derived average hit points outlined in red.](../../../assets/screens/custom-creature.png)
 
-**You mark what's true, and OpenFray does the arithmetic.** This is the part worth
-knowing, because it saves the most time and the most mistakes:
+**You enter what's true about the creature, and OpenFray does the arithmetic** from it:
 
 - Give it a **challenge rating**, in Identity, and OpenFray knows its proficiency bonus.
   Everything below depends on it, so set it early.
@@ -39,8 +38,8 @@ knowing, because it saves the most time and the most mistakes:
   stat blocks do it.
 - For spellcasting, pick the **ability**; the save DC and spell attack bonus follow.
 
-Everything derived updates live as you type, so you can watch the numbers land — and if
-one looks wrong, it's the ability score or the CR that needs fixing, not the total.
+Every derived number updates as you type, so you can check them as you go. If one looks
+wrong, fix the ability score or the challenge rating behind it, not the total.
 
 ### Importing instead of typing
 

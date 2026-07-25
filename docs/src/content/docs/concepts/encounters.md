@@ -32,17 +32,16 @@ concentration all stay as they are. Use it when you clicked ahead by mistake, no
 replay a turn.
 :::
 
-**Pause** holds the fight — the turn marker disappears so nobody's "up", and the timers in
-the footer stop counting. It's for the break, the rules argument, the pizza. Press it
-again to carry on exactly where you were.
+**Pause** holds the fight while the session stops. The turn marker disappears so nobody is
+"up", and the footer timers stop counting. Press it again to carry on where you left off.
 
-**Stop** ends the fight. Everyone stays on the board with their hit points, effects and
+**Stop** ends the fight. Everyone stays on the board with their hit points, effects, and
 conditions intact; the round counter resets and the ▶ button comes back. Nothing is lost,
-so stopping by mistake costs you nothing.
+so stopping by mistake is safe.
 
-Two clocks run in the footer while you fight: **Real**, the actual time you've spent
-(pauses don't count), and **In-game**, six seconds per round. The second one is the one
-to quote when a player asks whether their one-minute spell is still up.
+Two clocks run in the footer while you fight: **Real**, the time you've actually spent
+(pauses don't count), and **In-game**, six seconds per round. Use the in-game clock to
+tell a player how long a timed spell has left.
 
 ## What moving to the next turn does
 
@@ -74,9 +73,8 @@ grayed out and skipped, so the order holds steady if they come back.
 
 ## The summary
 
-When the last enemy is defeated, OpenFray asks once whether the fight is over — it won't
-nag, and you can say no if a second wave is coming. Say yes and you get a summary of what
-just happened:
+When the last foe is defeated, OpenFray asks once whether the fight is over. Say no if a
+second wave is coming; it won't ask again. Say yes and you get a summary of the fight:
 
 - **the outcome** — victory, defeat, or simply ended;
 - **experience earned**, and what that is per player — unless your campaign levels up by

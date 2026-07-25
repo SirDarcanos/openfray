@@ -33,7 +33,7 @@ you type in what the player rolled instead.
 ### Throwaway creatures
 
 **Quick add** drops in something you're inventing on the spot and won't reuse — just a
-name, hit points, and armor class. Mark it a foe to keep it with the enemies.
+name, hit points, and armor class. Mark it a foe to group it with the other foes.
 
 ## Reading a row
 

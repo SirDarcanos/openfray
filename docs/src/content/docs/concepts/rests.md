@@ -46,7 +46,7 @@ applies the lot to every friendly creature:
   Those are the ones you're deliberately holding on to, so OpenFray leaves them be;
 - the short-rest counter resets.
 
-Enemies are untouched.
+Foes are untouched.
 
 ## Clearing the board
 

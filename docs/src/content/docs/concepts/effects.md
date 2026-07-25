@@ -98,9 +98,9 @@ you just don't want to forget it two rounds from now.
 2. **Duration → Until removed**, because it ends when the story says so.
 3. Type the note in **Reminder** and press **Add**.
 
-It becomes a badge on their row like any other effect. OpenFray won't act on it — it
-can't know what you meant — but it will keep it in front of you until you clear it. That's
-the deal with reminders: you get the memory, you keep the judgment.
+It becomes a badge on their row like any other effect. OpenFray shows the reminder and
+keeps it in front of you until you clear it, but it doesn't apply any effect for you — a
+reminder is a note, and you decide what it means.
 
 ## Where effects show up
 

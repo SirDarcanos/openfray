@@ -9,13 +9,13 @@ want to save your game.
 
 ## The screen
 
-The console is one screen split into three columns. Nothing important is hidden in a
-menu — what you need mid-fight is in front of you.
+The console is one screen, split into three columns. Everything you need during a fight is
+on it — nothing important is hidden in a menu.
 
 ![The OpenFray console during a fight, with five areas outlined in red and numbered one to five.](../../assets/screens/layout.png)
 
 1. **The tracker.** Everyone in the fight, in the order they act, with hit points, armor
-   class, and any conditions on them. This is the column you watch.
+   class, and any conditions on them. This is the column you watch during a fight.
 2. **The stat block.** Everything about whoever you clicked on — abilities, attacks,
    spells. Click an attack here to roll it.
 3. **Controls and the log.** Buttons for the creature you've selected (add an effect,
@@ -69,8 +69,8 @@ Click **Start combat** and you're in round 1. From there:
 - **Pause** holds the fight so you can pick it up later. **Stop** ends it and takes you
   back to setup, keeping everyone on the board.
 
-When the last enemy goes down, OpenFray offers to end the fight and shows you a summary
-of how it went.
+When the last foe goes down, OpenFray offers to end the fight and shows you a summary of
+how it went.
 
 ## Saving your game
 

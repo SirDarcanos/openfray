@@ -3,9 +3,9 @@ title: Spells
 description: Casting a spell, adding its effect to the board, and rolling a whole group's saving throw at once.
 ---
 
-OpenFray helps you _run_ a spell without playing the rulebook at you. It handles the
-dice, offers to put the spell's effect on the board, and shows you the spell's card so
-you can read what it does.
+Casting a spell in OpenFray rolls its dice, offers to put its effect on the board, and
+shows you its card so you can read what it does. This page covers casting from a creature
+or from the **Cast spell** button, adding a spell's effect, and rolling a group's save.
 
 ## Casting a spell
 
@@ -16,8 +16,8 @@ the save number and attack bonus from that creature, and spends one casting: an 
 spell is unlimited, while a _2/Day Each_ spell counts down per spell — burning a Fireball
 leaves its Invisibility untouched — and grays out when it's spent.
 
-Monster spells cast at the level printed on the stat block. There's no upcasting to pick,
-because a stat block doesn't have spell slots to spend.
+Creature spells cast at the level printed on the stat block. There's no upcasting to
+pick, because a stat block doesn't have spell slots to spend.
 
 ![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labeled.](../../../assets/screens/cast-spell.png)
 
@@ -63,15 +63,15 @@ marks it as such, so ending concentration clears it everywhere at once.
 
 ## Group saves
 
-**Group save** is the Fireball moment: one spell, a whole group rolling against it at
-once. Open it from the top of the screen, or let a saving throw spell open it for you.
+**Group save** rolls one spell's saving throw for a whole group at once — the Fireball
+case. Open it from the top of the screen, or let a saving throw spell open it for you.
 
 ![The Group save box, with the DC, the on-save rule, the damage field, the target list and the Roll saves button outlined in red.](../../../assets/screens/group-save.png)
 
 1. Pick the ability and the number to beat, and what a successful save earns — half
    damage, no damage, or the effect simply doesn't happen. Casting a spell fills all of
    this in for you.
-2. Choose who's rolling. Your players and the enemies are listed separately.
+2. Choose who's rolling. Your players and the foes are listed separately.
 3. Type the damage — a formula like `8d6`, or a flat number if the player already rolled
    it.
 4. Click **Roll saves**. OpenFray rolls for the creatures, working in their save bonuses
