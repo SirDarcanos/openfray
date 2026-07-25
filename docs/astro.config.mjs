@@ -2,6 +2,21 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+// Load Fathom in production builds only (`astro build`), never on the dev server / localhost.
+const isProd = process.argv.includes('build');
+const fathomHead = isProd
+  ? [
+      {
+        tag: /** @type {const} */ ('script'),
+        attrs: {
+          src: 'https://cdn.usefathom.com/script.js',
+          'data-site': 'CZDKZIAS',
+          defer: true,
+        },
+      },
+    ]
+  : [];
+
 // The OpenFray handbook. Built separately (like the app under /console) and merged
 // into dist/docs by scripts/assemble-site.mjs, so it lives at openfray.app/docs
 // without touching the custom marketing homepage. `base` prefixes every route.
@@ -19,18 +34,9 @@ export default defineConfig({
         alt: 'OpenFray',
       },
       // Fathom analytics — privacy-friendly, cookieless (same site id as the console
-      // and marketing site). The CSP in site/public/_headers already allows
-      // cdn.usefathom.com across the whole deploy, including /docs.
-      head: [
-        {
-          tag: 'script',
-          attrs: {
-            src: 'https://cdn.usefathom.com/script.js',
-            'data-site': 'CZDKZIAS',
-            defer: true,
-          },
-        },
-      ],
+      // and marketing site), production only. The CSP in site/public/_headers already
+      // allows cdn.usefathom.com across the whole deploy, including /docs.
+      head: fathomHead,
       customCss: ['./src/styles/theme.css'],
       social: [
         {
