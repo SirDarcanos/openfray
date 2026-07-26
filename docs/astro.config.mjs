@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import sitemap from '@astrojs/sitemap';
 
 // Load Fathom in production builds only (`astro build`), never on the dev server / localhost.
 const isProd = process.argv.includes('build');
@@ -32,6 +33,12 @@ export default defineConfig({
       logo: {
         src: './src/assets/mark.svg',
         alt: 'OpenFray',
+      },
+      // Extends Starlight's built-in <head> (title, canonical, description, base OG and
+      // Twitter tags) with the pieces it doesn't emit: og:image, the remaining Twitter
+      // card tags, keywords, and JSON-LD structured data.
+      components: {
+        Head: './src/components/Head.astro',
       },
       // Fathom analytics — privacy-friendly, cookieless (same site id as the console
       // and marketing site), production only. The CSP in site/public/_headers already
@@ -105,5 +112,9 @@ export default defineConfig({
         },
       ],
     }),
+    // Emits /docs/sitemap-index.xml (base-prefixed), which Starlight's <head> already
+    // links to. The marketing site emits its own sitemap at the domain root; robots.txt
+    // points crawlers at both.
+    sitemap(),
   ],
 });
