@@ -25,11 +25,12 @@ which rules you're looking at:
 
 ## Creatures
 
-Every creature you can use from the [rule sets you selected](#rule-sets), with its full stat block. This is the same list you pick from
-when you click **Add creature**.
+Every creature you can use from the [rule sets you selected](#rule-sets), with its full
+stat block. This is the same list you pick from when you click **Add creature**.
 
 Each row is badged with the book it came from and which rules it uses, so you always know
-what you're looking at. If it's one of your homebrew creations, the badge will show **Custom**.
+what you're looking at. If it's one of your homebrew creations, the badge will show
+**Custom**.
 
 ## Spells
 
@@ -44,13 +45,15 @@ senses, and private GM notes — and drop them into any fight instead of typing 
 again.
 
 :::note[Sign in required]
-Saving and reusing player characters requires you to sign in with a free Google or Discord account.
+Saving and reusing player characters requires you to sign in with a free Google or Discord
+account.
 :::
 
 ![The Characters tab with a saved character selected, its stats and GM notes shown, and the Add to encounter button outlined in red.](../../../assets/screens/characters-tab.png)
 
-The campaign each character belongs to is shown beside their name in the list, so a table's party stays recognisable when you
-run more than one game. Click the **Add to encounter** button to add them straight on the initiative tracker.
+The campaign each character belongs to is shown beside their name in the list, so a
+table's party stays recognizable when you run more than one game. Click the **Add to
+encounter** button to add them straight on the initiative tracker.
 
 ## Campaigns
 
@@ -66,18 +69,23 @@ Saving and using campaigns requires you to sign in with a free Google or Discord
 The compendium shows the books you've turned on. OpenFray ships with:
 
 - **Core Rules 2024** (DnD 5.5e) — the newer rules. On by default.
-- **Core Rules 2014** (DnD 5e) — the older rules. Turn this on if that's what your table plays.
-- **Tome of Beasts 1, 2, and 3** (DnD 5e) — three books of extra creatures from Kobold Press.
+- **Core Rules 2014** (DnD 5e) — the older rules. Turn this on if that's what your table
+  plays.
+- **Tome of Beasts 1, 2, and 3** (DnD 5e) — three books of extra creatures from Kobold
+  Press.
 
-Select the ones your table uses in **Settings**. See [Settings & appearance](/docs/reference/settings/#rule-sets).
+Select the ones your table uses in **Settings**. See
+[Settings & appearance](/docs/reference/settings/#rule-sets).
 
 ## Homebrew content
 
-You can build your own **creatures** and **spells** in a full editor, and
-they're kept in your library next to the built-in ones. See [Build your own](/docs/library/making-your-own/).
+You can build your own **creatures** and **spells** in a full editor, and they're kept in
+your library next to the built-in ones. See
+[Build your own](/docs/library/making-your-own/).
 
 :::note[Sign in required]
-Creating homebrew creatures and spells requires you to sign in with a free Google or Discord account.
+Creating homebrew creatures and spells requires you to sign in with a free Google or
+Discord account.
 :::
 
 To turn a D&D&nbsp;Beyond creature into an

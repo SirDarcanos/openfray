@@ -8,12 +8,14 @@ keywords:
   - custom stat block
 ---
 
-The built-in books don't have everything — some famous creatures aren't in the Core Rules at
-all, and your table has its own homebrew creations. With OpenFray's homebrew content editor you can build your own,
-and they sit in your library next to the built-in ones, ready to drop into any fight.
+The built-in books don't have everything — some famous creatures aren't in the Core
+Rules at all, and your table has its own homebrew creations. With OpenFray's homebrew
+content editor you can build your own, and they sit in your library next to the built-in
+ones, ready to drop into any fight.
 
 :::note[Sign in required]
-Homebrew creations are stored in your account. This requires you to sign in with a free Google or Discord account.
+Homebrew creations are stored in your account. This requires you to sign in with a free
+Google or Discord account.
 :::
 
 Both editors live in the [compendium](/docs/library/compendium/): open the
@@ -34,7 +36,8 @@ skills, senses, traits, actions, reactions, legendary actions and spellcasting.
 - In **Defense & HP**, give the **hit dice** — how many, which die, and any modifier. The
   average appears beside them (_"= 17 HP avg"_).
 - In **Abilities & saves**, type the six scores and tick **Proficient** on the saves it's
-  good at. The bonus is the modifier plus the proficiency bonus, calculated for you automatically.
+  good at. The bonus is the modifier plus the proficiency bonus, calculated for you
+  automatically.
 - Skills work the same way — tick proficient, tick expertise where it applies.
 - For an attack, pick **which ability** it swings with. The to-hit is that ability's
   modifier plus proficiency, and the modifier is baked into the damage the way printed
@@ -56,7 +59,8 @@ What lands in your library is an ordinary custom creature: editable, yours, and 
 different from one you built by hand.
 
 :::tip[Import your existing homebrew creatures]
-If you already created homebrew creatures on D&D Beyond, you can import them into OpenFray with the importer.
+If you already created homebrew creatures on D&D Beyond, you can import them into OpenFray
+with the importer.
 :::
 
 ## Creating a homebrew spell
@@ -88,6 +92,7 @@ Your creatures and spells:
 - can be edited or deleted later from the bottom of their own card.
 
 Editing one **doesn't change a fight already in progress** — a creature you added to the
-initiative tracker is a copy of the one in the compendium, taken at the moment you added it.
+initiative tracker is a copy of the one in the compendium, taken at the moment you added
+it.
 
 You need to add it again to a combat if you want the changes to show.

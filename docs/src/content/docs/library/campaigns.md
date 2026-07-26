@@ -10,15 +10,16 @@ keywords:
 
 A **campaign** is where you keep one game together. It holds the rules your table uses,
 so you set them once and they apply to every fight you run. Pick the campaign you're
-running from the box at the bottom of the console. Without a campaign OpenFray just uses the default rules.
+running from the box at the bottom of the console. Without a campaign OpenFray just uses
+the default rules.
 
 Make and edit campaigns on the **Campaigns** tab of the
 [compendium](/docs/library/compendium/#campaigns). Each one shows its rules at a glance,
 and you can change them right there.
 
 :::note[Sign in required]
-Creating and using a campaign and its rules requires an account. Sign in with a free Google or Discord account.
-Without an account OpenFray uses the default rules.
+Creating and using a campaign and its rules requires an account. Sign in with a free
+Google or Discord account. Without an account OpenFray uses the default rules.
 :::
 
 ## Which rules it's for
@@ -55,13 +56,15 @@ what applies its rules to the fight in front of you:
 
 ![The campaign picker in the console footer, open, listing the available campaigns.](../../../assets/screens/campaign-picker.png)
 
-Selecting a campaign does not affect the combatants already added in the initiative tracker. Add new creatures to recalculate their hit points,
-or add new player characters as necessary.
+Selecting a campaign does not affect the combatants already added in the initiative
+tracker. Add new creatures to recalculate their hit points, or add new player characters
+as necessary.
 
 ## Leveling up: experience or milestone
 
-- **Experience points** — the usual way. The experience points awarded by each creature shows on stat blocks and in the
-  end-of-fight summary, as a total and split for each player on the board (exluding friendly NPCs).
+- **Experience points** — the usual way. The experience points awarded by each creature
+  show on stat blocks and in the end-of-fight summary, as a total and split for each
+  player on the board (excluding friendly NPCs).
 - **Milestone** — you level the party up at story moments, so experience is just noise.
   Pick this and OpenFray hides it during a fight and in the summary.
 
