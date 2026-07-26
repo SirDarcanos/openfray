@@ -1,6 +1,11 @@
 ---
 title: Spells
-description: Casting a spell, adding its effect to the board, and rolling a whole group's saving throw at once.
+description: Cast a Dungeons and Dragons 5e spell, add its effect to the board, and roll a whole group's saving throw at once.
+keywords:
+  - Dungeons and Dragons 5e spells
+  - DnD 5e spellcasting tracker
+  - cast a 5e spell
+  - group saving throw
 ---
 
 Casting a spell in OpenFray rolls its dice, offers to put its effect on the board, and

@@ -1,10 +1,15 @@
 ---
 title: Build your own creatures & spells
-description: Make a creature or a spell that isn't in the books, and keep it in your own library alongside the built-in ones.
+description: Make a Dungeons and Dragons 5e creature or spell that isn't in the books, and keep it in your own library alongside the built-in ones.
+keywords:
+  - custom Dungeons and Dragons 5e creatures
+  - homebrew DnD 5e monsters
+  - build a 5e spell
+  - custom stat block
 ---
 
 The built-in books don't have everything — some famous creatures aren't in the SRD at
-all, and your table has its own inventions. So you can build your own, and they sit in
+all, and your table has its own homebrew. So you can build your own, and they sit in
 your library next to the built-in ones, ready to drop into any fight.
 
 :::note[Needs an account]

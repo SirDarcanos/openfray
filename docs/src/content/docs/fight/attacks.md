@@ -1,6 +1,11 @@
 ---
 title: Attacks & damage
-description: Roll a creature's attack from its stat block, apply the damage, and let OpenFray handle resistances, immunities, and critical hits.
+description: Roll a creature's attack from its stat block in a Dungeons and Dragons 5e fight, apply the damage, and let OpenFray handle resistances, immunities, and critical hits.
+keywords:
+  - Dungeons and Dragons 5e attack rolls
+  - DnD 5e damage tracker
+  - 5e resistance and immunity
+  - to-hit and critical hits
 ---
 
 When a creature attacks, you roll it from its stat block and OpenFray does the rest: the

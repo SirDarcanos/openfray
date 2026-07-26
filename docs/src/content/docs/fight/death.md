@@ -1,6 +1,11 @@
 ---
 title: Death & dying
-description: What happens when a creature drops to 0 hit points — death saves for players, and how OpenFray tracks who is down, dead, or stable.
+description: What happens when a creature drops to 0 hit points in Dungeons and Dragons 5e — death saves for players, and how OpenFray tracks who is down, dead, or stable.
+keywords:
+  - Dungeons and Dragons 5e death saves
+  - DnD 5e death saving throws
+  - 0 hit points 5e
+  - dying and stable tracker
 ---
 
 When a creature reaches 0 hit points it doesn't leave the fight. A foe is marked dead; a

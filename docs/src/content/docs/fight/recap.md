@@ -1,11 +1,16 @@
 ---
 title: End of the fight
-description: The summary OpenFray shows when a fight ends — outcome, experience, timings, damage totals, and standout hits.
+description: The summary OpenFray shows when a Dungeons and Dragons 5e fight ends — outcome, experience points, timings, damage totals, and standout hits.
+keywords:
+  - Dungeons and Dragons 5e combat recap
+  - DnD 5e experience points
+  - 5e encounter summary
+  - combat damage totals
 ---
 
-When a fight ends, OpenFray shows a summary of how it went: who won, the experience earned,
-how long it took, and a few standout numbers. This page covers what the summary shows and
-when it appears.
+When a fight ends, OpenFray shows a summary of how it went: who won, the experience points
+earned, how long it took, and a few standout numbers. This page covers what the summary
+shows and when it appears.
 
 ## When the summary appears
 

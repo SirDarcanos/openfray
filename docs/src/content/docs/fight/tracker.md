@@ -1,10 +1,16 @@
 ---
 title: The tracker & rows
-description: The three columns of the console, what each row in the tracker shows, and how to change a creature's hit points.
+description: The three columns of the combat console, what each row in the initiative tracker shows, and how to change a creature's hit points.
+keywords:
+  - DnD 5e initiative tracker
+  - Dungeons and Dragons 5e combat tracker
+  - 5e hit point tracker
+  - combat console layout
 ---
 
 The **tracker** is the left column of the console — the list of everyone in the fight, in
-the order they act. It's the column you watch. This page covers what a row shows, and how to change hit points.
+initiative order. It's the column you watch. This page covers what a row shows, and how to
+change hit points.
 
 ## Reading a row
 

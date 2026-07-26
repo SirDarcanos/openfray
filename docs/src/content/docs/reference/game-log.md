@@ -1,6 +1,11 @@
 ---
 title: The game log
-description: The running record of everything that happens in a fight — the sidebar feed, the full history grouped by round, and how to filter it.
+description: The running record of everything that happens in a Dungeons and Dragons 5e fight — the sidebar feed, the full history grouped by round, and how to filter it.
+keywords:
+  - Dungeons and Dragons 5e combat log
+  - DnD 5e roll history
+  - 5e encounter log
+  - initiative round history
 ---
 
 The **game log** is the record of everything that happens in a fight: every roll, every

@@ -1,11 +1,17 @@
 ---
 title: Getting started
-description: Open the console, add your creatures and players, start your first fight, and see where to go next.
+description: Open the OpenFray combat console, add your creatures and players, start your first Dungeons and Dragons 5e fight, and see where to go next.
+keywords:
+  - how to run Dungeons and Dragons 5e combat
+  - DnD 5e combat console tutorial
+  - start a 5e encounter
+  - Game Master quick start
 ---
 
-OpenFray runs in your web browser at [openfray.app/console](/console/). There's nothing to
-download and no account needed. This page runs you through your first fight, start to
-finish. You can [sign in](#saving-your-game) later if you want to save your game.
+OpenFray is a combat console and initiative tracker for Dungeons and Dragons. It runs in
+your web browser at [openfray.app/console](/console/). There's nothing to download and no
+account needed. This page runs you through your first fight, start to finish. You can
+[sign in](#saving-your-game) later if you want to save your game.
 
 ## The console at a glance
 

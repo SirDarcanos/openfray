@@ -1,6 +1,11 @@
 ---
 title: Saving throws
-description: Resolve a saving throw forced by an action or a spell — one creature or a whole group at once — with resistances and Evasion handled for you.
+description: Resolve a Dungeons and Dragons 5e saving throw forced by an action or a spell — one creature or a whole group at once — with resistances and Evasion handled for you.
+keywords:
+  - Dungeons and Dragons 5e saving throws
+  - DnD 5e group save
+  - 5e Fireball save
+  - mass saving throw tracker
 ---
 
 Saving throws come up two ways: an action forces one (e.g. a dragon's breath, a creature's

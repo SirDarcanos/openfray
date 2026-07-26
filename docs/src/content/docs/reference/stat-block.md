@@ -1,6 +1,11 @@
 ---
 title: The stat block
-description: A reference for every part of a creature's stat block in OpenFray, and which parts you can click during a fight.
+description: A reference for every part of a Dungeons and Dragons 5e creature's stat block in OpenFray, and which parts you can click during a fight.
+keywords:
+  - Dungeons and Dragons 5e stat block
+  - DnD 5e monster stat block
+  - 5e creature reference
+  - read a 5e stat block
 ---
 
 The **stat block** is the full picture of a creature — the middle column when you select

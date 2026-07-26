@@ -1,6 +1,11 @@
 ---
 title: Effects & conditions
-description: How OpenFray tracks conditions, advantage and disadvantage, bonuses, reminders, and effects that a saving throw ends.
+description: How OpenFray tracks Dungeons and Dragons 5e conditions, advantage and disadvantage, bonuses, reminders, and effects that a saving throw ends.
+keywords:
+  - Dungeons and Dragons 5e conditions
+  - DnD 5e status effects tracker
+  - 5e advantage and disadvantage
+  - condition and effect tracker
 ---
 
 During a fight, little things pile up: this creature is frightened, that one has

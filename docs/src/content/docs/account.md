@@ -1,6 +1,11 @@
 ---
 title: Your account & what's saved
-description: What works without an account, what signing in adds, where your game is stored, and how to delete it all.
+description: What works in the OpenFray combat console without an account, what signing in adds, where your Dungeons and Dragons 5e game is stored, and how to delete it all.
+keywords:
+  - OpenFray account
+  - save Dungeons and Dragons 5e encounters
+  - DnD 5e combat console sign in
+  - sync fights across devices
 ---
 
 OpenFray works with no account at all. Signing in lets you **keep** things, not

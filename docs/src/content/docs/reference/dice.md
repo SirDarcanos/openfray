@@ -1,6 +1,11 @@
 ---
 title: Dice & roll formulas
-description: Fair, honest dice you can check, the formulas the roll box understands, and how effects are worked into a roll.
+description: Fair, honest Dungeons and Dragons 5e dice you can check, the formulas the roll box understands, and how effects are worked into a roll.
+keywords:
+  - Dungeons and Dragons 5e dice roller
+  - DnD 5e dice formulas
+  - 5e advantage dice
+  - fair virtual dice
 ---
 
 For a fight to feel fair, the dice have to be fair — and everyone has to be able to see

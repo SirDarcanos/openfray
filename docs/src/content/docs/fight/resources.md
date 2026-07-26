@@ -1,6 +1,11 @@
 ---
 title: Creature resources
-description: Track a creature's legendary actions, legendary resistance, recharge abilities, limited-use actions, spell uses, and reaction as you spend them.
+description: Track a Dungeons and Dragons 5e creature's legendary actions, legendary resistance, recharge abilities, limited-use actions, spell uses, and reaction as you spend them.
+keywords:
+  - Dungeons and Dragons 5e legendary actions
+  - DnD 5e legendary resistance tracker
+  - 5e recharge abilities
+  - monster resource tracker
 ---
 
 Creatures come with resources that run down over a fight: a reaction each round, legendary

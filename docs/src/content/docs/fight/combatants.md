@@ -1,6 +1,11 @@
 ---
 title: Creatures, players & quick adds
-description: The three kinds of thing you can add to a fight, what OpenFray tracks for each, and how it names duplicates.
+description: The three kinds of combatant you can add to a Dungeons and Dragons 5e fight, what OpenFray tracks for each, and how it names duplicates.
+keywords:
+  - Dungeons and Dragons 5e creatures
+  - DnD 5e monster tracker
+  - add players and NPCs
+  - 5e combatant tracker
 ---
 
 Every combatant in a fight is added in one of three ways. The difference is how much OpenFray

@@ -1,6 +1,11 @@
 ---
 title: Campaigns & house rules
-description: Set your table's rules once — crit damage, surprise, hit points, initiative ties, and how you level up — and they apply to every fight.
+description: Set your table's Dungeons and Dragons 5e house rules once — crit damage, surprise, hit points, initiative ties, and how you level up — and they apply to every fight.
+keywords:
+  - Dungeons and Dragons 5e house rules
+  - DnD 5e campaign settings
+  - 5e optional rules
+  - Game Master campaign tracker
 ---
 
 A **campaign** is where you keep one game together. It holds the rules your table uses,

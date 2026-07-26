@@ -1,6 +1,11 @@
 ---
 title: The importer
-description: A free browser add-on that turns a D&D Beyond creature page into an OpenFray creature, so you don't have to type it in yourself.
+description: A free browser add-on that turns a D&D Beyond creature page into an OpenFray Dungeons and Dragons 5e creature, so you don't have to type it in yourself.
+keywords:
+  - D&D Beyond importer
+  - Dungeons and Dragons 5e creature import
+  - DnD 5e stat block importer
+  - import monsters to OpenFray
 ---
 
 The **OpenFray Importer** is a free browser add-on. It reads a creature's page on

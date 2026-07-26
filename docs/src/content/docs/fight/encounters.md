@@ -1,9 +1,14 @@
 ---
 title: Encounters & initiative
-description: How the tracker puts creatures in order, runs rounds and turns, and lets you move forward and back.
+description: How the OpenFray initiative tracker puts creatures in order for a Dungeons and Dragons 5e fight, runs rounds and turns, and lets you move forward and back.
+keywords:
+  - DnD 5e initiative tracker
+  - Dungeons and Dragons initiative order
+  - 5e combat rounds and turns
+  - Game Master encounter tracker
 ---
 
-An **encounter** is the fight you're running: everyone in it, the order they act, and
+An **encounter** is the fight you're running: everyone in it, the initiative order, and
 which round you're on. The left column — the **tracker** — is where it all happens.
 
 ## Setting the order

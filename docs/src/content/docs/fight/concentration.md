@@ -1,6 +1,11 @@
 ---
 title: Concentration
-description: Mark a creature as concentrating on a spell, clear its effects everywhere when concentration ends, and handle the check when it takes damage.
+description: Track Dungeons and Dragons 5e spell concentration — mark a creature as concentrating, clear its effects everywhere when concentration ends, and handle the check when it takes damage.
+keywords:
+  - Dungeons and Dragons 5e concentration
+  - DnD 5e concentration tracker
+  - 5e concentration check
+  - spell concentration
 ---
 
 Some spells last only while their caster keeps **concentration** — and hold it until the

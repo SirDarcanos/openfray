@@ -1,6 +1,11 @@
 ---
 title: Rests & clearing the board
-description: Short and long rests, what each one restores, and how to clear the board before the next encounter.
+description: Short and long rests in Dungeons and Dragons 5e, what each one restores, and how to clear the board before the next encounter.
+keywords:
+  - Dungeons and Dragons 5e short and long rest
+  - DnD 5e rest tracker
+  - 5e hit dice recovery
+  - clear the encounter board
 ---
 
 Fights don't happen back to back. Between them the party rests, and you clear the board
