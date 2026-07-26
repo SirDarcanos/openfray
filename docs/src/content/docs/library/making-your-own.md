@@ -8,35 +8,33 @@ keywords:
   - custom stat block
 ---
 
-The built-in books don't have everything — some famous creatures aren't in the SRD at
-all, and your table has its own homebrew. So you can build your own, and they sit in
-your library next to the built-in ones, ready to drop into any fight.
+The built-in books don't have everything — some famous creatures aren't in the Core Rules at
+all, and your table has its own homebrew creations. With OpenFray's homebrew content editor you can build your own,
+and they sit in your library next to the built-in ones, ready to drop into any fight.
 
-:::note[Needs an account]
-Your creations are saved to your account, so this needs you to be signed in. Everything
-else in the compendium works without one.
+:::note[Sign in required]
+Homebrew creations are stored in your account. This requires you to sign in with a free Google or Discord account.
 :::
 
 Both editors live in the [compendium](/docs/library/compendium/): open the
 **Creatures** or **Spells** tab and use the create button.
 
-## Making a creature
+## Creating a homebrew creature
 
 The form is a whole stat block, broken into collapsible sections you can work through in
 any order — **Identity**, **Defense & HP**, **Speed**, **Abilities & saves**, then
 skills, senses, traits, actions, reactions, legendary actions and spellcasting.
 
-![The creature editor, with the hit-dice fields and the derived average hit points outlined in red.](../../../assets/screens/custom-creature.png)
+![The creature editor on a Bandit Gunner, with its hit dice giving a derived 17 HP average and the ability scores filled in.](../../../assets/screens/custom-creature.png)
 
-**You enter what's true about the creature, and OpenFray does the arithmetic** from it:
+**You enter the stats of the creature, and OpenFray does the math** from it for you:
 
 - Give it a **challenge rating**, in Identity, and OpenFray knows its proficiency bonus.
   Everything below depends on it, so set it early.
 - In **Defense & HP**, give the **hit dice** — how many, which die, and any modifier. The
-  average appears beside them (_"= 17 HP avg"_), and that's the number the creature
-  enters play with.
+  average appears beside them (_"= 17 HP avg"_).
 - In **Abilities & saves**, type the six scores and tick **Proficient** on the saves it's
-  good at. The bonus is the modifier plus the proficiency bonus; you never type it.
+  good at. The bonus is the modifier plus the proficiency bonus, calculated for you automatically.
 - Skills work the same way — tick proficient, tick expertise where it applies.
 - For an attack, pick **which ability** it swings with. The to-hit is that ability's
   modifier plus proficiency, and the modifier is baked into the damage the way printed
@@ -57,7 +55,11 @@ gives you into **Import a creature**, on the Creatures tab:
 What lands in your library is an ordinary custom creature: editable, yours, and no
 different from one you built by hand.
 
-## Making a spell
+:::tip[Import your existing homebrew creatures]
+If you already created homebrew creatures on D&D Beyond, you can import them into OpenFray with the importer.
+:::
+
+## Creating a homebrew spell
 
 The spell form covers the card, in the same collapsible sections: **Identity** (name,
 level, school, rules version), **Casting** (time, range, duration, concentration, ritual,
@@ -67,10 +69,7 @@ utility spell: OpenFray shows the card and lets you adjudicate.
 
 ![The custom spell editor, showing the Identity, Casting, Description and Mechanics sections.](../../../assets/screens/custom-spell.png)
 
-Two things are worth calling out.
-
-**There's no save DC.** A spell doesn't own its DC — the creature casting it does. Say
-the spell needs a Dexterity save, and OpenFray uses the caster's number when it's cast.
+One thing is worth calling out.
 
 **Casting at higher levels** usually follows a pattern, so you describe the pattern once:
 give the extra damage **per slot above the spell's base level** (or, for a cantrip, per
@@ -78,7 +77,7 @@ tier as the caster levels up), and OpenFray expands that into the actual damage 
 level, showing you the result as you type. For spells that don't follow a neat pattern,
 switch to **Edit each level** and set them by hand.
 
-## Living with your own content
+## Where the homebrew creations live
 
 Your creatures and spells:
 
@@ -89,4 +88,6 @@ Your creatures and spells:
 - can be edited or deleted later from the bottom of their own card.
 
 Editing one **doesn't change a fight already in progress** — a creature you added to the
-board is a copy, taken at the moment you added it. Add it again to pick up your edits.
+initiative tracker is a copy of the one in the compendium, taken at the moment you added it.
+
+You need to add it again to a combat if you want the changes to show.

@@ -12,14 +12,16 @@ The **OpenFray Importer** is a free browser add-on. It reads a creature's page o
 D&D&nbsp;Beyond and turns it into an OpenFray creature — so you don't have to type a
 whole stat block in by hand.
 
-## Get it
+## Download the importer
 
-- **Chrome or Edge** — [OpenFray Importer on the Chrome Web
+- **Google Chrome or Edge** — [OpenFray Importer on the Chrome Web
   Store](https://chromewebstore.google.com/detail/openfray-importer/cjooflanhdpfddpppllaelhlfpdinjfk).
   There's a link to it in OpenFray's **Settings** too.
-- **Firefox** — on the way.
+- **Firefox** — coming soon.
 
-Once it's installed you'll see the OpenFray icon in your browser's toolbar.
+Once it's installed pin it to your browser's toolbar for easy access.
+
+![Chrome's Extensions menu, with the pin icon beside OpenFray Importer outlined in red to pin it to the toolbar.](../../../assets/screens/importer-browser-pin.png)
 
 ## How to use it
 
@@ -51,10 +53,21 @@ The importer maps the whole stat block, including:
 - the spell list;
 - the flavor description.
 
-It works out from the page whether the creature uses the 2014 or 2024 rules.
+It works out from the page whether the creature uses the 5th edition (2014) or 5.5e (2024) rules.
 
-Two things it doesn't handle yet: 2014 innate spellcasting written into a creature's
-traits, and mythic actions.
+:::note[Mythic actions]
+Some creatures in the 5th edition rule set have _Mythic actions_. At this moment, OpenFray and the importer do not support them and they will ignore them when creating or importing a homebrew creature.
+:::
+
+### Settings
+
+Click **Options** in the importer's popup to toggle the following options:
+
+- _Include description_
+- _Include page number in source_
+- _Include link to source in description_
+
+![The importer's Options panel — three unchecked toggles above a Done button.](../../../assets/screens/importer-options.png)
 
 ## What it can and can't see
 

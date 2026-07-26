@@ -1,6 +1,11 @@
 ---
 title: Settings & appearance
-description: Choose which rule sets appear, switch between light and dark, and find the importer — all without an account.
+description: Choose which Dungeons and Dragons 5e rule sets appear, switch between light and dark, and find the importer — all without an account.
+keywords:
+  - Dungeons and Dragons 5e rule sets
+  - DnD 5e 2014 and 2024 rules
+  - OpenFray settings
+  - Tome of Beasts library
 ---
 
 Two small things live outside the fight: which **rule sets** you play with, and whether the
@@ -12,7 +17,7 @@ needed. Open **Settings** from the gear at the top right.
 OpenFray ships with more than one set of rules, and with extra books of creatures. In
 **Settings**, tick the ones your table uses.
 
-![The Rule sets settings, with the list of rule sets outlined in red and labeled "Tick the ones your table plays".](../../../assets/screens/rule-sets.png)
+![The Rule sets panel in Settings, with Core Rules 2024 ticked and the other rule sets unticked.](../../../assets/screens/rule-sets.png)
 
 - **Core Rules 2024** — the newer rules. On by default.
 - **Core Rules 2014** — the older rules. Turn this on if that's what your table plays.

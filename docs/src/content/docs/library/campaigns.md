@@ -10,12 +10,16 @@ keywords:
 
 A **campaign** is where you keep one game together. It holds the rules your table uses,
 so you set them once and they apply to every fight you run. Pick the campaign you're
-running from the box at the bottom of the console. Without a campaign — or without an
-account — OpenFray just uses the standard rules.
+running from the box at the bottom of the console. Without a campaign OpenFray just uses the default rules.
 
 Make and edit campaigns on the **Campaigns** tab of the
 [compendium](/docs/library/compendium/#campaigns). Each one shows its rules at a glance,
 and you can change them right there.
+
+:::note[Sign in required]
+Creating and using a campaign and its rules requires an account. Sign in with a free Google or Discord account.
+Without an account OpenFray uses the default rules.
+:::
 
 ## Which rules it's for
 
@@ -28,13 +32,13 @@ you whether or not you're signed in.
 
 ## House rules
 
-| Rule                    | What you can choose                                                                     |
-| ----------------------- | --------------------------------------------------------------------------------------- |
-| **Critical hit damage** | _Double the dice_ (standard); _Max normal dice + roll crit dice_; or _Double the total_ |
-| **Surprise round**      | _Initiative with disadvantage_ (2024); or _Skip the first turn_ (2014)                  |
-| **Creature HP**         | _Average_, _Roll_, _Min_ or _Max_, applied as each creature joins the fight             |
-| **Initiative ties**     | _Higher Dexterity_; _Players first_; or _Manual_, leaving the order to you              |
-| **Level up**            | _XP_, or _Milestone_                                                                    |
+| Rule                    | What you can choose                                                                              |
+| ----------------------- | ------------------------------------------------------------------------------------------------ |
+| **Critical hit damage** | _Double the dice_ (standard); _Max normal dice + roll crit dice_ (brutal); or _Double the total_ |
+| **Surprise round**      | _Initiative with disadvantage_ (DnD 5.5e); or _Skip the first turn_ (DnD 5e)                     |
+| **Creature HP**         | _Average_, _Roll_, _Min_ or _Max_, calculated as each creature joins the fight                   |
+| **Initiative ties**     | _Higher Dexterity_; _Players first_; or _Manual_, leaving the order to you                       |
+| **Level up**            | _XP_, or _Milestone_                                                                             |
 
 The crit and hit-point rules change the dice OpenFray rolls for creatures — it never
 rolls a player's attack. The surprise and tie rules change the initiative order.
@@ -51,17 +55,15 @@ what applies its rules to the fight in front of you:
 
 ![The campaign picker in the console footer, open, listing the available campaigns.](../../../assets/screens/campaign-picker.png)
 
+Selecting a campaign does not affect the combatants already added in the initiative tracker. Add new creatures to recalculate their hit points,
+or add new player characters as necessary.
+
 ## Leveling up: experience or milestone
 
-- **Experience points** — the usual way. Experience shows on stat blocks and in the
-  end-of-fight summary.
+- **Experience points** — the usual way. The experience points awarded by each creature shows on stat blocks and in the
+  end-of-fight summary, as a total and split for each player on the board (exluding friendly NPCs).
 - **Milestone** — you level the party up at story moments, so experience is just noise.
   Pick this and OpenFray hides it during a fight and in the summary.
 
 The [compendium's creature list](/docs/library/compendium/#creatures) always shows
 experience, whichever you pick — it's a reference, not a scoreboard.
-
-:::note[Needs an account]
-Campaigns are saved to your account, so this needs you to be signed in. Nothing here
-changes what you see without one — you always get the standard rules.
-:::
