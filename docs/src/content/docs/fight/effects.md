@@ -62,8 +62,6 @@ you've built in plain English.
 
 **5. Save the effect.** Click on **Apply** to add the effect, its conditions, and modifiers to the combatant.
 
-Whatever you've added is listed along the bottom of the box. **Done** closes it.
-
 :::tip[Casting a spell?]{icon="pen"}
 If you are casting a spell, use the **Cast spell** flow instead. It already applies
 all the conditions, modifiers, and timers for you. This box is for everything else
