@@ -57,7 +57,7 @@ It works out from the page whether the creature uses the 5th edition (2014) or 5
 (2024) rules.
 
 :::note[Mythic actions]
-Some creatures in the 5th edition rule set have _Mythic actions_. At this moment, OpenFray
+Some 5th edition creatures have _Mythic actions_. At this moment, OpenFray
 and the importer do not support them and they will ignore them when creating or importing
 a homebrew creature.
 :::

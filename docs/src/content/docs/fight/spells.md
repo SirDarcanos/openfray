@@ -27,7 +27,7 @@ pick, because a stat block doesn't have spell slots to spend.
 ![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labeled.](../../../assets/screens/cast-spell.png)
 
 **From the Cast spell button**, at the top of the screen. Search any spell — every spell
-in the [rule sets you've turned on](/docs/reference/settings/#rule-sets), plus your own —
+in the [libraries you've turned on](/docs/reference/settings/#libraries), plus your own —
 then pick **who is casting it**.
 
 ![The Cast spell button outlined in red, its modal open with a caster picker set to Zara, a spell search, and a badged spell list.](../../../assets/screens/cast-spell-modal.png)

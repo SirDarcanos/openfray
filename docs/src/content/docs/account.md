@@ -23,7 +23,7 @@ yours is sitting on a server you never asked to use. OpenFray warns you before y
 a tab with a fight in it.
 
 Two things do stick around on your own device without an account: your
-[rule-set choices](/docs/reference/settings/#rule-sets) and your choice of light or dark mode.
+[library choices](/docs/reference/settings/#libraries) and your choice of light or dark mode.
 
 ## Signing in
 

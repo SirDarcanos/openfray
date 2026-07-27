@@ -87,7 +87,7 @@ Your creatures and spells:
 
 - appear in the compendium beside the built-in ones, badged **Custom**;
 - show up in the **Add creature** and **Cast spell** pickers;
-- are always available, whichever [rule sets](/docs/reference/settings/#rule-sets) you
+- are always available, whichever [libraries](/docs/reference/settings/#libraries) you
   have turned on;
 - can be edited or deleted later from the bottom of their own card.
 

@@ -26,7 +26,7 @@ Google or Discord account. Without an account OpenFray uses the default rules.
 
 Each campaign is labeled **DnD 5.5 (2024)** or **DnD 5.0 (2014)**, so you can tell your
 games apart at a glance. Which creatures and spells you actually see is a separate
-choice, in [Settings](/docs/reference/settings/#rule-sets) — that way one setting covers
+choice, in [Settings](/docs/reference/settings/#libraries) — that way one setting covers
 you whether or not you're signed in.
 
 ![The New campaign box, with a name, an edition, and the five house-rule dropdowns.](../../../assets/screens/campaign-form.png)

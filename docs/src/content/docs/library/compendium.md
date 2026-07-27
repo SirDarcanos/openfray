@@ -1,11 +1,11 @@
 ---
 title: The compendium
-description: The built-in Dungeons and Dragons 5e reference of creatures, spells, characters, and campaigns — and how to turn different rule sets on or off.
+description: The built-in Dungeons and Dragons 5e reference of creatures, spells, characters, and campaigns — and how to turn different libraries on or off.
 keywords:
   - Dungeons and Dragons 5e SRD compendium
   - DnD 5e monster and spell reference
   - 5e stat blocks
-  - 2014 and 2024 rule sets
+  - 2014 and 2024 libraries
 ---
 
 The **compendium** is the reference OpenFray keeps for you. Open it with the book icon at
@@ -25,7 +25,7 @@ which rules you're looking at:
 
 ## Creatures
 
-Every creature you can use from the [rule sets you selected](#rule-sets), with its full
+Every creature you can use from the [libraries you selected](#libraries), with its full
 stat block. This is the same list you pick from when you click **Add creature**.
 
 Each row is badged with the book it came from and which rules it uses, so you always know
@@ -34,7 +34,7 @@ what you're looking at. If it's one of your homebrew creations, the badge will s
 
 ## Spells
 
-Every spell in the rule sets you selected, with its full card:
+Every spell in the libraries you selected, with its full card:
 casting time, range, components, how long it lasts, and what it does. You'll see the same
 card when you cast a spell, or when you point at a spell name inside a stat block.
 
@@ -64,18 +64,18 @@ Your games and their house rules. See
 Saving and using campaigns requires you to sign in with a free Google or Discord account.
 :::
 
-## Rule sets
+## Libraries
 
 The compendium shows the books you've turned on. OpenFray ships with:
 
-- **Core Rules 2024** (DnD 5.5e) — the newer rules. On by default.
-- **Core Rules 2014** (DnD 5e) — the older rules. Turn this on if that's what your table
+- **Basic Rules 2024** (DnD 5.5e) — the newer rules. On by default.
+- **Basic Rules 2014** (DnD 5e) — the older rules. Turn this on if that's what your table
   plays.
 - **Tome of Beasts 1, 2, and 3** (DnD 5e) — three books of extra creatures from Kobold
   Press.
 
 Select the ones your table uses in **Settings**. See
-[Settings & appearance](/docs/reference/settings/#rule-sets).
+[Settings & appearance](/docs/reference/settings/#libraries).
 
 ## Homebrew content
 

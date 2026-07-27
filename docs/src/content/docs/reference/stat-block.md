@@ -62,7 +62,7 @@ The lower half lists what the creature can do, in the usual order:
 - A collapsible **Description** with the creature's flavor text, where the source has it.
 
 At the very bottom, a **source line** names the book and page the creature comes from — for
-example, _Core Rules 2024 (SRD 5.2.1, pg. 320)_.
+example, _Basic Rules 2024 (SRD 5.2.1, pg. 320)_.
 
 ## What you can click in a fight
 
