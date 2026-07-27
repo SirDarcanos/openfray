@@ -22,6 +22,8 @@ In **Settings**, tick the ones your table uses.
 - **Basic Rules 2024** — the newer rules. On by default.
 - **Basic Rules 2014** — the older rules. Turn this on if that's what your table plays.
 - **Tome of Beasts 1, 2, and 3** — three books of extra creatures from Kobold Press.
+- **Brood & Bloom** and **The Waking Garden** — OpenFray's own creatures, written for the
+  2024 rules.
 
 Whatever you turn on shows up in the [compendium](/docs/library/compendium/) and in the
 **Add creature** list, each entry badged with where it came from. Creatures and spells you

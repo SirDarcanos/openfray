@@ -73,6 +73,11 @@ The compendium shows the books you've turned on. OpenFray ships with:
   plays.
 - **Tome of Beasts 1, 2, and 3** (DnD 5e) — three books of extra creatures from Kobold
   Press.
+- **Brood & Bloom** (DnD 5.5e) — OpenFray's own, a brood of parasites that grow into
+  whatever their host feeds them.
+- **The Waking Garden** (DnD 5.5e) — OpenFray's own, a bestiary of vegetables that have
+  woken up, across three stages of growth from a cabbage that can't chase you to the
+  thing every garden is a cutting from.
 
 Select the ones your table uses in **Settings**. See
 [Settings & appearance](/docs/reference/settings/#libraries).
@@ -93,7 +98,8 @@ OpenFray creature without retyping it, see [the importer](/docs/library/importer
 
 :::note[Where the rules come from]
 The built-in rules come from the official System Reference Document, used under the
-CC-BY-4.0 license. The Tome of Beasts books are used under the Open Game License. Full
-credit for every source is in the app. OpenFray is compatible with fifth edition and
-isn't made or approved by Wizards of the Coast.
+CC-BY-4.0 license. The Tome of Beasts books are used under the Open Game License.
+Brood & Bloom and The Waking Garden are written for OpenFray: their stat blocks are
+CC-BY-4.0, their lore stays ours. Full credit for every source is in the app. OpenFray
+is compatible with fifth edition and isn't made or approved by Wizards of the Coast.
 :::
