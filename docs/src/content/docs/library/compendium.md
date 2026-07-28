@@ -100,6 +100,7 @@ OpenFray creature without retyping it, see [the importer](/docs/library/importer
 The built-in rules come from the official System Reference Document, used under the
 CC-BY-4.0 license. The Tome of Beasts books are used under the Open Game License.
 Brood & Bloom and The Waking Garden are written for OpenFray: their stat blocks are
-CC-BY-4.0, their lore stays ours. Full credit for every source is in the app. OpenFray
-is compatible with fifth edition and isn't made or approved by Wizards of the Coast.
+CC-BY-4.0, their lore, art, and prose stay ours. Full credit for every source is in the
+app. OpenFray is compatible with 5e (2014) and 5.5e (2024) and isn't made or approved by
+Wizards of the Coast.
 :::

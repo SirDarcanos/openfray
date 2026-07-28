@@ -54,6 +54,6 @@ D&D&nbsp;Beyond creature page into an OpenFray creature. See
 :::note[Where the rules come from]
 The built-in rules come from the official System Reference Document, used under the
 CC-BY-4.0 license. The Tome of Beasts books are used under the Open Game License. Full credit
-for every source is in the app. OpenFray is compatible with fifth edition and isn't made or
-approved by Wizards of the Coast.
+for every source is in the app. OpenFray is compatible with 5e (2014) and 5.5e (2024) and isn't
+made or approved by Wizards of the Coast.
 :::
