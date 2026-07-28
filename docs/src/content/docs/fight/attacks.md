@@ -28,7 +28,7 @@ Players roll their own attacks, you enter the result if needed.
    from [effects](/docs/fight/effects/), and shows the total against the target's armor
    class: **Hit** or **Miss**.
 
-![The attack box with a target picked, the to-hit result reading Hit, the rolled damage, and the Apply button outlined in red.](../../../assets/screens/attack-resolve.png)
+![The attack box with the target, the resolved roll reading Hit, and the Apply to Zara button outlined in red and labeled.](../../../assets/screens/attack-resolve.png)
 
 **Roll attack** becomes **Reroll** after the first roll, so you can roll again if you need
 to.
@@ -44,9 +44,7 @@ The video below shows a full attack flow, from clicking the action to applying t
 Above the roll button, the **Roll** setting is **Normal**, **Advantage**, or
 **Disadvantage**. Set it before you roll.
 
-<!-- TODO screenshot: attack-advantage.png — the Roll toggle in the attack box. Highlight: Normal / Advantage / Disadvantage. -->
-
-<!-- ![The Roll setting in the attack box, with Normal, Advantage and Disadvantage outlined in red.](../../../assets/screens/attack-advantage.png) -->
+![The Roll setting in the attack box, with Normal, Advantage and Disadvantage outlined in red and labeled.](../../../assets/screens/attack-advantage.png)
 
 This combines with any advantage or disadvantage already on the board from
 [effects](/docs/fight/effects/) — one of each cancels out. So if the target has an effect

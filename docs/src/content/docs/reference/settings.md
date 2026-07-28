@@ -35,7 +35,7 @@ matches what you're playing.
 
 The choice is remembered in your browser, so it sticks whether or not you're signed in.
 
-<!-- TODO screenshot: settings-panel.png — the whole Settings panel. Highlight: the Libraries section and the browser-extension link. -->
+![The Settings panel, with the Libraries section and the Get it for Chrome link outlined in red and labeled.](../../../assets/screens/settings-panel.png)
 
 ## Light or dark
 
@@ -43,7 +43,7 @@ The **sun/moon** button in the top bar switches between light and dark. OpenFray
 by default. Your choice is remembered in your browser, and it's shared with the OpenFray
 website, so both match.
 
-<!-- TODO screenshot: theme-toggle.png — the light/dark toggle in the header. Highlight: the sun/moon button. -->
+![The sun button in the top bar, outlined in red and labeled Light or dark, beside Sign in and the gear.](../../../assets/screens/theme-toggle.png)
 
 ## The importer
 

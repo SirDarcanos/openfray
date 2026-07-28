@@ -29,7 +29,7 @@ is written into the **log** on the right. Nothing is rolled in secret. You can a
 anything by hand from the bar along the bottom: type a formula like `2d6+3`, or tap a
 die.
 
-![The dice bar at the bottom of the screen and a log entry reading "1d20 [18] +2", both outlined in red.](../../../assets/screens/dice-log.png)
+![The dice bar at the bottom of the screen and a log entry reading "1d20 [16] +2", both outlined in red and labeled.](../../../assets/screens/dice-log.png)
 
 Each entry shows the dice that were rolled, in brackets, and what was added to them — so
 "is that right?" is answered by looking, not arguing. **View all** opens the full history,
