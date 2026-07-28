@@ -23,6 +23,31 @@ your campaign's [surprise rule](/docs/library/campaigns/#house-rules).
 
 Click **Start combat** and you're in round 1, at the top of the list.
 
+## How hard the fight looks
+
+While you're filling the board, the left of the footer rates the fight in front of you:
+**Trivial**, **Easy**, **Medium**, **Hard**, or **Deadly**, with the experience points it
+adds up to. It changes every time you add or remove someone, so you can drop in one more
+foe and watch it move.
+
+<!-- TODO screenshot: encounter-difficulty.png — the difficulty readout in the footer, before the fight. Highlight: the tier badge and the XP total. -->
+
+The rating is an estimate, and it's worth knowing what it's built from:
+
+- **Your players set the bar.** OpenFray doesn't know anyone's level — it works it out
+  from their hit points, and from Constitution when the character has it recorded. Give a
+  saved [character](/docs/fight/combatants/#players) its ability scores and the estimate
+  gets closer.
+- **Numbers count for more than they look.** Six foes are harder than one foe worth the
+  same experience, so the total is scaled up for a crowd, and again for a party of one or
+  two.
+- **A quick add is guessed at.** Something you invented on the spot carries no experience
+  value, so OpenFray sizes it up from its hit points and armor class. It's a rough figure.
+- **The dead don't count.** Foes left on the board from the last fight are ignored.
+
+Once the fight starts, the [clocks](#rounds-and-turns) take that spot. The rating is kept
+and shown again in the [end-of-fight summary](/docs/fight/recap/).
+
 ## Rounds and turns
 
 The creature whose turn it is glows in the tracker, and its stat block fills the middle

@@ -28,6 +28,9 @@ A party wipe only counts once every player is dead or stable — one character s
 ## What it shows
 
 - **The outcome** — victory, defeat, or simply ended.
+- **The difficulty** it was rated at before it began — see
+  [Encounters & initiative](/docs/fight/encounters/#how-hard-the-fight-looks). Worth
+  comparing against how it actually went.
 - **Experience earned**, and what that works out to per player — unless your campaign levels
   up by [milestone](/docs/library/campaigns/#leveling-up-experience-or-milestone), in which
   case experience is left out.

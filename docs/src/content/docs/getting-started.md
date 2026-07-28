@@ -27,8 +27,9 @@ on it — nothing important is hidden in a menu.
 3. **The stat block.** Everything about the current or selected combatant — abilities, actions, reactions, etc. Click an attack here to roll it. See [The stat block](/docs/reference/stat-block/).
 4. **Controls and the log.** Buttons for the creature you've selected — apply an effect,
    concentrate, use a reaction — and below them a running list of what has happened.
-5. **The bottom bar.** Dice you can roll by hand, the fight's timers, and — when you're
-   signed in — which campaign you're running.
+5. **The bottom bar.** Dice you can roll by hand, how hard the fight looks before it
+   starts, the fight's timers once it does, and — when you're signed in — which campaign
+   you're running.
 
 ## Add your creatures and players
 
