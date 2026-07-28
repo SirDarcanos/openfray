@@ -15,9 +15,7 @@ page names each part and points out what you can click during a fight.
 Select a creature to see its stat block. The one for a player character is shorter, and is
 covered under [Creatures, players & quick adds](/docs/fight/combatants/).
 
-<!-- TODO screenshot: stat-block-full.png — a rich creature (a legendary spellcaster, e.g. an archmage or a dragon) in the compendium. Number each section: header, abilities, defenses, traits, spellcasting, actions, legendary actions. -->
-
-<!-- ![A full creature stat block with its sections outlined in red and numbered: header, abilities, defenses, traits, spellcasting, actions, and legendary actions.](../../../assets/screens/stat-block-full.png) -->
+![An Ancient Black Dragon stat block with its sections numbered one to seven, from the header down to the legendary actions.](../../../assets/screens/stat-block-full.png)
 
 ## The header
 

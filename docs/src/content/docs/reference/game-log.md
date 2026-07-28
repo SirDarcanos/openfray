@@ -27,9 +27,7 @@ and the damage by type.
 Click **View all** to open the full history. It's grouped by round, oldest first, so you can
 retrace the whole fight from the top.
 
-<!-- TODO screenshot: game-log-modal.png — the full history modal, grouped by round. Highlight: the category filter chips, a round grouping, Clear log. -->
-
-<!-- ![The full game log grouped by round, with the category filter chips at the top and the Clear log link outlined in red.](../../../assets/screens/game-log-modal.png) -->
+![The full game log grouped by round, with the category filter chips and the Clear log link outlined in red and labeled.](../../../assets/screens/game-log-modal.png)
 
 ### Filtering by kind
 

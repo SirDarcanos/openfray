@@ -23,7 +23,7 @@ Click the **campfire**. OpenFray doesn't guess how much anyone recovers — it a
 because the players are the ones deciding. You get a list of everyone friendly, each with
 a box:
 
-![The short rest box, listing each character with a hit point field, one outlined in red.](../../../assets/screens/short-rest.png)
+![The short rest box, listing each character with a hit point field, the first outlined in red and labeled.](../../../assets/screens/short-rest.png)
 
 In each box you can:
 

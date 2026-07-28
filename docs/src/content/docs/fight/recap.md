@@ -23,7 +23,7 @@ The summary comes up three ways:
 A party wipe only counts once every player is dead or stable — one character still rolling
 [death saves](/docs/fight/death/) means the fight is still on.
 
-<!-- TODO screenshot: an end-of-fight summary (recap) with the outcome banner, the stat tiles, and the three awards. Optional — reuse an existing capture if one fits. -->
+![The combat recap after a victory, with tiles for experience, difficulty, rounds, timings and damage, above the three awards.](../../../assets/screens/recap.png)
 
 ## What it shows
 
