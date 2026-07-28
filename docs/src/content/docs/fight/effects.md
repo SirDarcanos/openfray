@@ -34,7 +34,7 @@ Click the creature in the tracker, then click **Apply effect** in the controls b
 stat block. Everything happens in one box, and it stays open while you work — so you can
 put several things on the same creature before closing it.
 
-![The Apply effect box, with its duration, condition, modifier and reminder sections outlined in red and numbered one to four.](../../../assets/screens/apply-effect.png)
+![The Apply effect box with its duration, reminder, condition and bonus-or-penalty sections outlined in red and numbered one to four.](../../../assets/screens/apply-effect.png)
 
 **1. Set how long it lasts.** This setting applies to everything you add while the box is open, so start here:
 
@@ -108,7 +108,7 @@ reminder is a note, and you decide what it means.
 Each effect and reminder shows as a small **badge** under the combatants's name in the tracker — just
 the name, so the row stays easy to read at a glance.
 
-![A tracker row for an Ogre with a Frightened badge under its name, outlined in red.](../../../assets/screens/effect-badge.png)
+![A tracker row for an Ogre with its Frightened badge outlined in red and labeled as an effect on the creature.](../../../assets/screens/effect-badge.png)
 
 The details live in the **Applied effects** list, in the controls beside the stat block.
 There, each effect shows how it ends and carries its own buttons.

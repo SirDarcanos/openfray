@@ -58,7 +58,7 @@ tracker, where the round number appears once you're going:
 
 Before anything starts, OpenFray asks for everyone's initiative:
 
-![The Roll initiative box, with a player's roll field and the surprised toggle outlined in red.](../../assets/screens/roll-initiative.png)
+![The Roll initiative box, with a player's roll field and a creature's surprised toggle outlined in red and labeled.](../../assets/screens/roll-initiative.png)
 
 - Creatures are already rolled and filled in for you.
 - Players are blank. Type what each player rolled, or leave it blank and OpenFray rolls

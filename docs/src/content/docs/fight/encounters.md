@@ -30,7 +30,7 @@ While you're filling the board, the left of the footer rates the fight in front 
 adds up to. It changes every time you add or remove someone, so you can drop in one more
 foe and watch it move.
 
-<!-- TODO screenshot: encounter-difficulty.png — the difficulty readout in the footer, before the fight. Highlight: the tier badge and the XP total. -->
+![The difficulty readout in the footer, outlined in red, with arrows to the Deadly badge and the 3,375 XP total.](../../../assets/screens/encounter-difficulty.png)
 
 The rating is an estimate, and it's worth knowing what it's built from:
 

@@ -17,7 +17,7 @@ needed. Open **Settings** from the gear at the top right.
 OpenFray ships with more than one edition of the rules, and with extra books of creatures.
 In **Settings**, tick the ones your table uses.
 
-![The Libraries panel in Settings, with Basic Rules 2024 ticked and the other libraries unticked.](../../../assets/screens/rule-sets.png)
+![The Libraries panel in Settings, grouped into Core, OpenFray and Other, with Basic Rules 2024 ticked.](../../../assets/screens/rule-sets.png)
 
 - **Basic Rules 2024** — the newer rules. On by default.
 - **Basic Rules 2014** — the older rules. Turn this on if that's what your table plays.
