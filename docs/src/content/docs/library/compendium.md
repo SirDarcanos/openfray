@@ -73,8 +73,9 @@ The compendium shows the books you've turned on. OpenFray ships with:
   plays.
 - **Tome of Beasts 1, 2, and 3** (DnD 5e) — three books of extra creatures from Kobold
   Press.
-- **Brood & Bloom** (DnD 5.5e) — OpenFray's own, a brood of parasites that grow into
-  whatever their host feeds them.
+- **Brood & Bloom** (DnD 5.5e) — OpenFray's own, a bestiary of parasites in three
+  broods — one that lives in people, one that takes ground and buildings, and one that
+  wants only the dead — plus the Lazaret, the order that catalogs and treats them.
 - **The Waking Garden** (DnD 5.5e) — OpenFray's own, a bestiary of vegetables that have
   woken up, across three stages of growth from a cabbage that can't chase you to the
   thing every garden is a cutting from.
