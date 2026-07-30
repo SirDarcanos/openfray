@@ -16,8 +16,10 @@ whole stat block in by hand.
 
 - **Google Chrome or Edge** — [OpenFray Importer on the Chrome Web
   Store](https://chromewebstore.google.com/detail/openfray-importer/cjooflanhdpfddpppllaelhlfpdinjfk).
-  There's a link to it in OpenFray's **Settings** too.
-- **Firefox** — coming soon.
+- **Firefox** — [OpenFray Importer on Firefox Browser
+  Add-ons](https://addons.mozilla.org/en-US/firefox/addon/openfray-importer/).
+
+Both links are in OpenFray's **Settings** too, under **Browser extension**.
 
 Once it's installed pin it to your browser's toolbar for easy access.
 
