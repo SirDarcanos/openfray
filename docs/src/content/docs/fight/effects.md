@@ -24,6 +24,7 @@ Whatever spell or ability caused it, what lands on a creature is always one of t
 | **A bonus or penalty**                | Bless (+1d4), Bane (−1d4), +2 to armor class     |
 | **A reminder**                        | a note to yourself, like "Hex: +1d6 on a hit"    |
 | **Ends on a save**                    | something a saving throw shakes off              |
+| **A counter**                         | a tally you raise and lower, like Exhaustion     |
 
 Conditions are just one kind of effect, so there's only one thing to learn. You tell
 OpenFray what happened; it remembers it and works it into the right rolls.
@@ -44,6 +45,7 @@ put several things on the same creature before closing it.
 | **This turn / next attack** | something used up by the next roll (Vicious Mockery)                                                                                                        |
 | **Save ends**               | something the creature can shake off — it then asks which save, the number to beat, and whether it's rolled at the start or the end of that creature's turn |
 | **Until removed**           | you'll clear it yourself when the story says so                                                                                                             |
+| **Counter**                 | a number you keep by hand — see [Counters](#counters)                                                                                                       |
 
 Change it later and everything you've already added in this box changes with it — so
 it's fine to tap a condition first and pick the duration after.
@@ -140,6 +142,40 @@ burn. Each one gets **its own** save: two effects that happen to need the same s
 still roll separately. On a creature's turn,
 OpenFray rolls these for you, at the start or end of the turn as you chose. For a player,
 use **Roll save** to record their roll, or just **Clear** it when they pass.
+
+## Counters
+
+Some things at the table are a number that goes up and down rather than something that
+ends: Exhaustion levels, a homebrew corruption track, a countdown you're running. A
+**counter** is an effect that holds that number for you. OpenFray never changes it — you
+do, and you decide what it means when it gets high.
+
+To add one:
+
+1. Click the creature, then **Apply effect**.
+2. Set **Duration** to **Counter**.
+3. Type its name in **Reminder** — something like `Depth` or `Corruption`.
+4. Click **Apply**.
+
+It starts at 0. The counter shows on the creature's row as a badge with its number in it,
+so you can read it at a glance. In the **Applied effects** list beside the stat block, it
+gets buttons of its own:
+
+| Button    | What it does                                        |
+| --------- | --------------------------------------------------- |
+| **+1**    | Raises the number by one.                           |
+| **−1**    | Lowers it by one. It never goes below 0.            |
+| **Reset** | Puts it back to 0, and leaves the counter on.       |
+| **Clear** | Removes the counter, the way it removes any effect. |
+
+Every change is written into the [game log](/docs/reference/game-log/), so you can retrace
+how a number got where it is.
+
+:::note[Nothing counts it for you]
+A counter isn't a timer. It doesn't tick down at the end of a turn, it survives a long
+rest, and reaching any particular number does nothing on its own. It's a number OpenFray
+holds so you don't have to.
+:::
 
 ## Concentration
 
