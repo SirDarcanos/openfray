@@ -48,7 +48,8 @@ website, so both match.
 ## The importer
 
 Settings also links to the **OpenFray Importer**, a free browser add-on that turns a
-D&D&nbsp;Beyond creature page into an OpenFray creature. See
+D&D&nbsp;Beyond creature page into an OpenFray creature. Under **Browser extension** there's a
+button for each browser it's published for: **Get it for Chrome** and **Get it for Firefox**. See
 [The importer](/docs/library/importer/).
 
 :::note[Where the rules come from]
