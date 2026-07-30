@@ -59,8 +59,12 @@ The lower half lists what the creature can do, in the usual order:
 - **Legendary Actions** and **Lair Actions** for creatures that have them.
 - A collapsible **Description** with the creature's flavor text, where the source has it.
 
-At the very bottom, a **source line** names the book and page the creature comes from — for
-example, _Basic Rules 2024 (SRD 5.2.1, pg. 320)_.
+At the very bottom, a **source line** names the book the creature comes from, and its page
+where the book has one — for example, _Brood & Bloom_, or _Basic Rules 2024 (SRD 5.2.1,
+pg. 320)_. When the creature comes from one of OpenFray's own books, that name is a link:
+click it to read the book, in a new tab, so following it never takes the fight off your
+screen. Every other source is plain text. Full credit for every book OpenFray uses is in
+[CREDITS.md](https://github.com/SirDarcanos/openfray/blob/main/CREDITS.md).
 
 ## What you can click in a fight
 
