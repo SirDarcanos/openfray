@@ -18,10 +18,11 @@ account needed. This page runs you through your first fight, start to finish. Yo
 The console is one screen, split into three columns. Everything you need during a fight is
 on it — nothing important is hidden in a menu.
 
-![The OpenFray console during a fight, with five areas outlined in red and numbered one to five.](../../assets/screens/layout.png)
+![The OpenFray console during a fight, with its five areas marked by red numbered discs, one to five.](../../assets/screens/layout.png)
 
 1. **The top bar.** Adding creatures and players, group saves, casting a spell, rests, and
-   the switch between the console and the compendium.
+   the switch between the console and the compendium. On its right: signing in, the
+   **?** (handbook), the gear (settings), and the sun/moon that switches light and dark.
 2. **The tracker.** Everyone in the fight, in the order they act, with hit points, armor
    class, and any conditions on them. This is the column you watch.
 3. **The stat block.** Everything about the current or selected combatant — abilities, actions, reactions, etc. Click an attack here to roll it. See [The stat block](/docs/reference/stat-block/).

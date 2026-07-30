@@ -10,7 +10,8 @@ keywords:
 
 Two small things live outside the fight: which **libraries** you play with, and whether the
 app is **light or dark**. Both are set once and remembered in your browser, with no account
-needed. Open **Settings** from the gear at the top right.
+needed. Open **Settings** from the gear at the top right. Beside it sit the **?** that opens
+this handbook and the sun/moon that switches the theme.
 
 ## Libraries
 
@@ -23,7 +24,7 @@ In **Settings**, tick the ones your table uses.
 - **Basic Rules 2014** — the older rules. Turn this on if that's what your table plays.
 - **Tome of Beasts 1, 2, and 3** — three books of extra creatures from Kobold Press.
 - **Brood & Bloom** and **The Waking Garden** — OpenFray's own creatures, written for the
-  2024 rules.
+  2024 rules. Their names are links: click one to read the book itself, in a new tab.
 
 Whatever you turn on shows up in the [compendium](/docs/library/compendium/) and in the
 **Add creature** list, each entry badged with where it came from. Creatures and spells you
@@ -35,7 +36,7 @@ matches what you're playing.
 
 The choice is remembered in your browser, so it sticks whether or not you're signed in.
 
-![The Settings panel, with the Libraries section and the Get it for Chrome link outlined in red and labeled.](../../../assets/screens/settings-panel.png)
+![The Settings panel, with the Libraries section and the two importer buttons outlined in red and labeled.](../../../assets/screens/settings-panel.png)
 
 ## Light or dark
 
@@ -43,7 +44,7 @@ The **sun/moon** button in the top bar switches between light and dark. OpenFray
 by default. Your choice is remembered in your browser, and it's shared with the OpenFray
 website, so both match.
 
-![The sun button in the top bar, outlined in red and labeled Light or dark, beside Sign in and the gear.](../../../assets/screens/theme-toggle.png)
+![The sun button in the top bar, outlined in red and labeled Light or dark, beside Sign in, the handbook question mark, and the gear.](../../../assets/screens/theme-toggle.png)
 
 ## The importer
 

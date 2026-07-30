@@ -168,6 +168,8 @@ gets buttons of its own:
 | **Reset** | Puts it back to 0, and leaves the counter on.       |
 | **Clear** | Removes the counter, the way it removes any effect. |
 
+![A Depth counter in the Applied effects list reading "Depth · at 3", with its −1, +1, Reset and Clear buttons outlined in red.](../../../assets/screens/effect-counter.png)
+
 Every change is written into the [game log](/docs/reference/game-log/), so you can retrace
 how a number got where it is.
 
