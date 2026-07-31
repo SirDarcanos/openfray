@@ -50,16 +50,27 @@ Creatures are different, and that's your call — see below.
 
 Everything that happens on the board, minus a creature's numbers:
 
-| They see                                               | They don't                             |
-| ------------------------------------------------------ | -------------------------------------- |
-| A creature attacking, and whether it hit or missed     | The die it rolled, or its attack bonus |
-| The damage it dealt to a character                     | —                                      |
-| A creature saving or failing a save                    | The die, or its saving throw bonus     |
-| That a creature was hurt or healed                     | By how much                            |
-| Conditions and effects landing and clearing, on anyone | —                                      |
-| Concentration starting and breaking                    | —                                      |
-| Spells being cast, by name                             | —                                      |
-| Turns, rounds, knockouts, deaths, and rests            | —                                      |
+| They see                                               | They don't                    |
+| ------------------------------------------------------ | ----------------------------- |
+| A creature attacking, and whether it hit or missed     | The dice, or its attack bonus |
+| What a roll came to, and what damage it dealt          | The dice that got there       |
+| Whether a creature saved or failed                     | Its save total, or its bonus  |
+| That a creature was hurt or healed                     | By how much                   |
+| Conditions and effects landing and clearing, on anyone | —                             |
+| Concentration starting and breaking                    | —                             |
+| Spells being cast, by name                             | —                             |
+| Turns, rounds, knockouts, deaths, and rests            | —                             |
+
+A roll's total is safe to show — on its own it says nothing, because the dice behind it
+are unknown. A **saving throw** is the exception and shows no number at all: set against a
+difficulty class your table can work out, a save total would give the creature's bonus
+away. Saved or failed is the whole of what they need.
+
+:::note[Legendary Resistance is never spoiled]
+A creature that fails a save and then spends Legendary Resistance shows your players
+**Saved**, and nothing before it. The outcome isn't shared until you've settled it, so the
+table never reads a "Failed" that you then take back.
+:::
 
 Their own characters aren't held back at all: damage to a player character shows the
 number, because they know it already.
