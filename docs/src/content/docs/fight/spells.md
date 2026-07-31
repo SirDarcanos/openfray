@@ -44,6 +44,10 @@ What happens next depends on the spell:
 - a **saving throw** spell opens the [group save](#group-saves) box, already filled in;
 - a **helpful or utility** spell shows its card.
 
+Wherever a spell rolls its own dice, **Roll damage** becomes **Reroll damage** afterwards.
+Rerolling updates the damage the saves are split from and leaves the results you've already
+recorded alone. See [Rerolling one creature's save](/docs/fight/saves/#rerolling-one-creatures-save).
+
 ## Putting a spell's effect on the board
 
 Lots of spells leave something behind on a creature — a bonus, a condition, a note. When

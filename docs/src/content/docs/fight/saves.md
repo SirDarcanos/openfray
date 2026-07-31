@@ -42,6 +42,15 @@ Two common defenses are handled for you when they apply:
 
 ![A save with Magical Effect checked, and a log entry showing the creature rolled with advantage from Magic Resistance.](../../../assets/screens/magic-resistance.png)
 
+## Rerolling one creature's save
+
+Every creature's row carries a **Reroll** button, which rolls that creature's save again
+and updates its damage. It's per creature on purpose: the rest of the list keeps whatever
+you've already settled, and the damage — one roll the whole area shares — doesn't change.
+
+A player's row has no **Reroll**. OpenFray never rolls for a player, so you record what
+they rolled with **Save** or **Fail**, and change it there if they roll again.
+
 ## Turning a failed save into a success
 
 A creature with **Legendary Resistance** can choose to succeed on a save it failed. When a
