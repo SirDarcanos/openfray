@@ -54,7 +54,8 @@ success** — one tap spends a use. See
 Once the saves are rolled:
 
 - Click **Apply damage** to take the damage off everyone at once — full, half, or none per
-  creature, following the on-save rule and any Evasion.
+  creature, following the on-save rule, each creature's resistances and immunities, and any
+  Evasion.
 - For a save-or-be-affected spell, the box also offers to drop the condition (or the
   spell's effect) on just the creatures that **failed**.
 
@@ -64,17 +65,21 @@ Once the saves are rolled:
 once, with no action to start from. Open it from the top of the screen, or let a saving
 throw spell open it for you.
 
-![The Group save box, with the DC, the on-save rule, the damage field, the target list and the Roll saves button outlined in red.](../../../assets/screens/group-save.png)
+![The Group save box, with the DC, the on-save rule, the damage field, the damage type, the target list and the Roll saves button outlined in red.](../../../assets/screens/group-save.png)
 
 1. Pick the **ability** and the **DC**, and what a successful save earns — half damage, no
    damage, or the effect simply doesn't happen. Casting a spell fills all of this in.
 2. Type the **damage** — a formula like `8d6`, or a flat number if the player already
    rolled it.
-3. Choose the targets. Your players and the foes are listed separately.
-4. Click **Roll saves**. OpenFray rolls for the creatures, working in their save bonuses
+3. Pick the **damage type** beside it — **Fire** for a _Fireball_. OpenFray then works in
+   each target's resistances and immunities, the same way it does for an attack. Leave it
+   on **Untyped** and the number lands as you typed it, because there's nothing for a
+   defense to match.
+4. Choose the targets. Your players and the foes are listed separately.
+5. Click **Roll saves**. OpenFray rolls for the creatures, working in their save bonuses
    and things like Magic Resistance and Evasion. For your players, you type what they
    rolled.
-5. **Apply damage** to everyone in one click — and for a save-or-be-affected spell, drop
+6. **Apply damage** to everyone in one click — and for a save-or-be-affected spell, drop
    the condition on the ones that failed.
 
 Casting a saving throw spell opens this box already filled in. See
