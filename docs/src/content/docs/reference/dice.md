@@ -54,8 +54,9 @@ someone just needs a number.
 Because rolls and [effects](/docs/fight/effects/) work together, whatever is on a
 creature is worked in for you:
 
-- **advantage and disadvantage** from conditions and effects are applied, and the log
-  shows both dice;
+- **advantage and disadvantage** from conditions and effects are applied. Both dice show
+  — in the box you rolled from and in the log — with the one that counted highlighted and
+  the one it dropped dimmed beside it;
 - **bonuses and penalties** (Bless's +1d4, Bane's −1d4) are added and shown;
 - **critical hits** follow your campaign's [crit rule](/docs/library/campaigns/#house-rules);
 - a creature's **saves** include its bonuses, plus things like Magic Resistance and
