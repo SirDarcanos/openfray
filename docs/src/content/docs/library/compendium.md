@@ -73,6 +73,8 @@ The compendium shows the books you've turned on. OpenFray ships with:
   plays.
 - **Tome of Beasts 1, 2, and 3** (DnD 5e) — three books of extra creatures from Kobold
   Press.
+- **Creature Codex** (DnD 5e) — a fourth Kobold Press bestiary, around 350 more
+  creatures.
 - **Brood & Bloom** (DnD 5.5e) — OpenFray's own, a bestiary of parasites in three
   broods — one that lives in people, one that takes ground and buildings, and one that
   wants only the dead — plus the Lazaret, the order that catalogs and treats them.
