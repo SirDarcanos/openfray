@@ -39,6 +39,18 @@ The choice is remembered in your browser, so it sticks whether or not you're sig
 
 ![The Settings panel, with the Libraries section and the two importer buttons outlined in red and labeled.](../../../assets/screens/settings-panel.png)
 
+## Player view
+
+The **player view** is a read-only screen your players follow on their own devices. Two
+settings here decide how much of a creature it gives away:
+
+- **Creature hit points** — **In words** (Bloodied), an **exact number**, or **hidden**.
+- **Creature armor class** — **hidden**, or **shown**.
+
+It starts on words and no armor class. Player characters always show in full, whatever you
+pick here. Sharing itself is the **screen** button in the top bar — see
+[The player view](/docs/fight/player-view/).
+
 ## Light or dark
 
 The **sun/moon** button in the top bar switches between light and dark. OpenFray opens dark

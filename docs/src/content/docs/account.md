@@ -22,8 +22,13 @@ crashes, nothing is lost. If you intetionally close the tab the game state will 
 yours is sitting on a server you never asked to use. OpenFray warns you before you close
 a tab with a fight in it.
 
-Two things do stick around on your own device without an account: your
-[library choices](/docs/reference/settings/#libraries) and your choice of light or dark mode.
+You can also share a read-only [player view](/docs/fight/player-view/) with your table
+without an account. Nothing about it is stored on a server either way — it reaches your
+players' screens and is kept nowhere.
+
+Three things do stick around on your own device without an account: your
+[library choices](/docs/reference/settings/#libraries), your choice of light or dark mode, and
+the link your player view uses.
 
 ## Signing in
 
@@ -38,6 +43,7 @@ From then on, this is saved to your account and follows you between devices:
 | **Creatures and spells you make** | your homebrew and importer library                                             |
 | **Characters**                    | build the party once instead of retyping them each session                     |
 | **Campaigns**                     | your table's [house rules](/docs/library/campaigns/), applied to every fight   |
+| **Your player-view link**         | name it something your table remembers, and keep it between sessions           |
 
 Saving happens in the background while you play. You never wait for it, and there's no save button.
 

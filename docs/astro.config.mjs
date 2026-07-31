@@ -80,6 +80,7 @@ export default defineConfig({
             { label: 'Creature resources', link: '/fight/resources/' },
             { label: 'Spells', link: '/fight/spells/' },
             { label: 'Rests & clearing the board', link: '/fight/rests/' },
+            { label: 'The player view', link: '/fight/player-view/' },
             { label: 'End of the fight', link: '/fight/recap/' },
           ],
         },
