@@ -53,7 +53,7 @@ advantage.
 
 ## Critical hits
 
-A natural 20 is a **Critical hit!** and a natural 1 is a **Miss (nat 1)**. How much a crit
+A natural 20 is a **Critical hit!** and a natural 1 is a **Critical miss!**. How much a crit
 adds to the damage follows your campaign's [crit rule](/docs/library/campaigns/#house-rules).
 
 A **melee** hit on a **Paralyzed** or **Unconscious** target is a critical automatically —
