@@ -21,6 +21,26 @@ Google or Discord account.
 Both editors live in the [compendium](/docs/library/compendium/): open the
 **Creatures** or **Spells** tab and use the create button.
 
+## Starting from one that exists
+
+Most homebrew is a small change to something in the books — a goblin with a crossbow, a
+fireball that deals cold damage. Both forms open with **Start from…** above the name, so
+you don't type the rest of the stat block again.
+
+1. Click **Start from…** at the top of the form. It searches everything you can use: the
+   [libraries you've turned on](/docs/reference/settings/#libraries) and your own
+   creations, each badged with where it came from.
+2. Click the one you want. Every field fills in, and every field stays editable.
+3. Type the **name**. That's the one thing that isn't copied — you're making something
+   new, not a second copy of the original.
+
+What you save is your own creature or spell: it gets its own entry, badged **Custom**,
+and editing it later never touches the one you started from. The **Source** is left for
+you to fill in as well, because what comes out is your homebrew rather than the book.
+
+**Start from…** appears when you're creating. It isn't there when you edit something you
+already saved — the form is already that creature.
+
 ## Creating a homebrew creature
 
 The form is a whole stat block, broken into collapsible sections you can work through in
