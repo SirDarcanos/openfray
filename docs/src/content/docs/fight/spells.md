@@ -71,6 +71,14 @@ reminder badge — you add the extra dice yourself when you roll.
 
 ![Casting Banishment: after the Ogre fails its save, the box offers to apply Banishment to the creatures that failed, dropping Incapacitated on them.](../../../assets/screens/gm-cast-spell.png)
 
+### Damage that lands a turn later
+
+A few spells deal some of their damage later — _Acid Arrow_ and _Vitriolic Sphere_ each
+deal the rest at the end of the target's next turn. OpenFray applies only what lands now,
+and puts a **reminder** on each creature that was caught: _5d4 acid at the end of this
+turn_. The badge clears itself when the damage comes due, and you roll it — the same way
+you roll a Hex die.
+
 Every spell you cast is written into the log. When a spell needs concentration, OpenFray
 marks it as such, so ending concentration clears it everywhere at once.
 
