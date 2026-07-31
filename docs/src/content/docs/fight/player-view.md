@@ -34,23 +34,43 @@ it publicly. Nobody can change anything through it: the player view has no butto
 
 ## What your players see
 
-Their screen has two parts:
+Their screen has two side-by-side columns, which scroll separately so a long fight's log
+never pushes the turn order out of sight. On a phone they stack, log underneath.
 
-- **The turn order** — everyone in the fight, in initiative order, with their conditions and
-  effects, who's up, and which round you're on.
-- **The game log** — the same running record you see, so nothing is rolled in secret.
+- **The turn order** — everyone in the fight, in initiative order, with their conditions
+  and effects, who's up, and which round you're on.
+- **The game log** — the running record of what happened.
 
 Player characters always show in full: hit points, armor class, conditions, and death saves.
 Your table wrote those numbers down themselves.
 
 Creatures are different, and that's your call — see below.
 
-Three things never reach the player view, whatever you choose:
+### What lands in their log
+
+Everything that happens on the board, minus a creature's numbers:
+
+| They see                                               | They don't                             |
+| ------------------------------------------------------ | -------------------------------------- |
+| A creature attacking, and whether it hit or missed     | The die it rolled, or its attack bonus |
+| The damage it dealt to a character                     | —                                      |
+| A creature saving or failing a save                    | The die, or its saving throw bonus     |
+| That a creature was hurt or healed                     | By how much                            |
+| Conditions and effects landing and clearing, on anyone | —                                      |
+| Concentration starting and breaking                    | —                                      |
+| Spells being cast, by name                             | —                                      |
+| Turns, rounds, knockouts, deaths, and rests            | —                                      |
+
+Their own characters aren't held back at all: damage to a player character shows the
+number, because they know it already.
+
+Two things never reach the player view, whatever you choose:
 
 - **Creature stat blocks** — abilities, attacks, traits, and spells.
 - **Recharge rolls** — whether a dragon got its breath weapon back.
-- **Escape saves** — a creature's roll to shake off an effect. Your players still see the
-  result, so "the ogre is no longer frightened" shows up; the die that did it doesn't.
+
+Set creature hit points to **Exact number** below and the withholding stops: you've told
+OpenFray your table may do the arithmetic, so the log stops rounding it off too.
 
 ## Choosing how much a creature gives away
 
@@ -65,6 +85,9 @@ apply to every creature in every fight:
 **In words** shows a creature's condition as **Healthy**, **Hurt**, **Bloodied**, or
 **Critical**, without the number. It's the middle ground: your players can tell the fight is
 going their way without counting hit points down to the last one.
+
+The hit-point setting also decides how the log reads. On **In words** or **Hidden**, a
+creature's dice and damage amounts are held back; on **Exact number** they aren't.
 
 Change either one while you're sharing and your players' screens update straight away.
 
