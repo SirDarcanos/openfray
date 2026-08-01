@@ -27,16 +27,16 @@ pick, because a stat block doesn't have spell slots to spend.
 ![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labeled.](../../../assets/screens/cast-spell.png)
 
 **From the Cast spell button**, at the top of the screen. Search any spell — every spell
-in the [libraries you've turned on](/docs/reference/settings/#libraries), plus your own —
-then pick **who is casting it**.
+in the [libraries you've turned on](/docs/reference/settings/#libraries), plus your own.
+The **caster** starts as whoever you have selected, or whoever's turn it is, so the common
+case needs no picking at all; change it in the dropdown when it's someone else.
 
 ![The Cast spell button outlined in red, its modal open with a caster picker set to Zara, a spell search, and a badged spell list.](../../../assets/screens/cast-spell-modal.png)
 
 Naming a caster is worth doing: OpenFray takes their save DC and spell attack bonus, and
-if the spell needs concentration it starts the caster concentrating, with the timer
-already counting. Leave the caster blank and you can still cast — you just type the
-numbers yourself. That's the path for a player's spell, where OpenFray has no sheet to
-read from.
+starts their concentration when the spell takes hold. Leave the caster blank and you can
+still cast — you just type the numbers yourself. That's the path for a player's spell,
+where OpenFray has no sheet to read from.
 
 What happens next depends on the spell:
 
@@ -44,7 +44,7 @@ What happens next depends on the spell:
 - a **saving throw** spell opens the [group save](#group-saves) box, already filled in;
 - a **helpful or utility** spell shows its card.
 
-Wherever a spell rolls its own dice, **Roll damage** becomes **Reroll damage** afterwards.
+Wherever a spell rolls its own dice, **Roll damage** becomes **Reroll damage** afterward.
 Rerolling updates the damage the saves are split from and leaves the results you've already
 recorded alone. See [Rerolling one creature's save](/docs/fight/saves/#rerolling-one-creatures-save).
 
@@ -80,6 +80,10 @@ turn_. The badge clears itself when the damage comes due, and you roll it — th
 you roll a Hex die.
 
 Every spell you cast is written into the log. When a spell needs concentration, OpenFray
-marks it as such, so ending concentration clears it everywhere at once.
+marks the caster as concentrating **once the spell lands** — a target failed, the attack
+hit, or you applied its effect — with the timer already counting. A spell everyone shrugs
+off leaves nothing to concentrate on, so nothing is marked. A spell with nothing to roll and
+nothing to put on a creature (_Wall of Force_, _Silent Image_) takes hold as you cast it.
+Ending concentration then clears the spell everywhere at once.
 
 ![The game log with "Zara concentrates on Banishment" recorded below the Ogre's failed CHA save.](../../../assets/screens/game-log-spell-casted.png)

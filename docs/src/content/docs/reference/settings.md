@@ -8,15 +8,19 @@ keywords:
   - Tome of Beasts library
 ---
 
-Two small things live outside the fight: which **libraries** you play with, and whether the
-app is **light or dark**. Both are set once and remembered in your browser, with no account
-needed. Click the **gear** at the top right and choose **Settings**. The same menu holds the
-light and dark switch, and a link to this handbook.
+Some things live outside the fight: which **libraries** you play with, how much your
+players see on the screen you share with them, and whether the app is **light or dark**.
+They're set once and remembered in your browser, with no account needed. Click the **gear**
+at the top right and choose **Settings**. The same menu holds the light and dark switch, and
+a link to this handbook.
+
+Settings opens on three tabs — **Libraries**, **Player view**, and **Importer** — and starts
+on Libraries.
 
 ## Libraries
 
 OpenFray ships with more than one edition of the rules, and with extra books of creatures.
-In **Settings**, tick the ones your table uses.
+On the **Libraries** tab, tick the ones your table uses.
 
 ![The Libraries panel in Settings, grouped into Core, OpenFray and Other, with Basic Rules 2024 ticked.](../../../assets/screens/rule-sets.png)
 
@@ -37,19 +41,33 @@ matches what you're playing.
 
 The choice is remembered in your browser, so it sticks whether or not you're signed in.
 
-![The Settings panel, with the Libraries section and the two importer buttons outlined in red and labeled.](../../../assets/screens/settings-panel.png)
+![The Settings screen on its Libraries tab, with the tab strip and the library list outlined in red and labeled.](../../../assets/screens/settings-panel.png)
 
 ## Player view
 
-The **player view** is a read-only screen your players follow on their own devices. Two
-settings here decide how much of a creature it gives away:
+The **player view** is a read-only screen your players follow on their own devices. Its own
+tab decides how much of a fight reaches them:
 
-- **Creature hit points** — **In words** (Bloodied), an **exact number**, or **hidden**.
-- **Creature armor class** — **hidden**, or **shown**.
+| Setting                          | What you can choose                         | Starts as       |
+| -------------------------------- | ------------------------------------------- | --------------- |
+| **Creature hit points**          | In words (Bloodied) · Exact number · Hidden | In words        |
+| **Creature armor class**         | Hidden · Shown                              | Hidden          |
+| **Creature rolls**               | Shown · Hidden                              | Shown           |
+| **Creature conditions**          | Shown · Hidden                              | Shown           |
+| **Creatures arriving mid-fight** | Shown · Hidden until revealed               | Shown           |
+| **Game log**                     | This fight only · The whole session         | This fight only |
+| **Fight clocks**                 | Shown · Hidden                              | Shown           |
+| **End-of-fight summary**         | Shown · Hidden                              | Shown           |
 
-It starts on words and no armor class. Player characters always show in full, whatever you
-pick here. Sharing itself is the **screen** button in the top bar — see
-[The player view](/docs/fight/player-view/).
+Player characters always show in full, whatever you pick here, and so does anyone fighting
+alongside them. Every choice reaches your players' screens straight away, mid-fight included.
+Any single creature can also be hidden or revealed on its own, from its controls beside the
+stat block.
+
+![The Player view tab in Settings, listing every choice the shared screen offers with its current value.](../../../assets/screens/player-view-settings.png)
+
+Sharing itself is the **screen** button in the top bar — see
+[The player view](/docs/fight/player-view/), which explains each choice.
 
 ## Light or dark
 
@@ -61,9 +79,9 @@ browser, and it's shared with the OpenFray website, so both match.
 
 ## The importer
 
-Settings also links to the **OpenFray Importer**, a free browser add-on that turns a
-D&D&nbsp;Beyond creature page into an OpenFray creature. Under **Browser extension** there's a
-button for each browser it's published for: **Get it for Chrome** and **Get it for Firefox**. See
+The **Importer** tab links to the **OpenFray Importer**, a free browser add-on that turns a
+D&D&nbsp;Beyond creature page into an OpenFray creature. There's a button for each browser it's
+published for: **Get it for Chrome** and **Get it for Firefox**. See
 [The importer](/docs/library/importer/).
 
 :::note[Where the rules come from]

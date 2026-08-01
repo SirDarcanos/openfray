@@ -17,7 +17,9 @@ ends.
 
 In the controls beside a creature's stat block, click **Concentrate**. You can add the
 spell's name and, if you like, how long it lasts. Casting a concentration spell from
-[Cast spell](/docs/fight/spells/) starts this for you, with the timer already counting.
+[Cast spell](/docs/fight/spells/), or from a creature's stat block, starts this for you
+with the timer already counting — as soon as the spell lands on someone. A spell every
+target shrugs off leaves nothing to hold on to, so nobody is marked as concentrating.
 
 ![The Concentrate control in use, with the game log recording a creature starting and ending concentration.](../../../assets/screens/set-concentration.gif)
 

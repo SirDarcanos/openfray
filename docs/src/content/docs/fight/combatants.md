@@ -52,6 +52,21 @@ name, hit points, armor class, and whether it's a **Friend** or a **Foe**.
 
 ![The Quick add button outlined in red, with its short form open: a name, a Foe dropdown, AC, and HP.](../../../assets/screens/add-npc-dropdown.png)
 
+## Allies
+
+A creature from the compendium is a foe unless you say otherwise. When one fights for the
+party instead — a summoned wolf, a hired guard, an ogre the bard has just charmed — select
+it and click **Make ally** in the controls beside its stat block.
+
+An ally moves in with the players in the tracker, takes the blue row color, is offered as
+an ally when you pick targets, and stops counting toward
+[how hard the fight looks](/docs/fight/encounters/#how-hard-the-fight-looks) and the
+experience in the [end-of-fight summary](/docs/fight/recap/). On the shared
+[player view](/docs/fight/player-view/) it shows in full, like a player character.
+
+The button reads **Ally** once it's one. Click it again to put the creature back on the
+other side, mid-fight if the charm wears off.
+
 ## What each row shows
 
 Once a combatant is on the board, the tracker row shows their initiative, name, hit points,
