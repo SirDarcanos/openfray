@@ -42,7 +42,7 @@ Once it's installed pin it to your browser's toolbar for easy access.
    ![The Import a creature box in OpenFray, with the pasted creature and an Import button.](../../../assets/screens/import-json.png)
 
 The creature is saved to your library as an ordinary custom creature — you can edit it
-afterwards like anything you built yourself, and drop it into any fight. Because it's
+afterward like anything you built yourself, and drop it into any fight. Because it's
 saved to your library, this last step needs an account.
 
 ## What it brings across
