@@ -73,6 +73,10 @@ tagged — it appears on its own when you press **Begin**.
 A creature that arrives mid-fight follows your **Creatures arriving mid-fight** setting, so
 reinforcements can be held back by default and revealed when the party sees them.
 
+When the fight ends, every creature leaves your players' screen again, and anything you
+showed or hid during it goes back to normal. The next **Begin** puts them all back, so you
+never reveal the same creature twice.
+
 ### What lands in their log
 
 Everything that happens on the board, minus the dice a creature rolled:
