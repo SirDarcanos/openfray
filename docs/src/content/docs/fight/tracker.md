@@ -22,8 +22,10 @@ points, and armor class. Any effects on the creature show as badges under its na
 During a fight, the creature whose turn it is glows, and its stat block fills the middle of
 the screen. Click any row to select that creature and act on it.
 
-A creature you're keeping off the shared [player view](/docs/fight/player-view/) is tagged
-**Hidden**, so you can see at a glance which ones your table can't.
+A creature you've chosen to keep off the shared [player view](/docs/fight/player-view/) is
+tagged **Hidden**, so you can see at a glance which ones your table can't. Creatures simply
+waiting for the fight to start aren't tagged — they reach your players' screen on their own
+when you press **Begin**.
 
 ## Changing hit points
 

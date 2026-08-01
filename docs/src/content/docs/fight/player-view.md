@@ -61,11 +61,14 @@ gives nothing away.
 You can overrule that for any creature, either way:
 
 1. Click the creature in the tracker.
-2. In the controls beside its stat block, click **Hide from players**.
+2. In the controls beside its stat block, click **Hide from players** to hold it back, or
+   **Show to players** to put it on their screen. The button always names what the click
+   does, so it reads **Show to players** before the fight, when no creature is on their
+   screen yet.
 
-The button reads **Hidden from players** while it's held back, its row is tagged **Hidden**
-on your own tracker, and anything it does stays out of your players' log. Click again to put
-it on their screen — before the fight if you want to, for the herald who walks in first.
+A creature you hold back is tagged **Hidden** on your own tracker, and anything it does
+stays out of your players' log. A creature merely waiting for the fight to start isn't
+tagged — it appears on its own when you press **Begin**.
 
 A creature that arrives mid-fight follows your **Creatures arriving mid-fight** setting, so
 reinforcements can be held back by default and revealed when the party sees them.
