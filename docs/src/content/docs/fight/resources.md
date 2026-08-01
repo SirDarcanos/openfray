@@ -21,6 +21,12 @@ spends one; the button changes to **Reaction used**.
 
 ![A creature's Use reaction control being clicked in the controls beside its stat block.](../../../assets/screens/use-reaction.gif)
 
+A creature's own reactions are in the **Reactions** section of its stat block. Click one to
+spend the round's reaction with it — the **Use reaction** control changes to **Reaction
+used** either way. If the reaction rolls something, the [attack](/docs/fight/attacks/) or
+[save](/docs/fight/saves/) box opens; most reactions (_Parry_, _Split_) roll nothing and
+just spend it.
+
 The reaction refreshes at the **start of that creature's next turn**, so you don't have to
 reset it by hand, although you can if you used it by mistake.
 
