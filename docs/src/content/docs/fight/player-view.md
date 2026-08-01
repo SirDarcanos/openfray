@@ -17,7 +17,7 @@ It works without an account. Signing in lets you give the link a name you can re
 
 ## Sharing the fight
 
-The **screen** button sits in the top bar, between the account menu and the gear.
+The **screen** button sits in the top bar, between **Sign in** and the gear.
 
 1. Click the **screen** button. A small box opens with the link and a button.
 2. Click **Start sharing**. A green dot appears on the button while sharing is on.
@@ -85,7 +85,7 @@ OpenFray your table may do the arithmetic, so the log stops rounding it off too.
 
 ## Choosing how much a creature gives away
 
-Open **Settings** (the gear at the top right), then **Player view**. Two choices, and both
+Click the **gear** at the top right, choose **Settings**, then **Player view**. Two choices, and both
 apply to every creature in every fight:
 
 | Setting                  | What you can choose                         | Starts as |

@@ -10,8 +10,8 @@ keywords:
 
 Two small things live outside the fight: which **libraries** you play with, and whether the
 app is **light or dark**. Both are set once and remembered in your browser, with no account
-needed. Open **Settings** from the gear at the top right. Beside it sit the **?** that opens
-this handbook and the sun/moon that switches the theme.
+needed. Click the **gear** at the top right and choose **Settings**. The same menu holds the
+light and dark switch, and a link to this handbook.
 
 ## Libraries
 
@@ -53,11 +53,11 @@ pick here. Sharing itself is the **screen** button in the top bar — see
 
 ## Light or dark
 
-The **sun/moon** button in the top bar switches between light and dark. OpenFray opens dark
-by default. Your choice is remembered in your browser, and it's shared with the OpenFray
-website, so both match.
+Click the **gear** at the top right, then **Light mode** or **Dark mode** — the row names the
+one you'd switch to. OpenFray opens dark by default. Your choice is remembered in your
+browser, and it's shared with the OpenFray website, so both match.
 
-![The sun button in the top bar, outlined in red and labeled Light or dark, beside Sign in, the handbook question mark, and the gear.](../../../assets/screens/theme-toggle.png)
+![The gear menu open in the top bar, showing Settings, Light mode, and Handbook.](../../../assets/screens/theme-toggle.png)
 
 ## The importer
 
