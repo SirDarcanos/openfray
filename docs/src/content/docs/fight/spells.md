@@ -55,9 +55,16 @@ a spell has one of those, OpenFray offers to **add it to the board** after you c
 you don't have to build it by hand:
 
 - **Bless** → +1d4 on attacks and saves, for the creatures you pick;
-- **Fly** → a _Fly Speed 60_ reminder;
 - **Hold Person** → Paralyzed, with the saving throw already set up;
-- **Mage Armor** → the new armor class, worked out from the target's Dexterity.
+- **Mage Armor** → the new armor class, worked out from the target's Dexterity;
+- **Haste** → +2 armor class, advantage on Dexterity saves, doubled Speed, and a
+  reminder about the extra action — all applied together.
+
+A spell that leaves several things behind, like Haste or Slow, lands them as **one badge**
+named for the spell. Clearing the badge clears everything the spell applied, and for a
+spell the target can shake off, succeeding on the save ends the whole spell at once. Where
+an effect changes a number — armor class, Speed, the HP maximum — the stat block and
+tracker row show the changed value while it lasts.
 
 Spells that only affect the caster (_Range: Self_, like Speak with Animals) go straight onto them — no
 need to pick a target. For a saving throw spell, OpenFray offers to put the effect on the
