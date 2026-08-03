@@ -13,7 +13,7 @@ the top of the screen.
 
 ![The compendium open to the Creatures tab, with the book icon that opens it outlined in red in the top toolbar.](../../../assets/screens/compendium.png)
 
-1. **The tabs** — creatures, spells, your characters, your campaigns.
+1. **The tabs** — creatures, spells, effects, your characters, your campaigns.
 2. **The list** — search by name; every match shows here.
 3. **What you picked** — the full stat block or spell card, in the same layout you'll see
    during a fight.
@@ -37,6 +37,19 @@ what you're looking at. If it's one of your homebrew creations, the badge will s
 Every spell in the libraries you selected, with its full card:
 casting time, range, components, how long it lasts, and what it does. You'll see the same
 card when you cast a spell, or when you point at a spell name inside a stat block.
+
+## Effects
+
+The effect presets you can apply during a fight — ready-made bundles like a disease
+stage or a level of Intoxication. The list holds the presets your selected libraries
+ship and the ones you've saved yourself; pick one to read exactly what it applies. You
+use them from **Apply effect** during a fight — see
+[Effects & conditions](/docs/fight/effects/#presets).
+
+:::note[Sign in required]
+Saving your own presets requires you to sign in with a free Google or Discord account. A
+library's presets are there for everyone who has the library turned on.
+:::
 
 ## Characters
 

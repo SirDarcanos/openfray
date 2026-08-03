@@ -45,6 +45,15 @@ add them from the compendium instead:
 
 ![The Add PC button outlined in red, with the signed-in picker open — a search over saved characters and a Create a character link.](../../../assets/screens/add-pc-dropdown-signedin.png)
 
+A saved character can also carry its class, level, and the armor it wears. Those feed
+exactly two numbers, each behind its own switch: tick **Calculate AC automatically** and
+OpenFray works armor class out from the armor, shield, and ability scores — including
+the Barbarian and Monk unarmored numbers — and updates it when the character dons or
+doffs armor mid-fight; leave the initiative modifier blank and it's derived from
+Dexterity and the class bonuses that touch initiative. Type either number yourself and
+your number wins. Everything else about the character stays yours to write — OpenFray
+still never runs a build.
+
 ### Throwaway combatants
 
 **Quick add** drops in something you're inventing on the spot and won't reuse — just a

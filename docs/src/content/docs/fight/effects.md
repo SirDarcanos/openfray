@@ -36,13 +36,13 @@ Click the creature in the tracker, then click **Apply effect** in the controls b
 stat block. The box stages everything you pick — nothing lands on the creature until you
 press **Apply**, so you can build the whole thing and change your mind on the way.
 
-![The Apply effect box with its preset, duration, reminder, condition and bonus-or-penalty sections.](../../../assets/screens/apply-effect.png)
+![The Apply effect box, with its preset, duration, reminder, condition, counter and bonus-or-penalty controls outlined in red and numbered one to six.](../../../assets/screens/apply-effect.png)
 
 **1. Start from a preset, if one fits.** **Presets**, at the top of the box, opens a
 search over the ready-made bundles — yours and the ones your
 [libraries](/docs/reference/settings/#libraries) ship. Picking one fills the form below,
-replacing whatever was staged, and you can adjust any part of it before applying. See
-[Presets](#presets).
+replacing whatever was staged, and you can adjust any part of it before applying. The
+row appears once there are presets to offer; see [Presets](#presets).
 
 **2. Set how long it lasts.** This applies to everything staged in the box:
 
@@ -144,6 +144,9 @@ Presets come from two places:
   [Settings](/docs/reference/settings/#libraries) adds the presets it ships:
   _Brood & Bloom_ carries its disease stages and brood counters, and _On Strong Waters
   and Potent Simples_ carries Intoxication, Craving, and the degrees of addiction.
+
+Read any preset in full on the compendium's **Effects** tab — see
+[The compendium](/docs/library/compendium/#effects).
 
 :::note[Needs an account]
 Saving your own presets requires signing in with a free Google or Discord account. A
