@@ -23,7 +23,7 @@ on it — nothing important is hidden in a menu.
 1. **The top bar.** Adding creatures and players, group saves, casting a spell, rests, and
    the switch between the console and the compendium. On its right: signing in, the
    **screen** (sharing a [player view](/docs/fight/player-view/)), and the **gear**, which
-   opens a short menu — settings, light or dark, and this handbook.
+   opens a short menu — settings, light or dark, this handbook, and reporting a bug.
 2. **The tracker.** Everyone in the fight, in the order they act, with hit points, armor
    class, and any conditions on them. This is the column you watch.
 3. **The stat block.** Everything about the current or selected combatant — abilities, actions, reactions, etc. Click an attack here to roll it. See [The stat block](/docs/reference/stat-block/).

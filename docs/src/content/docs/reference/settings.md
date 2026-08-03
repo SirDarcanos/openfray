@@ -11,8 +11,8 @@ keywords:
 Some things live outside the fight: which **libraries** you play with, how much your
 players see on the screen you share with them, and whether the app is **light or dark**.
 They're set once and remembered in your browser, with no account needed. Click the **gear**
-at the top right and choose **Settings**. The same menu holds the light and dark switch, and
-a link to this handbook.
+at the top right and choose **Settings**. The same menu holds the light and dark switch, a
+link to this handbook, and **Report a bug**, which opens a new issue on GitHub.
 
 Settings opens on three tabs — **Libraries**, **Player view**, and **Importer** — and starts
 on Libraries.
@@ -78,7 +78,7 @@ Click the **gear** at the top right, then **Light mode** or **Dark mode** — th
 one you'd switch to. OpenFray opens dark by default. Your choice is remembered in your
 browser, and it's shared with the OpenFray website, so both match.
 
-![The gear menu open in the top bar, showing Settings, Light mode, and Handbook.](../../../assets/screens/theme-toggle.png)
+![The gear menu open in the top bar, showing Settings, Light mode, Handbook, and Report a bug.](../../../assets/screens/theme-toggle.png)
 
 ## The importer
 
