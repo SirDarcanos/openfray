@@ -30,6 +30,9 @@ On the **Libraries** tab, tick the ones your table uses.
 - **Creature Codex** — a fourth Kobold Press bestiary.
 - **Brood & Bloom** and **The Waking Garden** — OpenFray's own creatures, written for the
   2024 rules. Their names are links: click one to read the book itself, in a new tab.
+- **On Strong Waters and Potent Simples** — OpenFray's own too, but a book of spells and
+  ready-made **Presets** rather than creatures. Turning it on adds nothing to the **Add
+  creature** list.
 
 Whatever you turn on shows up in the [compendium](/docs/library/compendium/) and in the
 **Add creature** list, each entry badged with where it came from. Creatures and spells you

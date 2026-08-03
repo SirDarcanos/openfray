@@ -78,6 +78,10 @@ The compendium shows the books you've turned on. OpenFray ships with:
 - **Brood & Bloom** (DnD 5.5e) — OpenFray's own, a bestiary of parasites in three
   broods — one that lives in people, one that takes ground and buildings, and one that
   wants only the dead — plus the Lazaret, the order that catalogs and treats them.
+- **On Strong Waters and Potent Simples** (DnD 5.5e) — OpenFray's own, and the one book
+  here that isn't a bestiary. It's an apothecary's book of drink and drugs, and it adds
+  eleven spells and a set of ready-made **Presets** for the intoxication, craving, and
+  addiction it counts. It adds no creatures.
 - **The Waking Garden** (DnD 5.5e) — OpenFray's own, a bestiary of vegetables that have
   woken up, across three stages of growth from a cabbage that can't chase you to the
   thing every garden is a cutting from.
@@ -102,8 +106,8 @@ OpenFray creature without retyping it, see [the importer](/docs/library/importer
 :::note[Where the rules come from]
 The built-in rules come from the official System Reference Document, used under the
 CC-BY-4.0 license. The Tome of Beasts books are used under the Open Game License.
-Brood & Bloom and The Waking Garden are written for OpenFray: their stat blocks are
-CC-BY-4.0, their lore, art, and prose stay ours. Full credit for every source is in the
+Brood & Bloom, The Waking Garden, and On Strong Waters and Potent Simples are written for
+OpenFray: their stat blocks and spells are CC-BY-4.0, their lore, art, and prose stay ours. Full credit for every source is in the
 app. OpenFray is compatible with 5e (2014) and 5.5e (2024) and isn't made or approved by
 Wizards of the Coast.
 :::
