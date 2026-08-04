@@ -66,7 +66,9 @@ Once the saves are rolled:
   creature, following the on-save rule, each creature's resistances and immunities, and any
   Evasion.
 - For a save-or-be-affected spell, the box also offers to drop the condition (or the
-  spell's effect) on just the creatures that **failed**.
+  spell's effect) on just the creatures that **failed**. **+1 Exhaustion** sits with those
+  chips, and raises each failed creature from the level it already carries — see
+  [Exhaustion](/docs/fight/effects/#exhaustion).
 
 ## Group saves
 

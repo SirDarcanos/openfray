@@ -235,6 +235,18 @@ header line, not on the parts:
 The parts underneath have no buttons of their own. They're what the level means, so
 changing one alone would only put it out of step with the number.
 
+### From an attack or a save
+
+Plenty of creatures cost a failed save a level — a troll's missing limbs, a salt devil's
+scimitar, a night in the cold. You don't have to open **Apply effect** for those: the
+**+1 Exhaustion** chip sits with the condition chips in the
+[attack](/docs/fight/attacks/) and [save](/docs/fight/saves/) boxes, and in
+[Group save](/docs/fight/saves/#group-saves). It raises each affected creature from the
+level it already carries, so a group of six all move up by one whatever they were on.
+
+The chip ignores the duration beside the condition chips. A level lasts until you lower
+it.
+
 ### What a level does
 
 Which penalties a level brings depends on which rules your campaign plays, so OpenFray

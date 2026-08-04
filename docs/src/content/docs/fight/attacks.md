@@ -71,7 +71,8 @@ Damage is never applied until you press that button. On a miss the button is dim
 can still apply if you mean to (adjust the number first).
 
 If the attack also lands a condition — a bite that grabs, a stinger that poisons — the box
-offers to apply it to the target in the same step.
+offers to apply it to the target in the same step, including **+1 Exhaustion** for the
+attacks that cost a level. See [Exhaustion](/docs/fight/effects/#exhaustion).
 
 ## Resistance, immunity, and vulnerability
 
