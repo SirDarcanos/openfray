@@ -175,11 +175,14 @@ all** for the lot; every effect keeps its own buttons:
 
 ![The Applied effects list showing "Frightened · DEX save DC 10" with Roll save and Clear buttons, outlined in red.](../../../assets/screens/applied-effects.png)
 
-- **Clear** removes it.
+- **Clear** removes it. Inside a bundle this removes just that part; **Clear all** on the
+  bundle's own line removes the lot.
 - For an effect that ends on a save, **Roll save** rolls it, and the line shows the
   ability and number needed.
-- **Hide** keeps that one effect off the shared [player view](/docs/fight/player-view/);
-  a hidden effect is tagged **Hidden**, and clicking again shows it.
+- **Hide** keeps it off the shared [player view](/docs/fight/player-view/); a hidden
+  effect is tagged **Hidden**, and clicking again shows it. A bundle reaches your players
+  as one badge carrying its name, so **Hide** sits on the bundle's line and covers
+  everything inside it — there's nothing finer to hide.
 - **Clear effects** removes all the applied effects at once.
 
 Casting a spell can put effects on the board too, already bundled under the spell's
