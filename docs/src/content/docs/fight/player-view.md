@@ -19,10 +19,13 @@ It works without an account. Signing in lets you give the link a name you can re
 
 The **screen** button sits in the top bar, between **Sign in** and the gear.
 
-1. Click the **screen** button. A small box opens with the link and a button.
+1. Click the **screen** button. A small box opens with the link and two buttons beside it.
 2. Click **Start sharing**. A green dot appears on the button while sharing is on.
-3. Click **Copy**, and send the link to your players however you normally talk to them.
-4. When you're done, open the box again and click **Stop sharing**.
+3. Click the **copy** button (two sheets) beside the link, and send it to your players however
+   you normally talk to them.
+4. To see what your table sees, click the **open** button (an arrow leaving a box). The player
+   view opens in a new tab.
+5. When you're done, open the box again and click **Stop sharing**.
 
 Your players' screens fill in as soon as you start. If someone opens the link first, it says
 it's waiting and then fills in on its own — nobody has to reload.
