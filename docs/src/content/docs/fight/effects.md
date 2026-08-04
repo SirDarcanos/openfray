@@ -16,16 +16,17 @@ an **effect**, and they all work the same way.
 
 Whatever spell or ability caused it, what lands on a creature is always one of these:
 
-| Kind                                  | Examples                                         |
-| ------------------------------------- | ------------------------------------------------ |
-| **A condition**                       | Prone, Frightened, Paralyzed, Poisoned           |
-| **Attacks against it have advantage** | Faerie Fire, attacking a prone creature in melee |
-| **Its own rolls have disadvantage**   | Vicious Mockery, Bane                            |
-| **A bonus or penalty to rolls**       | Bless (+1d4), Bane (−1d4), +10 to Stealth        |
-| **A change to its numbers**           | +2 to armor class, Speed halved, −10 HP maximum  |
-| **A reminder**                        | a note to yourself, like "Hex: +1d6 on a hit"    |
-| **Ends on a save**                    | something a saving throw shakes off              |
-| **A counter**                         | a tally you raise and lower, like Exhaustion     |
+| Kind                                  | Examples                                             |
+| ------------------------------------- | ---------------------------------------------------- |
+| **A condition**                       | Prone, Frightened, Paralyzed, Poisoned               |
+| **Attacks against it have advantage** | Faerie Fire, attacking a prone creature in melee     |
+| **Its own rolls have disadvantage**   | Vicious Mockery, Bane                                |
+| **A bonus or penalty to rolls**       | Bless (+1d4), Bane (−1d4), +10 to Stealth            |
+| **A change to its numbers**           | +2 to armor class, Speed halved, −10 HP maximum      |
+| **A reminder**                        | a note to yourself, like "Hex: +1d6 on a hit"        |
+| **Ends on a save**                    | something a saving throw shakes off                  |
+| **A counter**                         | a tally you raise and lower, like a corruption track |
+| **A level of Exhaustion**             | 1 to 6, with the penalties each level brings         |
 
 Conditions are just one kind of effect, so there's only one thing to learn. You tell
 OpenFray what happened; it remembers it and works it into the right rolls and numbers.
@@ -36,7 +37,7 @@ Click the creature in the tracker, then click **Apply effect** in the controls b
 stat block. The box stages everything you pick — nothing lands on the creature until you
 press **Apply**, so you can build the whole thing and change your mind on the way.
 
-![The Apply effect box, with its preset, duration, reminder, condition, counter and bonus-or-penalty controls outlined in red and numbered one to six.](../../../assets/screens/apply-effect.png)
+![The Apply effect box, with its preset, duration, reminder, condition, Exhaustion, counter and bonus-or-penalty controls outlined in red and numbered one to seven.](../../../assets/screens/apply-effect.png)
 
 **1. Start from a preset, if one fits.** **Presets**, at the top of the box, opens a
 search over the ready-made bundles — yours and the ones your
@@ -60,11 +61,15 @@ and reminds you; you decide what it does. **+ Add another reminder** stages a se
 **4. Apply a condition.** These are toggles: the ones already on the creature are
 highlighted, and tapping one again takes it off.
 
-**5. Add a counter.** Click **+ Add counter** and name it — a tally you raise and lower
-by hand, like Exhaustion. Tick **Hidden from players** to keep its number off the shared
-[player view](/docs/fight/player-view/). See [Counters](#counters).
+**5. Set an Exhaustion level.** Exhaustion isn't a toggle — it's a number from 1 to 6.
+Click the level, and the line below spells out what it does before you apply it. **None**
+takes the condition off. See [Exhaustion](#exhaustion).
 
-**6. Add a bonus or penalty.** Click **+ Add a bonus or penalty** and pick _what_ it does
+**6. Add a counter.** Click **+ Add counter** and name it — a tally you raise and lower
+by hand, like a corruption track or a countdown. Tick **Hidden from players** to keep its
+number off the shared [player view](/docs/fight/player-view/). See [Counters](#counters).
+
+**7. Add a bonus or penalty.** Click **+ Add a bonus or penalty** and pick _what_ it does
 (Advantage, Disadvantage, or a number), _what it applies to_, and _whose rolls_ (the
 creature's own, or rolls made against it). It can apply to a kind of roll — attack rolls,
 saving throws, ability checks, or everything — or to one of the creature's numbers:
@@ -75,12 +80,12 @@ OpenFray spells out what you've built in plain English.
 
 ![The Modifier builder in the Apply effect box: an Effect and Applies-to dropdown, ability chips, an On choice, a Label field, and a plain-English summary line.](../../../assets/screens/add-bous-penalty-effect.png)
 
-**7. Name the bundle.** With two or more parts staged, **Apply as one** offers a name —
+**8. Name the bundle.** With two or more parts staged, **Apply as one** offers a name —
 _Drunk_, _Cursed_. Named, everything above lands as one badge that clears together; left
 blank, each part gets its own badge. A counter always stands alone, so its tally outlives
-whatever applied it.
+whatever applied it, and so does an Exhaustion level.
 
-**8. Apply.** Click **Apply** to add everything staged to the combatant — or
+**9. Apply.** Click **Apply** to add everything staged to the combatant — or
 **Save as preset** first, to keep the bundle for the next time. See [Presets](#presets).
 
 ### The numbers a modifier can move
@@ -145,6 +150,9 @@ Presets come from two places:
   _Brood & Bloom_ carries its disease stages and brood counters, and _On Strong Waters
   and Potent Simples_ carries Intoxication, Craving, and the degrees of addiction.
 
+A preset can carry a change in Exhaustion too — see
+[Exhaustion in a preset](#exhaustion-in-a-preset).
+
 Read any preset in full on the compendium's **Effects** tab — see
 [The compendium](/docs/library/compendium/#effects).
 
@@ -201,12 +209,71 @@ roll, or just **Clear** it when they pass.
 When the effect is part of a bundle, succeeding on its save clears the whole bundle —
 the save ends the spell, not one line of it.
 
+## Exhaustion
+
+Exhaustion is the one condition that isn't on or off. It's a level from 1 to 6, and each
+level costs the creature more. OpenFray holds the level and works its penalties into the
+rolls and numbers, the same way it works in any other effect.
+
+To set it:
+
+1. Click the creature, then **Apply effect**.
+2. Under **Exhaustion**, click the level — or **None** to take it off.
+3. Read the line below the levels. It says what that level does before you commit to it.
+4. Click **Apply**.
+
+The creature's row shows one badge reading **Exhaustion 3**, and the **Applied effects**
+list beside the stat block lists what the level landed. Its buttons sit on the badge's
+header line, not on the parts:
+
+| Button        | What it does                                               |
+| ------------- | ---------------------------------------------------------- |
+| **+1**        | Raises the level by one. It stops at 6.                    |
+| **−1**        | Lowers it by one. At 0 the condition ends.                 |
+| **Clear all** | Takes Exhaustion off entirely, with everything it applied. |
+
+The parts underneath have no buttons of their own. They're what the level means, so
+changing one alone would only put it out of step with the number.
+
+### What a level does
+
+Which penalties a level brings depends on which rules your campaign plays, so OpenFray
+reads that from the campaign you're running (see
+[Campaigns & house rules](/docs/library/campaigns/)). Without a campaign it uses the 2024
+rules.
+
+- **Basic Rules 2024** — every d20 roll the creature makes drops by 2 for each level, and
+  its Speed drops by 5 feet for each level. At level 3 that's -6 and -15 feet.
+- **Basic Rules 2014** — each level adds a new penalty on top of the ones below it:
+  Disadvantage on ability checks at 1, Speed halved at 2, Disadvantage on attack rolls
+  and saving throws at 3, the hit point maximum halved at 4, and Speed 0 at 5.
+
+Switching a campaign doesn't rewrite a level already on the board. Set the level again
+and OpenFray rebuilds it for the rules you're playing now.
+
+:::caution[Level 6 is yours to apply]
+A creature at level 6 dies. OpenFray shows that as a reminder and does nothing else — it
+never kills a creature for reaching a number, and it never removes a level at a long rest
+either. Both are your call.
+:::
+
+### Exhaustion in a preset
+
+Exhaustion is cumulative, so a [preset](#presets) carrying it **adds levels** rather than
+setting one. Save a preset while the level is staged and it keeps the change you just made:
+stage 3 on a character already at 1 and the preset is worth two levels. Apply it to someone
+at 0 and they end at 2; apply it to someone at 4 and they end at 6.
+
+The preset's card on the compendium's **Effects** tab says which, as _Gains 2 levels_. A
+preset can relieve Exhaustion the same way — lower the level before you save it, and the
+card reads _Removes 1 level_.
+
 ## Counters
 
 Some things at the table are a number that goes up and down rather than something that
-ends: Exhaustion levels, a homebrew corruption track, a countdown you're running. A
-**counter** is an effect that holds that number for you. OpenFray never changes it — you
-do, and you decide what it means when it gets high.
+ends: a homebrew corruption track, a countdown you're running. A **counter** is an effect
+that holds that number for you. OpenFray never changes it — you do, and you decide what it
+means when it gets high.
 
 To add one:
 
