@@ -39,12 +39,14 @@ grouped by round and filterable by kind. See [The game log](/docs/reference/game
 
 The box at the bottom takes a formula and rolls it. Beyond `2d6+3`, it understands:
 
-| Type this             | And you get                                                |
-| --------------------- | ---------------------------------------------------------- |
-| `1d20+7`              | one die, plus a flat modifier                              |
-| `1d20adv` / `1d20dis` | rolled twice, keeping the higher or lower — both are shown |
-| `4d6kh3`              | roll four, keep the highest three (`kl` keeps the lowest)  |
-| `2d6+1d4+2`           | as many dice and modifiers as you like, added together     |
+| Type this             | And you get                                                            |
+| --------------------- | ---------------------------------------------------------------------- |
+| `1d20+7`              | one die, plus a flat modifier                                          |
+| `1d20adv` / `1d20dis` | rolled twice, keeping the higher or lower — both are shown             |
+| `4d6kh3`              | roll four, keep the highest three (`kl` keeps the lowest)              |
+| `2d6+1d4+2`           | as many dice and modifiers as you like, added together                 |
+| `1d6!`                | exploding: a die landing on its highest face is rolled again and added |
+| `1d6x10`              | multiply that group of dice — a d6 giving 10, 20, 30 and so on         |
 
 The **d20 d12 d10 d8 d6 d4** buttons beside it are shortcuts for a single die, for when
 someone just needs a number.
