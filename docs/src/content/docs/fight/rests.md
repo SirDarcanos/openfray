@@ -12,7 +12,7 @@ Fights don't happen back to back. Between them the party rests, and you clear th
 for whatever comes next. Both rests live in the top bar, to the left of **Group save** —
 a campfire and a tent.
 
-![The campfire and tent buttons in the top bar, outlined in red and labeled Short rest and Long rest, with the short-rest count beside them.](../../../assets/screens/rest-buttons.png)
+![The campfire and tent buttons in the top bar, outlined in red and labeled Short rest and Long rest.](../../../assets/screens/rest-buttons.png)
 
 Rests are **disabled while a fight is running** — you can't rest mid-combat, so OpenFray
 grays them out until you stop.
