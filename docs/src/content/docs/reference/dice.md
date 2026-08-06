@@ -42,7 +42,7 @@ The box at the bottom takes a formula and rolls it. Beyond `2d6+3`, it understan
 | Type this             | And you get                                                            |
 | --------------------- | ---------------------------------------------------------------------- |
 | `1d20+7`              | one die, plus a flat modifier                                          |
-| `1d20adv` / `1d20dis` | rolled twice, keeping the higher or lower — both are shown             |
+| `2d20adv` / `2d20dis` | roll two, keep the higher or lower — both are shown                    |
 | `4d6kh3`              | roll four, keep the highest three (`kl` keeps the lowest)              |
 | `2d6+1d4+2`           | as many dice and modifiers as you like, added together                 |
 | `1d6!`                | exploding: a die landing on its highest face is rolled again and added |
