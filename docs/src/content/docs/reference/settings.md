@@ -14,7 +14,7 @@ They're set once and remembered in your browser, with no account needed. Click t
 at the top right and choose **Settings**. The same menu holds the light and dark switch, a
 link to this handbook, and **Report a bug**, which opens a new issue on GitHub.
 
-Settings opens on three tabs — **Libraries**, **Player view**, and **Importer** — and starts
+Settings opens on three tabs (**Libraries**, **Player view**, and **Importer**) and starts
 on Libraries.
 
 ## Libraries
@@ -28,7 +28,7 @@ On the **Libraries** tab, tick the ones your table uses.
 - **Basic Rules 2014** — the older rules. Turn this on if that's what your table plays.
 - **Tome of Beasts 1, 2, and 3** — three books of extra creatures from Kobold Press.
 - **Creature Codex** — a fourth Kobold Press bestiary.
-- **Brood & Bloom** and **The Waking Garden** — OpenFray's own creatures, written for the
+- **Brood & Bloom** and **The Waking Garden**: OpenFray's own creatures, written for the
   2024 rules. Their names are links: click one to read the book itself, in a new tab.
 - **On Strong Waters and Potent Simples** — OpenFray's own too, but a book of spells and
   ready-made **Presets** rather than creatures. Turning it on adds nothing to the **Add
@@ -69,12 +69,12 @@ stat block.
 
 ![The Player view tab in Settings, listing every choice the shared screen offers with its current value.](../../../assets/screens/player-view-settings.png)
 
-Sharing itself is the **screen** button in the top bar — see
+Sharing itself is the **screen** button in the top bar. See
 [The player view](/docs/fight/player-view/), which explains each choice.
 
 ## Light or dark
 
-Click the **gear** at the top right, then **Light mode** or **Dark mode** — the row names the
+Click the **gear** at the top right, then **Light mode** or **Dark mode**. The row names the
 one you'd switch to. OpenFray opens dark by default. Your choice is remembered in your
 browser, and it's shared with the OpenFray website, so both match.
 

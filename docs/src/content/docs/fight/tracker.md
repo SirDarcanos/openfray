@@ -8,7 +8,7 @@ keywords:
   - combat console layout
 ---
 
-The **tracker** is the left column of the console — the list of everyone in the fight, in
+The **tracker** is the left column of the console: the list of everyone in the fight, in
 initiative order. It's the column you watch. This page covers what a row shows, and how to
 change hit points.
 
@@ -24,7 +24,7 @@ the screen. Click any row to select that creature and act on it.
 
 A creature you've chosen to keep off the shared [player view](/docs/fight/player-view/) is
 tagged **Hidden**, so you can see at a glance which ones your table can't. Creatures simply
-waiting for the fight to start aren't tagged — they reach your players' screen on their own
+waiting for the fight to start aren't tagged. They reach your players' screen on their own
 when you press **Begin**.
 
 ## Changing hit points
@@ -38,17 +38,17 @@ Click a creature's current hit points to change them. You can:
 Current hit points change color as a creature gets hurt, so you can spot a badly wounded
 one at a glance. Temporary hit points are counted separately and consumed first when damaging a combatant.
 
-![Three tracker rows with current hit points tinted by wound level — red at 1/5, green at full, and amber at 18/23.](../../../assets/screens/tracker-row-hp-colors.png)
+![Three tracker rows with current hit points tinted by wound level: red at 1/5, green at full, and amber at 18/23.](../../../assets/screens/tracker-row-hp-colors.png)
 
 :::tip[Damage from a player]
 Typing `-8` is the quick way to apply damage from a player to a creature. When a creature
-attacks, [resolve the attack](/docs/fight/attacks/) instead — OpenFray rolls the damage,
+attacks, [resolve the attack](/docs/fight/attacks/) instead. OpenFray rolls the damage,
 applies resistances, and takes the hit points off for you.
 :::
 
 ## Rearranging the order
 
-Once a fight is running, you can drag a row to a new spot in the initiative order — for a
+Once a fight is running, you can drag a row to a new spot in the initiative order, for a
 held action, or to fix a number you typed wrong. See
 [Encounters & initiative](/docs/fight/encounters/#rearranging-the-order).
 

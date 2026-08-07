@@ -23,7 +23,7 @@ yours is sitting on a server you never asked to use. OpenFray warns you before y
 a tab with a fight in it.
 
 You can also share a read-only [player view](/docs/fight/player-view/) with your table
-without an account. Nothing about it is stored on a server either way — it reaches your
+without an account. Nothing about it is stored on a server either way. It reaches your
 players' screens and is kept nowhere.
 
 Three things do stick around on your own device without an account: your
@@ -47,7 +47,7 @@ From then on, this is saved to your account and follows you between devices:
 
 Saving happens in the background while you play. You never wait for it, and there's no save button.
 
-Nothing you did before signing in is thrown away — the fight on your board stays put.
+Nothing you did before signing in is thrown away. The fight on your board stays put.
 
 ## Deleting everything
 

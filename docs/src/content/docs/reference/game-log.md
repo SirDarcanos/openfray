@@ -15,7 +15,7 @@ sidebar feed and the full history.
 
 ## The sidebar feed
 
-The bottom of the right-hand column shows **Game log** — the most recent entries, newest
+The bottom of the right-hand column shows **Game log**: the most recent entries, newest
 first. It's the running feed you watch during a fight.
 
 Each line carries a colored dot for its kind, so a roll, a spell, and a hit are easy to tell
@@ -34,20 +34,20 @@ retrace the whole fight from the top.
 The chips along the top filter the history to one kind of entry. Only the kinds present in
 this fight are shown:
 
-| Filter            | What it shows                                    |
-| ----------------- | ------------------------------------------------ |
-| **All**           | Everything, in order.                            |
-| **Roll**          | Dice rolls — attacks, saves, checks, initiative. |
-| **Spell**         | Spells cast.                                     |
-| **Action**        | Actions used.                                    |
-| **Condition**     | Conditions and effects applied or cleared.       |
-| **Concentration** | Concentration started, held, or broken.          |
-| **Damage**        | Hit-point damage dealt.                          |
-| **Heal**          | Healing.                                         |
-| **Turn**          | Turn and round changes.                          |
-| **Rest**          | Short and long rests.                            |
-| **Death**         | Death saves and knockouts.                       |
-| **Note**          | Notes you left, and anything else.               |
+| Filter            | What it shows                                   |
+| ----------------- | ----------------------------------------------- |
+| **All**           | Everything, in order.                           |
+| **Roll**          | Dice rolls: attacks, saves, checks, initiative. |
+| **Spell**         | Spells cast.                                    |
+| **Action**        | Actions used.                                   |
+| **Condition**     | Conditions and effects applied or cleared.      |
+| **Concentration** | Concentration started, held, or broken.         |
+| **Damage**        | Hit-point damage dealt.                         |
+| **Heal**          | Healing.                                        |
+| **Turn**          | Turn and round changes.                         |
+| **Rest**          | Short and long rests.                           |
+| **Death**         | Death saves and knockouts.                      |
+| **Note**          | Notes you left, and anything else.              |
 
 **Clear log** empties the history. It's also cleared when you remove everyone from the board
 with the skull (see [Rests & clearing the board](/docs/fight/rests/#clearing-the-board)); a

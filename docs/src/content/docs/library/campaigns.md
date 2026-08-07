@@ -26,7 +26,7 @@ Google or Discord account. Without an account OpenFray uses the default rules.
 
 Each campaign is labeled **DnD 5.5 (2024)** or **DnD 5.0 (2014)**, so you can tell your
 games apart at a glance. Which creatures and spells you actually see is a separate
-choice, in [Settings](/docs/reference/settings/#libraries) — that way one setting covers
+choice, in [Settings](/docs/reference/settings/#libraries), so one setting covers
 you whether or not you're signed in.
 
 ![The New campaign box, with a name, an edition, and the five house-rule dropdowns.](../../../assets/screens/campaign-form.png)
@@ -41,7 +41,7 @@ you whether or not you're signed in.
 | **Initiative ties**     | _Higher Dexterity_; _Players first_; or _Manual_, leaving the order to you                       |
 | **Level up**            | _XP_, or _Milestone_                                                                             |
 
-The crit and hit-point rules change the dice OpenFray rolls for creatures — it never
+The crit and hit-point rules change the dice OpenFray rolls for creatures. It never
 rolls a player's attack. The surprise and tie rules change the initiative order.
 
 Once a campaign exists, its card lists every rule at a glance, so you can check what this
@@ -69,4 +69,4 @@ as necessary.
   Pick this and OpenFray hides it during a fight and in the summary.
 
 The [compendium's creature list](/docs/library/compendium/#creatures) always shows
-experience, whichever you pick — it's a reference, not a scoreboard.
+experience, whichever you pick. It is a reference, not a scoreboard.

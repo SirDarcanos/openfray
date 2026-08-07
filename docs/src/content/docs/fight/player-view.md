@@ -28,7 +28,7 @@ The **screen** button sits in the top bar, between **Sign in** and the gear.
 5. When you're done, open the box again and click **Stop sharing**.
 
 Your players' screens fill in as soon as you start. If someone opens the link first, it says
-it's waiting and then fills in on its own — nobody has to reload.
+it's waiting and then fills in on its own. Nobody has to reload.
 
 Reloading the console doesn't interrupt them: sharing picks up again on its own, and only
 stops when you press **Stop sharing** or close the tab.
@@ -50,10 +50,10 @@ never pushes the turn order out of sight. On a phone they stack, log underneath.
 
 Player characters always show in full: hit points, armor class, conditions, and death saves.
 Your table wrote those numbers down themselves. Anyone fighting **alongside** them shows in
-full too — a summoned wolf, a hired guard, a creature you've made an ally (see
+full too: a summoned wolf, a hired guard, a creature you've made an ally (see
 [Creatures, players & quick adds](/docs/fight/combatants/#allies)).
 
-Creatures on the other side are different, and that's your call — see below.
+Creatures on the other side are different, and that's your call. See below.
 
 ### When a creature appears
 
@@ -71,7 +71,7 @@ You can overrule that for any creature, either way:
 
 A creature you hold back is tagged **Hidden** on your own tracker, and anything it does
 stays out of your players' log. A creature merely waiting for the fight to start isn't
-tagged — it appears on its own when you press **Begin**.
+tagged. It appears on its own when you press **Begin**.
 
 A creature that arrives mid-fight follows your **Creatures arriving mid-fight** setting, so
 reinforcements can be held back by default and revealed when the party sees them.
@@ -95,7 +95,7 @@ Everything that happens on the board, minus the dice a creature rolled:
 | Spells being cast, by name                             | —                             |
 | Turns, rounds, knockouts, deaths, and rests            | —                             |
 
-A roll's total is safe to show — on its own it says nothing, because the dice behind it are
+A roll's total is safe to show. On its own it says nothing, because the dice behind it are
 unknown. A **saving throw** is the exception and shows no number at all: set against a
 difficulty class your table can work out, a save total would give the creature's bonus away.
 Saved or failed is the whole of what they need.
@@ -117,8 +117,8 @@ Two things never reach the player view, whatever you choose:
 
 ### When the fight ends
 
-Your players see the same summary you do — the outcome, the experience earned, how long it
-took, and the standout hits — for as long as you leave it open. Their log clears at the same
+Your players see the same summary you do, for as long as you leave it open: the outcome,
+the experience earned, how long it took, and the standout hits. Their log clears at the same
 moment, ready for the next fight. Both are settings; see [Choosing what they
 see](#choosing-what-they-see).
 
@@ -162,7 +162,7 @@ Sign in and you can name it instead:
 1. Click the **screen** button, then type a name in **Name the link**.
 2. Click **Save**.
 
-Use letters, numbers, and hyphens — something like `tuesday-game`. Names are first come,
+Use letters, numbers, and hyphens, something like `tuesday-game`. Names are first come,
 first served: if another Game Master has already taken one, OpenFray says so and your current
 link keeps working, so nothing breaks mid-session.
 

@@ -17,16 +17,16 @@ damage; players roll their own and you record the result.
 
 1. Select the creature and click the **action** in its stat block. The save box opens.
 2. It's already set up from the stat block: the **ability** and the **DC** are filled in,
-   and so is the **on-save** rule — **save → half damage**, **save → no damage**, or
+   and so is the **on-save** rule: **save → half damage**, **save → no damage**, or
    **save → negates effect**.
-3. Pick the **targets** — your players and the foes are listed separately.
-4. Type the **damage** — a formula like `8d6`, or a flat number.
+3. Pick the **targets**. Your players and the foes are listed separately.
+4. Type the **damage**, either a formula like `8d6` or a flat number.
 5. Click **Roll saves**. OpenFray rolls each creature's save; for a player, you record
    what they rolled.
 
 ![The save box resolving an action against several targets, with the DC, and the per-target pass/fail results outlined in red.](../../../assets/screens/save-resolve.png)
 
-If the action deals damage with no save at all, the box says **Automatic area damage — no
+If the action deals damage with no save at all, the box says **Automatic area damage, no
 save** and the button reads **Roll damage** instead.
 
 ## Magic Resistance and Evasion
@@ -46,7 +46,7 @@ Two common defenses are handled for you when they apply:
 
 Every creature's row carries a **Reroll** button, which rolls that creature's save again
 and updates its damage. It's per creature on purpose: the rest of the list keeps whatever
-you've already settled, and the damage — one roll the whole area shares — doesn't change.
+you've already settled, and the damage doesn't change. It is one roll the whole area shares.
 
 A player's row has no **Reroll**. OpenFray never rolls for a player, so you record what
 they rolled with **Save** or **Fail**, and change it there if they roll again.
@@ -55,34 +55,34 @@ they rolled with **Save** or **Fail**, and change it there if they roll again.
 
 A creature with **Legendary Resistance** can choose to succeed on a save it failed. When a
 creature that has uses left fails, the box offers to **turn the failed save into a
-success** — one tap spends a use. See
+success**, and one tap spends a use. See
 [Creature resources](/docs/fight/resources/#legendary-resistance).
 
 ## Applying the result
 
 Once the saves are rolled:
 
-- Click **Apply damage** to take the damage off everyone at once — full, half, or none per
+- Click **Apply damage** to take the damage off everyone at once: full, half, or none per
   creature, following the on-save rule, each creature's resistances and immunities, and any
   Evasion.
 - For a save-or-be-affected spell, the box also offers to drop the condition (or the
   spell's effect) on just the creatures that **failed**. **+1 Exhaustion** sits with those
-  chips, and raises each failed creature from the level it already carries — see
+  chips, and raises each failed creature from the level it already carries. See
   [Exhaustion](/docs/fight/effects/#exhaustion).
 
 ## Group saves
 
-**Group save** is the standalone version — one spell, a whole group rolling against it at
+**Group save** is the standalone version: one spell, a whole group rolling against it at
 once, with no action to start from. Open it from the top of the screen, or let a saving
 throw spell open it for you.
 
 ![The Group save box, with the DC, the on-save rule, the damage field, the damage type, the target list and the Roll saves button outlined in red.](../../../assets/screens/group-save.png)
 
-1. Pick the **ability** and the **DC**, and what a successful save earns — half damage, no
+1. Pick the **ability** and the **DC**, and what a successful save earns: half damage, no
    damage, or the effect simply doesn't happen. Casting a spell fills all of this in.
-2. Type the **damage** — a formula like `8d6`, or a flat number if the player already
+2. Type the **damage**, either a formula like `8d6` or a flat number if the player already
    rolled it.
-3. Pick the **damage type** beside it — **Fire** for a _Fireball_. OpenFray then works in
+3. Pick the **damage type** beside it, such as **Fire** for a _Fireball_. OpenFray then works in
    each target's resistances and immunities, the same way it does for an attack. Leave it
    on **Untyped** and the number lands as you typed it, because there's nothing for a
    defense to match.
@@ -90,7 +90,7 @@ throw spell open it for you.
 5. Click **Roll saves**. OpenFray rolls for the creatures, working in their save bonuses
    and things like Magic Resistance and Evasion. For your players, you type what they
    rolled.
-6. **Apply damage** to everyone in one click — and for a save-or-be-affected spell, drop
+6. **Apply damage** to everyone in one click. For a save-or-be-affected spell, drop
    the condition on the ones that failed.
 
 Casting a saving throw spell opens this box already filled in. See

@@ -15,14 +15,14 @@ creature's turn. You spend them from the creature's controls and from its stat b
 
 ## Reactions
 
-Every creature gets one reaction a round — an opportunity attack, a readied action, a
+Every creature gets one reaction a round: an opportunity attack, a readied action, a
 _Shield_ spell. In the controls beside the stat block, click **Use reaction** when it
 spends one; the button changes to **Reaction used**.
 
 ![A creature's Use reaction control being clicked in the controls beside its stat block.](../../../assets/screens/use-reaction.gif)
 
 A creature's own reactions are in the **Reactions** section of its stat block. Click one to
-spend the round's reaction with it — the **Use reaction** control changes to **Reaction
+spend the round's reaction with it, and the **Use reaction** control changes to **Reaction
 used** either way. If the reaction rolls something, the [attack](/docs/fight/attacks/) or
 [save](/docs/fight/saves/) box opens; most reactions (_Parry_, _Split_) roll nothing and
 just spend it.
@@ -33,13 +33,13 @@ reset it by hand, although you can if you used it by mistake.
 ## Legendary actions
 
 A legendary creature can act between other creatures' turns. Its stat block has a
-**Legendary Actions** section, headed with how many it has this round — for example,
+**Legendary Actions** section, headed with how many it has this round, for example
 _Legendary Actions (3 of 3 left)_.
 
 ![A dragon's Legendary Actions section headed "Legendary Actions (3 of 3 left)", listing three clickable actions.](../../../assets/screens/legendary-actions.png)
 
 Click a legendary action to spend it. Each one has a cost, and the header counts down as
-you spend from the round's budget. If the action rolls something — an attack, a save — it
+you spend from the round's budget. If the action rolls something (an attack, a save) it
 opens the [attack](/docs/fight/attacks/) or [save](/docs/fight/saves/) box. The budget
 refreshes at the start of the creature's turn.
 
@@ -51,8 +51,8 @@ counts for legendary resistance and legendary actions, which are often higher th
 ## Legendary resistance
 
 A creature with **Legendary Resistance** can turn a failed saving throw into a success a few
-times a day. Its stat block shows the section with a counter — _Legendary Resistance (3
-left)_ — and the controls have a **Use Legendary Resistance** button.
+times a day. Its stat block shows the section with a counter, _Legendary Resistance (3
+left)_, and the controls have a **Use Legendary Resistance** button.
 
 ![The Legendary Resistance counter and the Use Legendary Resistance button, with the In lair toggle, outlined in red.](../../../assets/screens/legendary-resistance.png)
 
@@ -64,7 +64,7 @@ convert that failure to a success there. Either way spends one use.
 
 ## Recharge abilities
 
-Some abilities — a breath weapon, a bite — come back on a die roll, shown as **Recharge
+Some abilities (a breath weapon, a bite) come back on a die roll, shown as **Recharge
 5–6** on the stat block. Use it and it grays out, spent. On the creature's next turn,
 OpenFray rolls to see whether it recharges, and makes it available again if it does.
 
@@ -77,7 +77,7 @@ Other resources are counted per use:
 - An action marked **N/Day** (a limited-use ability) is clickable while it has uses left and
   grays out at zero.
 - **Spell uses** work the same way. An **At will** spell is unlimited; a **2/Day Each**
-  block counts down per spell — casting _Fireball_ leaves _Invisibility_ untouched — and
+  block counts down per spell, so casting _Fireball_ leaves _Invisibility_ untouched, and
   the spell grays out when it's spent. See [Spells](/docs/fight/spells/).
 
 Moving to the [next turn](/docs/fight/encounters/#what-moving-to-the-next-turn-does)

@@ -9,7 +9,7 @@ keywords:
 ---
 
 An **encounter** is the fight you're running: everyone in it, the initiative order, and
-which round you're on. The left column — the **tracker** — is where it all happens.
+which round you're on. The left column, the **tracker**, is where it all happens.
 
 ## Setting the order
 
@@ -18,7 +18,7 @@ Until you begin, players and foes sit in separate groups so you can see both sid
 
 Click **Begin** and OpenFray asks for everyone's initiative. Creatures are rolled for
 you. Players are blank, so you can type what they rolled, or leave it blank and let
-OpenFray roll. You can also mark someone **surprised** here — what that does depends on
+OpenFray roll. You can also mark someone **surprised** here. What that does depends on
 your campaign's [surprise rule](/docs/library/campaigns/#house-rules).
 
 Click **Start combat** and you're in round 1, at the top of the list.
@@ -34,7 +34,7 @@ foe and watch it move.
 
 The rating is an estimate, and it's worth knowing what it's built from:
 
-- **Your players set the bar.** OpenFray doesn't know anyone's level — it works it out
+- **Your players set the bar.** OpenFray doesn't know anyone's level. It works it out
   from their hit points, and from Constitution when the character has it recorded. Give a
   saved [character](/docs/fight/combatants/#players) its ability scores and the estimate
   gets closer.
@@ -57,7 +57,7 @@ of the screen. The buttons beside the round number move the fight along.
 
 :::caution[Going back is a fix, not an undo]
 **Previous turn** moves the marker back and nothing else. It does **not** put things
-back the way they were — timers that counted down, a used reaction, or lost
+back the way they were: timers that counted down, a used reaction, or lost
 concentration all stay as they are. Use it when you clicked ahead by mistake, not to
 replay a turn.
 :::
@@ -75,7 +75,7 @@ Two clocks run in the footer while you fight: **Real**, the time you've actually
 (pauses don't count), and **In-game**, six seconds per round. Use the in-game clock to
 tell a player how long a timed spell has left.
 
-![The footer clocks during a fight — Real 29:11 and In-game 0:36.](../../../assets/screens/fight-timer.png)
+![The footer clocks during a fight, reading Real 29:11 and In-game 0:36.](../../../assets/screens/fight-timer.png)
 
 ### Moving to the next turn
 
@@ -90,12 +90,12 @@ Clicking **Next turn** does more than move the marker. Each time, OpenFray:
   at the right moment in its turn;
 - rolls to see whether a used-up recharge ability is available again (e.g. a dragon's breath attack).
 
-OpenFray follows whose turn it is by the creature itself, not by its place in the list —
+OpenFray follows whose turn it is by the creature itself, not by its place in the list,
 so adding, removing, or dragging creatures around never loses the turn.
 
 ## Rearranging the order
 
-Sometimes the order needs a nudge — someone held their action, or you typed a number
+Sometimes the order needs a nudge. Someone held their action, or you typed a number
 wrong. Once the fight is running, every living row shows a **drag handle**: the six small
 dots on the far left of the row, before the initiative number.
 
@@ -112,5 +112,5 @@ When the last foe is defeated, OpenFray asks once whether the fight is over.
 ![The "Every foe is down" alert asking whether to end combat, with Keep fighting and End combat buttons.](../../../assets/screens/end-combat-alert.png)
 
 Click **Keep fighting** to keep the fight active (e.g. if a second wave of foes is coming or a player is rolling death saves);
-Click **End combat** to stop the ifght and get its summary — the outcome, experience, timings, and a few standout hits. See
+Click **End combat** to stop the fight and get its summary: the outcome, experience, timings, and a few standout hits. See
 [End of the fight](/docs/fight/recap/).

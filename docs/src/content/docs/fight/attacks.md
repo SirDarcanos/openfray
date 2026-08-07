@@ -21,7 +21,7 @@ Players roll their own attacks, you enter the result if needed.
 
 1. Click the attacking creature in the tracker to select it. Its stat block fills the
    middle column.
-2. In the stat block, click the **name of the attack** — _Bite_, _Longsword_, _Fire
+2. In the stat block, click the **name of the attack**, such as _Bite_, _Longsword_, _Fire
    Breath_. The attack box opens.
 3. Pick the **Target** from the chips at the top.
 4. Click **Roll attack**. OpenFray rolls a d20, adds the attack's bonus and any modifiers
@@ -56,21 +56,21 @@ advantage.
 A natural 20 is a **Critical hit!** and a natural 1 is a **Critical miss!**. How much a crit
 adds to the damage follows your campaign's [crit rule](/docs/library/campaigns/#house-rules).
 
-A **melee** hit on a **Paralyzed** or **Unconscious** target is a critical automatically —
-the box shows _(auto-crit — Paralyzed target)_ or _(auto-crit — Unconscious target)_ so you
+A **melee** hit on a **Paralyzed** or **Unconscious** target is a critical automatically.
+The box shows _(auto-crit, Paralyzed target)_ or _(auto-crit, Unconscious target)_ so you
 know why.
 
 ## Damage
 
 After a hit, OpenFray rolls the attack's damage and shows it as a pill for each damage type.
 
-1. Check the **Damage** field — it's filled in with the rolled total, and you can edit it.
+1. Check the **Damage** field. It's filled in with the rolled total, and you can edit it.
 2. Click **Apply to _{target}_** to take the damage off the target's hit points.
 
 Damage is never applied until you press that button. On a miss the button is dimmed; you
 can still apply if you mean to (adjust the number first).
 
-If the attack also lands a condition — a bite that grabs, a stinger that poisons — the box
+If the attack also lands a condition (a bite that grabs, a stinger that poisons) the box
 offers to apply it to the target in the same step, including **+1 Exhaustion** for the
 attacks that cost a level. See [Exhaustion](/docs/fight/effects/#exhaustion).
 
@@ -85,7 +85,7 @@ you:
 
 Each damage pill shows the type and the final amount, with a label like _resisted_ when a
 defense changed it. This works for **players** too, as long as you've given the character
-its defenses — in the **Add PC** form, or on a saved [character](/docs/fight/combatants/#players).
+its defenses, in the **Add PC** form or on a saved [character](/docs/fight/combatants/#players).
 If a player has none recorded, there's nothing to apply, so adjust the **Damage** field
 yourself before applying.
 
@@ -95,5 +95,5 @@ yourself before applying.
 
 An attack-roll spell (e.g. _Fire Bolt_, _Chromatic Orb_) uses this same box. Cast it from a
 creature's stat block and its attack bonus is filled in. Cast it from **Cast spell**
-without naming a caster — for a player's spell — and you type the **Spell attack bonus**
+without naming a caster (for a player's spell) and you type the **Spell attack bonus**
 yourself. See [Spells](/docs/fight/spells/).

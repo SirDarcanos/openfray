@@ -40,10 +40,10 @@ card when you cast a spell, or when you point at a spell name inside a stat bloc
 
 ## Effects
 
-The effect presets you can apply during a fight — ready-made bundles like a disease
+The effect presets you can apply during a fight: ready-made bundles like a disease
 stage or a level of Intoxication. The list holds the presets your selected libraries
 ship and the ones you've saved yourself; pick one to read exactly what it applies. You
-use them from **Apply effect** during a fight — see
+use them from **Apply effect** during a fight. See
 [Effects & conditions](/docs/fight/effects/#presets).
 
 :::note[Sign in required]
@@ -53,8 +53,8 @@ library's presets are there for everyone who has the library turned on.
 
 ## Characters
 
-Your saved players. Build a character once — armor, hit points, abilities, resistances,
-senses, and private GM notes — and drop them into any fight instead of typing them in
+Your saved players. Build a character once, with armor, hit points, abilities, resistances,
+senses, and private GM notes, then drop them into any fight instead of typing them in
 again.
 
 :::note[Sign in required]
@@ -81,21 +81,21 @@ Saving and using campaigns requires you to sign in with a free Google or Discord
 
 The compendium shows the books you've turned on. OpenFray ships with:
 
-- **Basic Rules 2024** (DnD 5.5e) — the newer rules. On by default.
-- **Basic Rules 2014** (DnD 5e) — the older rules. Turn this on if that's what your table
+- **Basic Rules 2024** (DnD 5.5e): the newer rules. On by default.
+- **Basic Rules 2014** (DnD 5e): the older rules. Turn this on if that's what your table
   plays.
-- **Tome of Beasts 1, 2, and 3** (DnD 5e) — three books of extra creatures from Kobold
+- **Tome of Beasts 1, 2, and 3** (DnD 5e): three books of extra creatures from Kobold
   Press.
-- **Creature Codex** (DnD 5e) — a fourth Kobold Press bestiary, around 350 more
+- **Creature Codex** (DnD 5e): a fourth Kobold Press bestiary, around 350 more
   creatures.
-- **Brood & Bloom** (DnD 5.5e) — OpenFray's own, a bestiary of parasites in three
-  broods — one that lives in people, one that takes ground and buildings, and one that
-  wants only the dead — plus the Lazaret, the order that catalogs and treats them.
-- **On Strong Waters and Potent Simples** (DnD 5.5e) — OpenFray's own, and the one book
+- **Brood & Bloom** (DnD 5.5e): OpenFray's own, a bestiary of parasites in three
+  broods. One lives in people, one takes ground and buildings, and one wants only the
+  dead. It also carries the Lazaret, the order that catalogs and treats them.
+- **On Strong Waters and Potent Simples** (DnD 5.5e): OpenFray's own, and the one book
   here that isn't a bestiary. It's an apothecary's book of drink and drugs, and it adds
   eleven spells and a set of ready-made **Presets** for the intoxication, craving, and
   addiction it counts. It adds no creatures.
-- **The Waking Garden** (DnD 5.5e) — OpenFray's own, a bestiary of vegetables that have
+- **The Waking Garden** (DnD 5.5e): OpenFray's own, a bestiary of vegetables that have
   woken up, across three stages of growth from a cabbage that can't chase you to the
   thing every garden is a cutting from.
 

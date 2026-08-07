@@ -16,21 +16,21 @@ account needed. This page runs you through your first fight, start to finish. Yo
 ## The console at a glance
 
 The console is one screen, split into three columns. Everything you need during a fight is
-on it — nothing important is hidden in a menu.
+on it. Nothing important is hidden in a menu.
 
 ![The OpenFray console during a fight, with its five areas marked by red numbered discs, one to five.](../../assets/screens/layout.png)
 
 1. **The top bar.** Adding creatures and players, group saves, casting a spell, rests, and
    the switch between the console and the compendium. On its right: signing in, the
    **screen** (sharing a [player view](/docs/fight/player-view/)), and the **gear**, which
-   opens a short menu — settings, light or dark, this handbook, and reporting a bug.
+   opens a short menu: settings, light or dark, this handbook, and reporting a bug.
 2. **The tracker.** Everyone in the fight, in the order they act, with hit points, armor
    class, and any conditions on them. This is the column you watch.
-3. **The stat block.** Everything about the current or selected combatant — abilities, actions, reactions, etc. Click an attack here to roll it. See [The stat block](/docs/reference/stat-block/).
-4. **Controls and the log.** Buttons for the creature you've selected — apply an effect,
-   concentrate, use a reaction — and below them a running list of what has happened.
+3. **The stat block.** Everything about the current or selected combatant: abilities, actions, reactions, and so on. Click an attack here to roll it. See [The stat block](/docs/reference/stat-block/).
+4. **Controls and the log.** Buttons for the creature you've selected (apply an effect,
+   concentrate, use a reaction) and below them a running list of what has happened.
 5. **The bottom bar.** Dice you can roll by hand, how hard the fight looks before it
-   starts, the fight's timers once it does, and — when you're signed in — which campaign
+   starts, the fight's timers once it does, and, when you're signed in, which campaign
    you're running.
 
 ## Add your creatures and players

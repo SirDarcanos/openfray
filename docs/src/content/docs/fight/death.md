@@ -27,7 +27,7 @@ tally clears, and they keep their place in the order, without re-rolling initiat
 
 ## Death saves
 
-A downed player's row is tagged **Unconscious** and shows a set of pips — successes on one
+A downed player's row is tagged **Unconscious** and shows a set of pips: successes on one
 line, failures on the other.
 
 ![A tracker row for a downed player, tagged Unconscious, with the Saves and Fails pips outlined in red.](../../../assets/screens/death-save-row.png)
@@ -38,7 +38,7 @@ Select the character and their controls show three buttons.
 
 - **Save** and **Fail** record what the player rolled. This is the normal path: the player
   rolls their own die, and you tap what happened.
-- **Roll death save** is the fallback for when they can't roll — OpenFray rolls it and
+- **Roll death save** is the fallback for when they can't roll. OpenFray rolls it and
   records the result for you.
 
 Once the tally resolves, OpenFray stops asking. A stabilized character keeps a **Stable**
@@ -53,7 +53,7 @@ Four things happen on their own during a fight, so nothing is missed mid-combat:
 | When                               | OpenFray does this                                               |
 | ---------------------------------- | ---------------------------------------------------------------- |
 | A drying character receives damage | Records a failure with the damage                                |
-| That damage came from a melee hit  | Records it as a critical — two failures                          |
+| That damage came from a melee hit  | Records it as a critical, so two failures                        |
 | **Roll death save** is a nat 20    | Puts them back on their feet at 1 hit point and clears the tally |
 | **Roll death save** is a nat 1     | Records two failures                                             |
 

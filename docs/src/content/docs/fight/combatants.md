@@ -28,7 +28,7 @@ change the library.
 
 ### Players
 
-A player character sheet is intentionally simple — just what you, the Game
+A player character sheet is intentionally simple. It holds just what you, the Game
 Master, need to see on the board:
 
 - always: name, armor class, hit points, and conditions;
@@ -43,20 +43,20 @@ you type in what the player rolled instead.
 If you sign in with your Google or Discord account, you can save your player characters and
 add them from the compendium instead:
 
-![The Add PC button outlined in red, with the signed-in picker open — a search over saved characters and a Create a character link.](../../../assets/screens/add-pc-dropdown-signedin.png)
+![The Add PC button outlined in red, with the signed-in picker open, showing a search over saved characters and a Create a character link.](../../../assets/screens/add-pc-dropdown-signedin.png)
 
 A saved character can also carry its class, level, and the armor it wears. Those feed
 exactly two numbers, each behind its own switch: tick **Calculate AC automatically** and
-OpenFray works armor class out from the armor, shield, and ability scores — including
-the Barbarian and Monk unarmored numbers — and updates it when the character dons or
+OpenFray works armor class out from the armor, shield, and ability scores, including
+the Barbarian and Monk unarmored numbers. It updates when the character dons or
 doffs armor mid-fight; leave the initiative modifier blank and it's derived from
 Dexterity and the class bonuses that touch initiative. Type either number yourself and
-your number wins. Everything else about the character stays yours to write — OpenFray
+your number wins. Everything else about the character stays yours to write. OpenFray
 still never runs a build.
 
 ### Throwaway combatants
 
-**Quick add** drops in something you're inventing on the spot and won't reuse — just a
+**Quick add** drops in something you're inventing on the spot and won't reuse. It takes just a
 name, hit points, armor class, and whether it's a **Friend** or a **Foe**.
 
 ![The Quick add button outlined in red, with its short form open: a name, a Foe dropdown, AC, and HP.](../../../assets/screens/add-npc-dropdown.png)
@@ -64,7 +64,7 @@ name, hit points, armor class, and whether it's a **Friend** or a **Foe**.
 ## Allies
 
 A creature from the compendium is a foe unless you say otherwise. When one fights for the
-party instead — a summoned wolf, a hired guard, an ogre the bard has just charmed — select
+party instead (a summoned wolf, a hired guard, an ogre the bard has just charmed) select
 it and click **Make ally** in the controls beside its stat block.
 
 An ally moves in with the players in the tracker, takes the blue row color, is offered as
@@ -84,9 +84,9 @@ and armor class, and you change hit points right there. See
 
 ## Copies and renaming
 
-Add the same creature multiple times and a number is added to their name for you — that's just to
+Add the same creature multiple times and a number is added to their name for you, just to
 tell them apart. Its stat block still shows their original name. If you rename one
 yourself, it shows its custom name with the real one after it (e.g. _Snik (Goblin)_), so you always
 know what it actually is.
 
-![Three goblins in the tracker outlined in red — Goblin Minion, Goblin Minion 2, and a renamed Snik whose stat block reads Snik (Goblin Minion).](../../../assets/screens/creature-duplicate-renamed.png)
+![Three goblins in the tracker outlined in red: Goblin Minion, Goblin Minion 2, and a renamed Snik whose stat block reads Snik (Goblin Minion).](../../../assets/screens/creature-duplicate-renamed.png)

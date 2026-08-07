@@ -34,26 +34,26 @@ OpenFray what happened; it remembers it and works it into the right rolls and nu
 ## Adding an effect
 
 Click the creature in the tracker, then click **Apply effect** in the controls beside its
-stat block. The box stages everything you pick — nothing lands on the creature until you
+stat block. The box stages everything you pick. Nothing lands on the creature until you
 press **Apply**, so you can build the whole thing and change your mind on the way.
 
 ![The Apply effect box, with its preset, duration, reminder, condition, Exhaustion, counter and bonus-or-penalty controls outlined in red and numbered one to seven.](../../../assets/screens/apply-effect.png)
 
 **1. Start from a preset, if one fits.** **Presets**, at the top of the box, opens a
-search over the ready-made bundles — yours and the ones your
+search over the ready-made bundles, both yours and the ones your
 [libraries](/docs/reference/settings/#libraries) ship. Picking one fills the form below,
 replacing whatever was staged, and you can adjust any part of it before applying. The
 row appears once there are presets to offer; see [Presets](#presets).
 
 **2. Set how long it lasts.** This applies to everything staged in the box:
 
-| Choice                      | Use it for                                                                                                                                                  |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Until removed**           | you'll clear it yourself when the story says so                                                                                                             |
-| **This turn / next attack** | something used up by the next roll (Vicious Mockery)                                                                                                        |
-| **Save ends**               | something the creature can shake off — it then asks which save, the number to beat, and whether it's rolled at the start or the end of that creature's turn |
-| **1 round** … **24 hours**  | anything with a stated duration — a spell, a potion                                                                                                         |
-| **Custom…**                 | any other length, typed as a number of rounds, minutes, hours, or days                                                                                      |
+| Choice                      | Use it for                                                                                                                                                 |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Until removed**           | you'll clear it yourself when the story says so                                                                                                            |
+| **This turn / next attack** | something used up by the next roll (Vicious Mockery)                                                                                                       |
+| **Save ends**               | something the creature can shake off. It then asks which save, the number to beat, and whether it's rolled at the start or the end of that creature's turn |
+| **1 round** … **24 hours**  | anything with a stated duration, such as a spell or a potion                                                                                               |
+| **Custom…**                 | any other length, typed as a number of rounds, minutes, hours, or days                                                                                     |
 
 **3. Set a reminder.** Type a short note. OpenFray shows it on the creature's tracker row
 and reminds you; you decide what it does. **+ Add another reminder** stages a second note.
@@ -61,18 +61,18 @@ and reminds you; you decide what it does. **+ Add another reminder** stages a se
 **4. Apply a condition.** These are toggles: the ones already on the creature are
 highlighted, and tapping one again takes it off.
 
-**5. Set an Exhaustion level.** Exhaustion isn't a toggle — it's a number from 1 to 6.
+**5. Set an Exhaustion level.** Exhaustion isn't a toggle. It's a number from 1 to 6.
 Click the level, and the line below spells out what it does before you apply it. **None**
 takes the condition off. See [Exhaustion](#exhaustion).
 
-**6. Add a counter.** Click **+ Add counter** and name it — a tally you raise and lower
+**6. Add a counter.** Click **+ Add counter** and name it. A counter is a tally you raise and lower
 by hand, like a corruption track or a countdown. Tick **Hidden from players** to keep its
 number off the shared [player view](/docs/fight/player-view/). See [Counters](#counters).
 
 **7. Add a bonus or penalty.** Click **+ Add a bonus or penalty** and pick _what_ it does
 (Advantage, Disadvantage, or a number), _what it applies to_, and _whose rolls_ (the
-creature's own, or rolls made against it). It can apply to a kind of roll — attack rolls,
-saving throws, ability checks, or everything — or to one of the creature's numbers:
+creature's own, or rolls made against it). It can apply to a kind of roll (attack rolls,
+saving throws, ability checks, or everything) or to one of the creature's numbers:
 armor class, Speed, or the HP maximum. A modifier on saving throws or ability checks can
 be narrowed to particular abilities, so "Disadvantage on Wisdom checks" reaches only
 those. Give it a label, like Bless or Reckless, so you recognize it on the board later.
@@ -80,12 +80,12 @@ OpenFray spells out what you've built in plain English.
 
 ![The Modifier builder in the Apply effect box: an Effect and Applies-to dropdown, ability chips, an On choice, a Label field, and a plain-English summary line.](../../../assets/screens/add-bous-penalty-effect.png)
 
-**8. Name the bundle.** With two or more parts staged, **Apply as one** offers a name —
+**8. Name the bundle.** With two or more parts staged, **Apply as one** offers a name.
 _Drunk_, _Cursed_. Named, everything above lands as one badge that clears together; left
 blank, each part gets its own badge. A counter always stands alone, so its tally outlives
 whatever applied it, and so does an Exhaustion level.
 
-**9. Apply.** Click **Apply** to add everything staged to the combatant — or
+**9. Apply.** Click **Apply** to add everything staged to the combatant, or
 **Save as preset** first, to keep the bundle for the next time. See [Presets](#presets).
 
 ### The numbers a modifier can move
@@ -94,7 +94,7 @@ A modifier aimed at armor class, Speed, or the HP maximum changes the number its
 stat block and the tracker row show the changed value for as long as the effect lasts,
 and rolls and damage use it. A Speed amount can be a number (`-10`), or `half`, `zero`,
 or `double`. When an effect lowers the HP maximum below the creature's current hit
-points, the current hit points drop to match — and they don't spring back when the
+points, the current hit points drop to match, and they don't spring back when the
 effect ends, the same way a cured disease doesn't heal the flesh it cost.
 
 ### Two examples
@@ -102,7 +102,7 @@ effect ends, the same way a cured disease doesn't heal the flesh it cost.
 #### Reckless Attack
 
 The barbarian's player announces it. There's no spell to cast and nothing on any stat
-block — but for the rest of the round, attacks against them land more easily, and that's
+block. For the rest of the round, attacks against them land more easily, and that's
 the sort of thing you'll otherwise forget by the time the enemy swings.
 
 ![The Apply effect box set up for Reckless: Advantage on attack rolls made against it, with the summary line text.](../../../assets/screens/example-reckless.png)
@@ -121,7 +121,7 @@ dice, and names _Reckless attack_ as the reason.
 #### Something you just made up
 
 A creature throws a flask of oil on a player and they are now covered in oil. There's no
-condition for that and no spell involved — you just don't want to forget it two rounds
+condition for that and no spell involved. You just don't want to forget it two rounds
 from now.
 
 ![The Apply effect box with a free-text reminder typed into the Reminder field.](../../../assets/screens/example-reminder.png)
@@ -131,12 +131,12 @@ from now.
 3. Type the note in **Reminder** and press **Apply**.
 
 It becomes a badge on their row like any other effect. OpenFray shows the reminder and
-keeps it in front of you until you clear it, but it doesn't apply any effect for you — a
+keeps it in front of you until you clear it, but it doesn't apply any effect for you. A
 reminder is a note, and you decide what it means.
 
 ## Presets
 
-A preset is a bundle you apply more than once — _Drunk_, a disease stage, a house rule.
+A preset is a bundle you apply more than once: _Drunk_, a disease stage, a house rule.
 Open **Apply effect** and click **Presets** to search them; picking one fills the form,
 and nothing lands until you press **Apply**, so a preset is a starting point rather than
 a button.
@@ -150,10 +150,10 @@ Presets come from two places:
   _Brood & Bloom_ carries its disease stages and brood counters, and _On Strong Waters
   and Potent Simples_ carries Intoxication, Craving, and the degrees of addiction.
 
-A preset can carry a change in Exhaustion too — see
+A preset can carry a change in Exhaustion too. See
 [Exhaustion in a preset](#exhaustion-in-a-preset).
 
-Read any preset in full on the compendium's **Effects** tab — see
+Read any preset in full on the compendium's **Effects** tab. See
 [The compendium](/docs/library/compendium/#effects).
 
 :::note[Needs an account]
@@ -163,7 +163,7 @@ library's presets work for everyone who has the library turned on.
 
 ## Where effects show up
 
-Each effect shows as a small **badge** under the combatant's name in the tracker — just
+Each effect shows as a small **badge** under the combatant's name in the tracker, just
 the name, so the row stays easy to read at a glance. Parts applied as one named bundle
 share a single badge carrying the bundle's name; point at it to read what's inside.
 
@@ -182,11 +182,11 @@ all** for the lot; every effect keeps its own buttons:
 - **Hide** keeps it off the shared [player view](/docs/fight/player-view/); a hidden
   effect is tagged **Hidden**, and clicking again shows it. A bundle reaches your players
   as one badge carrying its name, so **Hide** sits on the bundle's line and covers
-  everything inside it — there's nothing finer to hide.
+  everything inside it. There's nothing finer to hide.
 - **Clear effects** removes all the applied effects at once.
 
 Casting a spell can put effects on the board too, already bundled under the spell's
-name — see [Spells](/docs/fight/spells/).
+name. See [Spells](/docs/fight/spells/).
 
 ## How long effects last
 
@@ -203,13 +203,13 @@ Every effect knows when it ends, and the **Applied effects** list tells you:
 
 ### Effects a saving throw ends
 
-Some effects hang on until the creature makes a saving throw — a paralysis, an ongoing
+Some effects hang on until the creature makes a saving throw: a paralysis, an ongoing
 burn. Each one gets **its own** save: two effects that happen to need the same save and
 DC still roll separately. On a creature's turn, OpenFray rolls these for you, at the
 start or end of the turn as you chose. For a player, use **Roll save** to record their
 roll, or just **Clear** it when they pass.
 
-When the effect is part of a bundle, succeeding on its save clears the whole bundle —
+When the effect is part of a bundle, succeeding on its save clears the whole bundle,
 the save ends the spell, not one line of it.
 
 ## Exhaustion
@@ -221,7 +221,7 @@ rolls and numbers, the same way it works in any other effect.
 To set it:
 
 1. Click the creature, then **Apply effect**.
-2. Under **Exhaustion**, click the level — or **None** to take it off.
+2. Under **Exhaustion**, click the level, or **None** to take it off.
 3. Read the line below the levels. It says what that level does before you commit to it.
 4. Click **Apply**.
 
@@ -240,7 +240,7 @@ changing one alone would only put it out of step with the number.
 
 ### From an attack or a save
 
-Plenty of creatures cost a failed save a level — a troll's missing limbs, a salt devil's
+Plenty of creatures cost a failed save a level: a troll's missing limbs, a salt devil's
 scimitar, a night in the cold. You don't have to open **Apply effect** for those: the
 **+1 Exhaustion** chip sits with the condition chips in the
 [attack](/docs/fight/attacks/) and [save](/docs/fight/saves/) boxes, and in
@@ -267,7 +267,7 @@ Switching a campaign doesn't rewrite a level already on the board. Set the level
 and OpenFray rebuilds it for the rules you're playing now.
 
 :::caution[Level 6 is yours to apply]
-A creature at level 6 dies. OpenFray shows that as a reminder and does nothing else — it
+A creature at level 6 dies. OpenFray shows that as a reminder and does nothing else. It
 never kills a creature for reaching a number, and it never removes a level at a long rest
 either. Both are your call.
 :::
@@ -280,21 +280,21 @@ stage 3 on a character already at 1 and the preset is worth two levels. Apply it
 at 0 and they end at 2; apply it to someone at 4 and they end at 6.
 
 The preset's card on the compendium's **Effects** tab says which, as _Gains 2 levels_. A
-preset can relieve Exhaustion the same way — lower the level before you save it, and the
+preset can relieve Exhaustion the same way. Lower the level before you save it, and the
 card reads _Removes 1 level_.
 
 ## Counters
 
 Some things at the table are a number that goes up and down rather than something that
 ends: a homebrew corruption track, a countdown you're running. A **counter** is an effect
-that holds that number for you. OpenFray never changes it — you do, and you decide what it
+that holds that number for you. OpenFray never changes it. You do, and you decide what it
 means when it gets high.
 
 To add one:
 
 1. Click the creature, then **Apply effect**.
 2. Click **+ Add counter**.
-3. Type its name — something like `Depth` or `Corruption` — and tick
+3. Type its name, something like `Depth` or `Corruption`, and tick
    **Hidden from players** if the table shouldn't read it.
 4. Click **Apply**.
 
@@ -323,5 +323,5 @@ holds so you don't have to.
 ## Concentration
 
 A spell that a creature has to concentrate on is a special case: ending the concentration
-clears the spell's effects everywhere at once. That has its own page —
+clears the spell's effects everywhere at once. That has its own page.
 [Concentration](/docs/fight/concentration/).

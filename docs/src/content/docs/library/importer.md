@@ -9,7 +9,7 @@ keywords:
 ---
 
 The **OpenFray Importer** is a free browser add-on. It reads a creature's page on
-D&D&nbsp;Beyond and turns it into an OpenFray creature — so you don't have to type a
+D&D&nbsp;Beyond and turns it into an OpenFray creature, so you don't have to type a
 whole stat block in by hand.
 
 ## Download the importer
@@ -27,7 +27,7 @@ Once it's installed pin it to your browser's toolbar for easy access.
 
 ## How to use it
 
-1. On D&D&nbsp;Beyond, open a creature and go to its **Details** page — the one with the
+1. On D&D&nbsp;Beyond, open a creature and go to its **Details** page, the one with the
    full stat block.
 2. Click the **OpenFray** icon in your toolbar. The add-on reads the page and builds an
    OpenFray creature from it, showing you the result.
@@ -41,7 +41,7 @@ Once it's installed pin it to your browser's toolbar for easy access.
 
    ![The Import a creature box in OpenFray, with the pasted creature and an Import button.](../../../assets/screens/import-json.png)
 
-The creature is saved to your library as an ordinary custom creature — you can edit it
+The creature is saved to your library as an ordinary custom creature. You can edit it
 afterward like anything you built yourself, and drop it into any fight. Because it's
 saved to your library, this last step needs an account.
 
@@ -72,11 +72,11 @@ Click **Options** in the importer's popup to toggle the following options:
 - _Include page number in source_
 - _Include link to source in description_
 
-![The importer's Options panel — three unchecked toggles above a Done button.](../../../assets/screens/importer-options.png)
+![The importer's Options panel: three unchecked toggles above a Done button.](../../../assets/screens/importer-options.png)
 
 ## What it can and can't see
 
 The importer only reads the page you're looking at, and only when you click it. It
-carries no game content of its own — it just reformats the creature already on your
+carries no game content of its own. It just reformats the creature already on your
 screen into OpenFray's format, on your own computer. It's a free, unofficial fan tool,
 not made or approved by Wizards of the Coast or D&D&nbsp;Beyond.

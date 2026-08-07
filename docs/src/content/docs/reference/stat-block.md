@@ -8,7 +8,7 @@ keywords:
   - read a 5e stat block
 ---
 
-The **stat block** is the full picture of a creature — the middle column when you select
+The **stat block** is the full picture of a creature: the middle column when you select
 one, and the reading pane in the compendium. It's the same layout printed books use. This
 page names each part and points out what you can click during a fight.
 
@@ -22,7 +22,7 @@ covered under [Creatures, players & quick adds](/docs/fight/combatants/).
 The top of the block carries the creature's identity and its headline numbers:
 
 - **Name**, and below it the **size, type, and alignment**, then the **challenge rating**
-  with its XP — for example, _Large Dragon, chaotic evil · CR 10 (5,900 XP)_.
+  with its XP, for example _Large Dragon, chaotic evil · CR 10 (5,900 XP)_.
 - **AC** — armor class.
 - **HP** — hit points; a creature also shows the hit-dice formula it rolled from.
 - **TMP** — temporary hit points, counted separately and used up first.
@@ -33,7 +33,7 @@ A legendary creature is marked as such under the header.
 
 ## Abilities, saves, and skills
 
-The six ability scores, each with its modifier and — where the creature is proficient — its
+The six ability scores, each with its modifier and, where the creature is proficient, its
 **saving throw** bonus. Alongside them, any **skills** the creature is proficient in.
 
 ## Defenses and senses
@@ -60,7 +60,7 @@ The lower half lists what the creature can do, in the usual order:
 - A collapsible **Description** with the creature's flavor text, where the source has it.
 
 At the very bottom, a **source line** names the book the creature comes from, and its page
-where the book has one — for example, _Brood & Bloom_, or _Basic Rules 2024 (SRD 5.2.1,
+where the book has one, for example _Brood & Bloom_, or _Basic Rules 2024 (SRD 5.2.1,
 pg. 320)_. When the creature comes from one of OpenFray's own books, that name is a link:
 click it to read the book, in a new tab, so following it never takes the fight off your
 screen. Every other source is plain text. Full credit for every book OpenFray uses is in
@@ -74,10 +74,10 @@ During a fight, the parts that roll or spend something are clickable:
 | ------------------------------------ | ------------------------------------------------------------------------------------ |
 | An **ability** or **skill**          | Rolls that check (a creature's own).                                                 |
 | An **action** with an attack or save | Opens the [attack](/docs/fight/attacks/) or [save](/docs/fight/saves/) box.          |
-| A **spell**                          | Casts it — see [Spells](/docs/fight/spells/).                                        |
+| A **spell**                          | Casts it. See [Spells](/docs/fight/spells/).                                         |
 | A **legendary action**               | Spends it from the round's budget. See [Creature resources](/docs/fight/resources/). |
 | A **recharge** ability               | Spends it; OpenFray rolls to recharge on the creature's turn.                        |
 
-Everything else — traits, the descriptive text of an action — is there to read. OpenFray
+Everything else is there to read, including traits and the descriptive text of an action. OpenFray
 never rolls a player's dice, so a player character's abilities show the modifier only, and
 you enter what the player rolled.
